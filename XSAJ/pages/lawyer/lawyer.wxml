@@ -1,0 +1,41 @@
+<view class="search-area">
+    <input type="text" placeholder-class="placeholder-text" placeholder="搜索姓名" class="search-text small-text" bindconfirm="searchLawyer"/>
+</view>
+<!--<view>
+    <view class="small-text top-title"><text style="margin: 20rpx; line-height: 80rpx">按擅长领域查找</text></view>
+    <view class="flex-wrap">
+        <view  class="flex-item normal-text" wx:for="{{lawType}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}">
+            <view bindtap="gotoSearchResult" id="{{itemName.law_type}};{{itemName.answer_id}}" class="{{itemName.answer_id==-1?                      'gray':'normal'}}">{{itemName.law_type}}</view>  
+        </view>
+    </view>
+</view>-->
+<view>
+    <view class="small-text top-title margin-top"><text style="margin: 20rpx; line-height: 80rpx">按执业地区查找</text></view>
+    <view class="flex-wrap">
+        <view  class="flex-item normal-text" wx:for="{{citydata}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}">
+            <view bindtap="gotoSearchResultByCity" id="{{itemName.city_name}};{{itemName.city_code}}" class="{{itemName.city_code==-2?                      'gray':'normal'}}">{{itemName.city_name}}</view>  
+        </view>
+    </view>
+</view>
+<view class="small-text top-title margin-top"><text style="margin: 20rpx; line-height: 80rpx">推荐律师</text></view>
+
+<view wx:for="{{lawyerArray}}"  wx:for-index="idx" wx:for-item="itemCase" style="background: white">
+        <view class="lawyer-info-header"  > 
+            <image src="{{itemCase.avatar}}" class="normal-avatar avatar" bindtap="goToLawyerInfo" id="{{itemCase.user_id}}"></image>
+            <view style="flex: 1;" bindtap="goToLawyerInfo" id="{{itemCase.user_id}}">
+                <view class="lawyer-name-address big-text">{{itemCase.lawyer_name}} | {{itemCase.city_name}}</view>
+                <view class="normal-text answear-info" wx:if="{{itemCase.score!=0}}">{{itemCase.CompleteOrderCount}}次解答,用户评价{{itemCase.score}}分</view>
+                <view class="normal-text answear-info" wx:if="{{itemCase.score==0}}">{{itemCase.CompleteOrderCount}}次解答,暂无用户评价</view>
+            </view> 
+            <view class="little-button" bindtap="consultation" id="{{itemCase.lawyer_id}};{{itemCase.lawyer_name}}">咨询Ta</view>
+        </view>
+        <view bindtap="goToLawyerInfo" id="{{itemCase.user_id}}" class="lawyer-info small-text">执业于{{itemCase.company_name}}, 已从业{{itemCase.experience_years}}年</view>
+        <view bindtap="goToLawyerInfo" id="{{itemCase.user_id}}" wx:if="{{itemCase.first_profession}}||{{itemCase.second_profession}}||{{itemCase.profession3}}" class="lawyer-info small-text padding-bottom">擅长<text wx:if="{{itemCase.first_profession}}">{{itemCase.first_profession}}、</text>
+        <text wx:if="{{itemCase.second_profession}}" style="margin-left:15rpx">{{itemCase.second_profession}}、</text>
+        <text wx:if="{{itemCase.profession3}}" style="margin-left:15rpx">{{itemCase.profession3}}</text>等专业领域</view>
+</view>
+
+<view class="progress" hidden="{{isRolling}}">
+        <image src="../../images/loading.svg" class="rolling-icon"></image>
+        <text class="small-text loading-info">努力载入中...</text>
+</view>

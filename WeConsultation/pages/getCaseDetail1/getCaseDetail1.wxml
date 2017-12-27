@@ -1,0 +1,183 @@
+<import src="../../templates/template.wxml" />
+
+<view class="container" hidden="{{!isRolling}}">
+
+    <view class="prompt normal-text" wx:if="{{(state != 7 || state != 8) && PhonePrizeUser >= 0}}">
+      <image src="../../images/35.png" class="prompt-icon"></image>
+      请保持电话畅通，否则律师将无法为您解答；
+    </view>
+
+    
+    <view class="lawyer-title-box" wx:if="{{firstReplyInfo.lawyer_info || secondReplyInfo.lawyer_info}}">
+      <view class="lawyer-title small-text">解答律师</view>
+    </view>
+    <view class="lawyer-avatar-block">
+
+        <view class="lawyer-avatar" wx:if="{{firstReplyInfo.lawyer_info}}">
+            <image src="{{firstReplyInfo.lawyer_info.avatar}}" class="big-avatar"></image>
+            <view class="lawyer-name big-text">{{firstReplyInfo.lawyer_info.lawyer_name}}</view>
+            <view wx:if="{{state==1}}" style="margin-bottom: 60rpx"></view>
+            <view class="answear-state" wx:elif="{{firstReplyInfo.lawyer_info&&!firstReplyInfo.answer&&caseCate == 1}}">
+              <image src="../../images/32.png" class="answear-icon"></image>
+              <view class="answear-state-ing">解答中...</view>
+            </view>
+            <view class="answear-state" wx:else>
+              <image src="../../images/33.png" class="answear-icon"></image>
+              <view class="answear-state-ing" style="color:#999">已解答</view>
+            </view>
+        </view>
+        <view class="lawyer-avatar" wx:if="{{secondReplyInfo.lawyer_info}}">
+            <image src="{{secondReplyInfo.lawyer_info.avatar}}" class="big-avatar"></image>
+            <view class="lawyer-name big-text">{{secondReplyInfo.lawyer_info.lawyer_name}}</view>
+            <view wx:if="{{state==1}}" style="margin-bottom: 60rpx"></view>
+            <view class="answear-state" wx:elif="{{secondReplyInfo.lawyer_info&&!secondReplyInfo.answer&&caseCate == 1}}">
+              <image src="../../images/32.png" class="answear-icon"></image>
+              <view class="answear-state-ing">解答中...</view>
+            </view>
+            <view class="answear-state" wx:else>
+              <image src="../../images/33.png" class="answear-icon"></image>
+              <view class="answear-state-ing" style="color:#999">已解答</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="consultation">
+        <view class="consultation-head" >
+            <view class="consultation-title small-text">咨询内容</view>
+            <view class="is-call" wx:if="{{PhonePrizeUser >= 0 && PhoneUseState < 3}}">
+              <image src="../../images/22.png" class="mini-icon"></image>
+              等待
+            </view>
+            <view class="end" wx:elif="{{PhonePrizeUser >= 0 && PhoneUseState >= 3}}">
+              <image src="../../images/22.png" class="mini-icon"></image>
+              结束
+            </view>
+        </view>
+        <text class="consultation-content` big-text">{{details}}</text>
+
+        <view class="consultation-imgs">
+          <block wx:for="{{attach_list}}" wx:for-item="itemCase" wx:key="itemCase.id">
+            <image src="{{itemCase.media_url}}" class="attach-img"></image>
+          </block>
+        </view>
+
+        <view class="consultation-time-price">
+          <text wx:if="{{caseCate == 1}}" class="consultation-detail small-text">{{createTime}} | {{money}}元</text>
+          <view class="small-text case-state"  wx:if="{{state==1}}">未付款</view>
+          <view class="small-text case-state"  wx:elif="{{state==-1}}">已撤单</view>
+          <view class="small-text case-state"  wx:elif="{{!firstReplyInfo.answer && !secondReplyInfo.answer&&state!=1&&PhonePrizeUser < 0}}">律师正在接单...</view>
+        </view>
+    </view>
+
+    <view wx:if="{{!firstReplyInfo.lawyer_info && !secondReplyInfo.lawyer_info}}"></view>
+    <view wx:elif="{{state==1}}"></view>
+    <view wx:else style="width:100%">                      
+      <view class="lawyer-answear" style="margin-top: 30rpx;">
+          <text class="consultation-title small-text">解答律师</text>
+          <view class="reply" wx:if="{{firstReplyInfo.lawyer_info}}">
+              <image src="{{firstReplyInfo.lawyer_info.avatar}}" class="normal-avatar" />
+              <view class="reply-lawyer-info">
+                  <view class="row-box">
+                    <view class="reply-lawyer-name big-text">{{firstReplyInfo.lawyer_info.lawyer_name}}</view>
+                    <view class="is-same-city" wx:if="{{isSameCtiy1}}">同城</view>
+                  </view>
+                  <!--<view class="reply-lawyer-price small-text" wx:if="{{caseCate != 1}}">分得{{FirstReward}}元</view>
+                  <view wx:elif="{{firstReplyInfo.answer}}" class="answear small-text">已解答</view>
+                  <view wx:elif="{{!firstReplyInfo.answer}}" class="get-case small-text">已接单</view>-->
+                  <view class="answear-time small-text">{{answerTime1}}</view>
+              </view>
+
+              <view >
+                <view class="consultation-it small-text" bindtap="gotoAskagain" wx:if="{{firstReplyInfo.answer && isCanAskAgain1==true}}" id="{{firstReplyInfo.lawyer_info.user_id}}" >追问</view>
+                <view class="consultation-it small-text" bindtap="consultation" wx:else id="{{firstReplyInfo.lawyer_info.lawyer_id}};{{firstReplyInfo.lawyer_info.lawyer_name}};{{firstReplyInfo.lawyer_info.questionPrice}}" >继续咨询</view>
+                
+                <view class="surplus small-text" wx:if="{{firstReplyInfo.answer && isCanAskAgain1==true}}">剩{{firstReplyInfo.answer.residueAnswerCount}}次追问</view>
+              </view>
+          </view>
+
+          <view wx:if="{{firstReplyInfo.answer.prune_content}}" class="advice">
+              <view class="advice-title small-text">咨询概述</view>
+              <view class="answer-content big-text">{{firstReplyInfo.answer.prune_content}}</view>
+          </view>
+          <view wx:if="{{FirstAnswer}}" class="advice">
+              <view class="advice-title small-text">律师意见</view>
+              <view class="answer-content big-text">{{FirstAnswer}}</view>
+          </view>
+          <view wx:if="{{firstReplyInfo.answer.hold_legal_basis}}" class="advice">
+              <view class="advice-title small-text">法律依据</view>
+              <view class="answer-content big-text">{{firstReplyInfo.answer.hold_legal_basis}}</view>
+          </view>
+
+          <view class="normal-text no-answear" wx:if="{{firstReplyInfo.lawyer_info&&!firstReplyInfo.answer&&caseCate == 1}}">正在为您提交解答，请稍后</view>
+          <view class="talk-list big-text" wx:if="{{firstReplyInfo.answer.talk_list}}" wx:for="{{firstReplyInfo.answer.talk_list}}" wx:for-index="idx" wx:for-item="itemCase" wx:key="idx">
+              <view class="talk-list-item">
+                  <text class="lawyer" wx:if="{{itemCase.user_id == firstReplyInfo.lawyer_info.user_id}}">律师解答:</text>
+                  <text class="user" wx:elif="{{itemCase.user_id != firstReplyInfo.lawyer_info.user_id}}">用户追问:</text>
+                  <text class="talk-list-content">{{itemCase.content}}</text>
+              </view>
+          </view>
+          <view class="inner-line"></view>
+      </view>
+      <view class="lawyer-answear" style="margin-bottom: 100rpx;">
+          <text class="consultation-title small-text" style="height: 2rpx"/>
+          <view class="reply" wx:if="{{secondReplyInfo.lawyer_info}}">
+              <image src="{{secondReplyInfo.lawyer_info.avatar}}" class="normal-avatar" />
+              <view class="reply-lawyer-info">
+                  <view class="row-box">
+                    <view class="reply-lawyer-name big-text">{{secondReplyInfo.lawyer_info.lawyer_name}}</view>
+                    <view class="is-same-city" wx:if="{{isSameCtiy2}}">同城</view>
+                  </view>
+                  <!--<view class="reply-lawyer-price small-text" wx:if="{{caseCate != 1}}">分得{{FirstReward}}元</view>
+                  <view wx:elif="{{firstReplyInfo.answer}}" class="answear small-text">已解答</view>
+                  <view wx:elif="{{!firstReplyInfo.answer}}" class="get-case small-text">已接单</view>-->
+                  <view class="answear-time small-text">{{answerTime2}}</view>
+              </view>
+              <view >
+                <view class="consultation-it small-text" bindtap="gotoAskagain" wx:if="{{secondReplyInfo.answer && isCanAskAgain2==true}}" id="{{secondReplyInfo.lawyer_info.user_id}}" >追问</view>
+                <view class="consultation-it small-text" bindtap="consultation" wx:else id="{{secondReplyInfo.lawyer_info.lawyer_id}};{{secondReplyInfo.lawyer_info.lawyer_name}};{{secondReplyInfo.lawyer_info.questionPrice}}" >继续咨询</view>
+
+                <view class="surplus small-text" wx:if="{{secondReplyInfo.answer && isCanAskAgain2==true}}">剩{{secondReplyInfo.answer.residueAnswerCount}}次追问</view>
+              </view>
+          </view>
+
+          <view wx:if="{{secondReplyInfo.answer.prune_content}}" class="advice">
+              <view class="advice-title small-text">咨询概述</view>
+              <view class="answer-content big-text">{{secondReplyInfo.answer.prune_content}}</view>
+          </view>
+          <view wx:if="{{EvaluateContent}}" class="advice">
+              <view class="advice-title small-text">律师意见</view>
+              <view class="answer-content big-text">{{EvaluateContent}}</view>
+          </view>
+          <view wx:if="{{secondReplyInfo.answer.hold_legal_basis}}" class="advice">
+              <view class="advice-title small-text">法律依据</view>
+              <view class="answer-content big-text">{{secondReplyInfo.answer.hold_legal_basis}}</view>
+          </view>
+
+          <view class="normal-text no-answear" wx:if="{{secondReplyInfo.lawyer_info&&!secondReplyInfo.answer&&caseCate == 1}}">正在为您提交解答，请稍后</view>
+
+          <view class="talk-list big-text" wx:if="{{secondReplyInfo.answer.talk_list}}" wx:for="{{secondReplyInfo.answer.talk_list}}"      wx:for-index="idx" wx:for-item="itemCase" wx:key="idx">
+              <view class="talk-list-item">
+                  <text class="lawyer" wx:if="{{itemCase.user_id == secondReplyInfo.lawyer_info.user_id}}">律师解答:</text>
+                  <text class="user" wx:elif="{{itemCase.user_id != secondReplyInfo.lawyer_info.user_id}}">用户追问:</text>
+                  <text class="talk-list-content">{{itemCase.content}}</text>
+              </view>
+          </view>
+      </view>
+    </view>
+
+    <view  wx:if="{{state==7}}"></view>
+    <view class="bottom-btn" bindtap="editConsultation" wx:elif="{{state==1}}">
+        <view class="bottom-button">编辑咨询</view>
+    </view>
+    <view class="bottom-btn" bindtap="sureCase" wx:elif="{{firstReplyInfo.lawyer_info && firstReplyInfo.answer && !secondReplyInfo.lawyer_info}}">
+        <view class="bottom-button">确认解答</view>
+    </view>
+    <view class="bottom-btn" bindtap="sureCase" wx:elif="{{firstReplyInfo.lawyer_info && firstReplyInfo.answer && secondReplyInfo.lawyer_info && secondReplyInfo.answer}}">
+        <view class="bottom-button">确认解答</view>
+    </view>
+    <!--<view class="bottom-btn" wx:else>
+        <view class="bottom-button" style="background: #cbc7cc">等待解答</view>
+    </view>-->
+</view>
+
+<template is="rolling" data="{{isRolling: isRolling}}"></template>

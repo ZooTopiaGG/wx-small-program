@@ -1,0 +1,6 @@
+
+<view class="itemT" wx:for="{{array}}" wx:for-item="itemCase" wx:for-index="idx"
+    wx:key="idx" bindtap="showOrHiddenContent" id="{{idx}}">
+  <view class="item-title big-text" >{{itemCase.title}}</view>
+  <view wx:if="{{itemCase.hidd}}" class="item-content normal-text">{{itemCase.content}}</view>
+</view>

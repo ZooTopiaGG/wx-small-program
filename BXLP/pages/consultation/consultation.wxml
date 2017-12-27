@@ -1,0 +1,46 @@
+
+    <view class="content" >
+        <textarea class="content-text-arae" value="{{consultationContent}}" 
+        bindinput="bindconsultationContentBlur" focus="{{focus}}"
+        placeholder="请尽量详细的提出您要咨询的法律问题，这将有助于您获得更有用的律师专业解答。为保护用户的个人隐私，建议您在咨询内容中不要使用自己或者相关当事人的真实姓名。" maxlength="500"/>
+        <view class="stringNum">
+            <text>{{nums}}</text>/500
+        </view>
+    </view>
+    
+
+    <view class="images-wrapper"> 
+        <!--<text class="images-text">请选择图片</text>-->
+        <view class="images-list">
+            <block wx:for="{{imageList}}" wx:for-item="image" wx:for-index="idx">
+                <view class="images-image">
+                    <image src="{{image.mediaUrl}}" class="images-image" data-src="{{image.mediaUrl}}" bindtap="previewImage"></image>
+                    <image src="../../images/13@2X.png" class="close-img" bindtap="dropImage" id="{{idx}}"></image>
+                </view>
+            </block>
+            <view class="images-image image-plus" bindtap="chooseImage">
+                <view class="image-plus-horizontal"></view>
+                <view class="image-plus-vertical"></view>
+            </view>
+            <text class="images-num"><text>{{imageNum}}</text>/3</text>
+        </view>
+    </view>
+
+    <view class="pay">
+        <view class="pay-title">您愿意支付的赏金</view>
+        <view class="pay-opts">
+            <text class="pay-opts-m {{select1 == 1 ? 'optsed':'noopts'}}" bindtap="opts1" ><text>15</text>元</text>
+            <text class="pay-opts-m pay-opts-center {{select2 == 1 ? 'optsed':'noopts'}}" bindtap="opts2" ><text>20</text>元</text>
+            <text class="pay-opts-m {{select3 == 1 ? 'optsed':'noopts'}}" bindtap="opts3"><text>30</text>元</text>
+        </view>
+        <view class="input-money">
+            <view class="input-title">我自己填</view>
+            <input type="digit" placeholder="10-999元" bindinput="eveHandle" value="{{price}}" class="input-money-text"/>
+        </view>
+    </view>
+
+    <view class="bottom"></view>
+    <button class="this-bottom-btn"  bindtap="evaSubmit" type="primary" loading="{{isloading}}">立即提交</button>
+
+
+    

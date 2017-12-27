@@ -1,0 +1,109 @@
+/**app.wxss**/
+@import 'wa-ui.wxss';
+
+.icon-normal {
+    height: 100rpx;
+    width: 100rpx;
+    margin: 20rpx;
+}
+
+.active {
+    color: #5d99ff;
+    margin: 60rpx;
+    width: 200rpx;
+    text-align: center;
+    line-height: 97rpx;
+    border-bottom: 2rpx solid #5d99ff;
+}
+
+.normal {
+    width: 200rpx;
+    text-align: center;
+    margin: 60rpx;
+    color: #333;
+}
+
+.normal-input {
+    width: 90%;
+    height: 80rpx;
+    background: #fff;
+    line-height: 80rpx;
+    margin-top: 40rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.normal-input-placeholder {
+    font-size: 24rpx;
+    color: #ccc;
+    overflow: hidden
+}
+
+.inner-input {
+    font-size: 24rpx;
+    background-color: #EFEFF4;
+    height: 60rpx;
+    line-height: 60rpx;
+    flex: 1;
+    margin-left: 20rpx;
+    padding-left: 20rpx;
+}
+
+.calculator {
+    background: #5d99ff;
+    width: 300rpx;
+}
+
+.reset {
+    background: #cccccc;
+    width: 300rpx;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 100%;
+    height: 120rpx;
+    margin-top: 50rpx;
+    border-bottom: 1rpx #ccc solid;
+}
+
+.button-container-item {
+    flex: 1;
+    height: 120rpx;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.result-container {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.identity {
+    color: #CCCCCC;
+    margin: 20rpx;
+}
+
+.result {
+    font-size: 40rpx;
+    margin-bottom: 20rpx;
+    font-weight: bold;
+    color: #ff8633
+}
+
+
+.place-holder {
+    color: #ccc
+}

@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="input">
+        <text class="input-label big-text">手机号码</text>
+        <input type="number" class="input-text" placeholder="请输入您的手机号" placeholder-class="placeholder" bindinput="EventHandle" value="{{mobile}}"/>
+    </view>
+
+    <view class="input">
+        <text class="input-label big-text">验 证 码</text>    
+        <input type="number" class="input-text" placeholder="请填写验证码" placeholder-class="placeholder" maxlength="6" bindinput="EventHandleVerificationCode" focus="true"/>
+        <view class="get-verification-code-btn big-text" bindtap="getVerificationCode">{{getVerificationCodeBtnText}}</view>
+    </view>
+
+    <button class="common-btn big-text" style="width: 690rpx" bindtap="register" type="primary">绑定手机</button>
+</view>

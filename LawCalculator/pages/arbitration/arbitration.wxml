@@ -1,0 +1,16 @@
+<view class="container">
+    <input class="normal-input" type="number" placeholder="标的额（元）" value="{{money}}" 
+            placeholder-class="normal-input-placeholder" bindinput="inputMoney"/>
+
+    <view class="button-container">
+        <view class="button-container-item"><button class="wa-button calculator" bindtap="calculate">结算</button></view>
+        <view class="button-container-item"><button class="wa-button reset" bindtap="reset">重置</button></view>
+    </view>
+
+    <view class="result-container">
+        <view class="identity">计算结果(元)</view>
+        <view class="text-center result" wx:if="{{result}}">{{result}}</view>
+    </view>
+
+    <view class="identity" wx:if="{{result}}">仲裁费包含受理费与处理费，该结果仅计算全国通用的受理费浮动区间，实际金额还需加上各地仲裁委的处理费</view>
+</view>

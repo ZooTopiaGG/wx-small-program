@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="telephone=no" name="format-detection">
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<title>我要咨询</title>
+		<style type="text/css">
+			/*img{
+				width: 7.5rem;
+				height: 21.0rem;
+			}*/
+			.mui-content{
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulDetails.html#0">
+								1、咨询后多久解答？
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulDetails.html#1">
+								2、没有律师解答怎么办？
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulDetails.html#2">
+								3、解答咨询的都是律师么？
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulDetails.html#3">
+								4、担心解答不满意怎么办？
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulDetails.html#4">
+								5、什么是一对一电话咨询？
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulDetails.html#5">
+								6、我不想我咨询的问题被别人看到
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="usefulAnswer.html">
+								咨询小技巧：如何更聪明的提问？
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--<img src="images/zxts.png"/>-->
+			
+		</div>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: false
+			});
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0006 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+		</script>
+	</body>
+</html>

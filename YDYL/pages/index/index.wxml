@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="input-info">  
+    <input placeholder="用户名" placeholder-class="placeholder" class="username" bindinput="bindAccountInput" value="{{userName}}"/>
+    <input placeholder="密码" placeholder-class="placeholder" class="username" password="true" bindinput="bindPwdInput" value="{{password}}"/>
+    <view class="input-button">
+      <button bindtap="login">登录</button>
+      <button bindtap="register">注册</button>
+    </view>
+  </view>
+</view>

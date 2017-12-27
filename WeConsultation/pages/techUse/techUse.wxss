@@ -1,0 +1,30 @@
+/* techUse.wxss */
+
+.help { 
+  width: 100%;
+}
+
+.item-title {
+  line-height: 80rpx; 
+  color: #1675e1;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+}
+.item-content {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  line-height: 55rpx;
+}
+
+.itemT {
+  border-bottom: 1rpx solid #eee;
+}
+
+.itemT:active {
+  background-color: #eee;
+}
+
+page {
+  background-color: white;
+}

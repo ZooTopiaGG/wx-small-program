@@ -1,0 +1,12 @@
+<!--<form bindsubmit="evaSubmit">
+    <textarea bindblur="EventHandleMsg" name="evaContent" class="input-area" auto-focus="true"/>
+
+    <button class="bottom-btn" formType="submit"  >提交</button>
+</form>-->
+
+<view class="container">
+    <view class="i-textarea">
+        <textarea class="text-area"  name="textarea" bindinput="EventHandleMsg"/>
+    </view>
+    <button class="bottom-btn" bindtap="evaSubmit" >提交</button>
+</view>

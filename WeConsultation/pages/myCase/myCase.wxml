@@ -1,0 +1,33 @@
+<view wx:for="{{caseArray}}"  wx:for-index="idx" wx:key="idx" wx:for-item="itemCase" class="case-item"  id="{{itemCase.id}}" bindtap="goToCaseDetail">
+    <view class="content" >{{itemCase.brief_info}}</view>
+    
+    <view class="small-text lawyers-name">
+      <text style="flex: 1">{{itemCase.create_time}} | {{itemCase.price}}元</text>
+      <view class="case-state small-text" catchtap="gotoCommentLawyer" wx:if="{{itemCase.state == 7 && !itemCase.IsCommented}}" id="{{itemCase.id}}">评价律师</view>
+      <view class="row" wx:elif="{{itemCase.state == 1}}">
+        <view class="case-state small-text"  id="{{itemCase.id}}" catchtap="editConsultation">重新编辑</view>
+        <view class="case-state small-text"  id="{{itemCase.id}}:{{itemCase.PhonePrizeUser}}:{{itemCase.price}}" catchtap="pay">立即支付</view>
+      </view>
+      <!--<view class="case-state-cancel small-text" wx:elif="{{itemCase.state == 2}}" id="{{itemCase.id}}" catchtap="cancelCase">撤销订单</view>-->
+      <view class="case-state-waiting small-text" wx:elif="{{itemCase.state == 3}}">解答中...</view>
+      <view class="case-state small-text" wx:elif="{{itemCase.state == 4}}" id="{{itemCase.id}}" catchtap="confirm">确认解答</view>
+      <view class="box" wx:elif="{{itemCase.state == 7 && itemCase.IsCommented}}">
+        <view class="case-state-confirm small-text"  id="{{itemCase.id}};{{idx}}" catchtap="setPublic">
+         <view class="circle"></view>
+         <view class="circle"></view>
+         <view class="circle"></view>
+        </view>
+        <view class="isP" wx:if="{{click == idx? true : false}}">
+          <view class="is-public-item" catchtap="setPublicItem" id="{{itemCase.id}}">
+            <image src="{{itemCase.IsPublic? publicIcon : privateIcon}}" class="icon"></image>
+            <view class="{{itemCase.IsPublic? 'blue-text' : 'gray-text'}}">公开</view>
+          </view>
+          <view class="line"></view>
+          <view class="is-public-item" catchtap="setPrivateItem" id="{{itemCase.id}}">
+            <image src="{{itemCase.IsPublic? privateIcon : publicIcon}}" class="icon"></image>
+            <view class="{{itemCase.IsPublic? 'gray-text' : 'blue-text'}}">不公开</view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

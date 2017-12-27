@@ -1,0 +1,21 @@
+.content {
+    margin: 0rpx 30rpx 30rpx 30rpx;
+    padding-top: 40rpx;
+    font-size: 34rpx;
+    color: #353535;
+    line-height: 50rpx;
+    max-height: 200rpx;
+    overflow: hidden;
+}
+
+.lawyers-name {
+    margin-left: 30rpx;
+    padding-bottom: 35rpx;
+    color: #a9a9a9;
+    border-bottom: 1rpx solid #eeeeee;
+}
+
+.case-item {
+    width: 100%;
+    background: #fff;
+}

@@ -1,0 +1,16 @@
+/* completeComment.wxss */
+
+.circle {
+  width: 450rpx;
+  height: 450rpx;
+  margin-top: 133rpx;
+  margin-bottom: 150rpx;
+}
+
+.commnet-suc {
+  color: #353535;
+}
+
+page {
+  background-color: white;
+}

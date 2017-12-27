@@ -1,0 +1,249 @@
+.head {
+    width: 100%;
+    height: 280rpx;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1rpx solid #eeeeee;
+}
+
+.top-title {
+    margin-top: 60rpx;
+    color: #09bb07;
+    line-height: 50rpx;
+}
+
+.top-little-title {
+    margin-top: 40rpx;
+    color: #888888;
+    line-height: 30rpx;
+}
+
+.top-title-desc {
+    margin-top: 30rpx;
+    color: #09bb07;
+    line-height: 30rpx;
+}
+
+.top-button {
+    margin-top: 37rpx;
+    height: 70rpx;
+    width: 360rpx;
+    background-color: #09bb07;
+    text-align: center;
+    line-height: 70rpx;
+    color: white;
+}
+
+.margin-bottom {
+    margin-bottom: 30rpx;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    margin-top: 20rpx;
+    background: white;
+    border-bottom:1rpx solid #eeeeee;
+}
+
+
+.active {
+    color: #09bb07;
+    margin: 60rpx;
+    width: 200rpx;
+    text-align: center;
+    line-height: 97rpx;
+    border-bottom: 2rpx solid #09bb07;
+}
+
+.normal {
+    width: 200rpx;
+    text-align: center;
+    margin: 60rpx;
+    color: #333;
+}
+
+.case-item {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1rpx solid #eeeeee;
+}
+
+.content {
+    margin: 40rpx 30rpx 30rpx 30rpx;
+    font-size: 34rpx;
+    color: #353535;
+    line-height: 50rpx;
+    max-height: 200rpx;
+    overflow: hidden;
+}
+
+.lawyers-name {
+    margin-bottom: 35rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    color: #a9a9a9;
+    display: flex;
+}
+
+.lawtype-item {
+    background: white;
+    width: 100%;
+}
+
+.lawtype-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20rpx;
+    align-items: center;
+    border-bottom: 1rpx solid #eeeeee;
+}
+
+.lawtype-pic {
+    background: gainsboro;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.lawtype-info {
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.lawtype-title {
+    color: #000000
+}
+
+.lawtype-desc {
+    color: #353535;
+    line-height: 37rpx;
+    margin-top: 15rpx;
+}
+
+.public-case-num {
+    color: #a9a9a9;
+    line-height: 37rpx;
+    margin-top: 15rpx;
+}
+
+.tab1 {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.consultation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    line-height: 50rpx;
+}
+
+.consultation-content {
+    height: 360rpx;
+    flex: 1;
+    margin: 30rpx;
+    padding: 10rpx;
+    background-color: #f8f8f8;
+    border: 1rpx solid #e5e5e5;
+    font-size: 28rpx;
+    line-height: 38rpx;
+    text-align: start;
+}
+
+.consultation-placeholder {
+    color: #888;
+}
+
+.stringNum{
+  position: absolute;
+  right: 50rpx;
+  margin-top: 340rpx;
+  color:#888;
+}
+
+.Prompt {
+    color: #888;
+    margin-bottom: 30rpx;
+}
+
+.pay-opts{
+  text-align: center;
+  display: flex;
+  flex-direction:row; 
+  margin-bottom: 30rpx;
+  margin-left: 14rpx;
+  margin-right: 14rpx;
+}
+.pay-opts .pay-opts-m{
+  flex:1;
+  height: 77.5rpx;
+  line-height: 77.5rpx;
+  border: 2rpx solid #dfdfdf;
+  background: #f8f8f8;
+  margin:0 16rpx
+}
+.pay-opts .optsed{
+  background: #fff;
+  color: #09BB07;
+  border: 2rpx solid #09BB07;
+  border-radius: 6rpx;
+}
+.pay-opts .noopts{
+   background: #f8f8f8;
+   color: #353535;
+   border-radius: 6rpx;
+}
+
+.pay-input {
+  flex:1;
+  height: 77.5rpx;
+  line-height: 77.5rpx;
+  border: 2rpx solid #dfdfdf;
+  background: #f8f8f8;
+  margin:0 16rpx;
+  border-radius: 6rpx;
+  color: #353535;
+}
+
+.pay-input-f {
+  flex:1;
+  height: 77.5rpx;
+  line-height: 77.5rpx;
+  border: 2rpx solid #09BB07;
+  background: #fff;
+  margin:0 16rpx;
+  border-radius: 6rpx;
+  color: #09BB07;
+}
+
+.pay-input-p {
+    color: #353535;
+}
+
+.commit-btn {
+    width: 360rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 32rpx;
+    color: #fff;
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+}
+
+.consultation-fee {
+    flex: 1;
+    text-align: end;
+}

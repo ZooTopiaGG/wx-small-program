@@ -1,0 +1,16 @@
+<!--index.wxml-->
+
+<view >
+    <image src="/imgs/adventure.png" class="banner"></image>
+    <view class="wa-grid text-center item-bg">
+        <view wx:for="{{main_func}}" wx:for-item="main_func" wx:key="m" class="wa-grid-50 border-basic" >
+            <image src="{{main_func.icon}}" class="item-img-round icon-normal" mode="scaleToFill" 
+            bindtap="gotoCal" id="{{main_func.text}}"></image>
+            <view class="main_func_name">{{main_func.text}}</view>
+        </view>
+    </view>
+
+    <view class="important-explain">[律师说]团队出品</view>
+    <view class="explain">Copyright © 2012-2017 JIUYIHENGTAI</view>
+</view>
+

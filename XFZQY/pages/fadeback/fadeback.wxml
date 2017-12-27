@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="i-textarea">
+        <textarea auto-focus class="text-area"  name="textarea" value="{{fadebackCon}}" bindblur="textareaBlur"/>
+    </view>
+    <button class="bottom-btn" bindtap="subFadeBack" >提交</button>
+</view>

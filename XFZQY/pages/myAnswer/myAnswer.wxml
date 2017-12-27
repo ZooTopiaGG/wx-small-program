@@ -1,0 +1,25 @@
+<view>
+    <view class="item" bindtap="showLawyerType">{{lawType}}</view>
+    <view class="item top">咨询概述</view>
+    <textarea bindinput="EventHandleZixun" name="evaContent"/>
+    <view class="item">律师意见</view>
+    <textarea bindinput="EventHandleYijian" name="evaContent"/>
+    <view class="item">法律依据</view>
+    <textarea bindinput="EventHandleYiju" name="evaContent"/>
+    
+    <button class="bottom-btn" bindtap="submit" wx:if="{{!isShowLawyerType}}" >提交</button>
+
+    <view class="law-type-menu" wx:if="{{isShowLawyerType}}">
+         <scroll-view class="law-type-cate" style="height: 240px;" scroll-y="true">
+            <view wx:for="{{lawCateArray}}" wx:for-index="idx" wx:for-item="itemCase">
+                <view class="item" id="{{idx}}" bindtap="setLawArray">{{itemCase}}</view>
+            </view>
+         </scroll-view>
+         <scroll-view class="law-type-cate" scroll-y="true" style="height: 500px;">               
+            <view wx:for="{{lawCodeAndName}}" wx:for-index="idx" wx:for-item="itemName">
+                <view class="item" bindtap="chooseLawCode" id="{{itemName.code}}" data-name="{{itemName.name}}">{{itemName.name}}</view>
+            </view>
+         </scroll-view>
+    </view>
+    
+</view>

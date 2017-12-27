@@ -1,0 +1,121 @@
+.content {
+    margin: 0rpx 30rpx 30rpx 30rpx;
+    padding-top: 40rpx;
+    font-size: 34rpx;
+    color: #353535;
+    line-height: 50rpx;
+    max-height: 200rpx;
+    overflow: hidden;
+}
+
+.lawyers-name {
+    margin-left: 30rpx;
+    padding-bottom: 35rpx;
+    color: #a9a9a9;
+    border-bottom: 1rpx solid #eeeeee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.case-item {
+    width: 100%;
+    background: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.case-state {
+  margin-right: 30rpx;
+  color: #1675e1;
+  border: 1rpx solid #1675e1;
+  border-radius: 6rpx;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.case-state-cancel {
+  margin-right: 30rpx;
+  color: #f58144;
+  border: 1rpx solid #f58144;
+  border-radius: 6rpx;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.case-state-waiting {
+  margin-right: 30rpx;
+  color: #1675e1;
+}
+
+.case-state-confirm {
+  margin-right: 30rpx;
+  color: #1675e1;
+  width: 48rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  background-color: #1675e1;
+  width: 9rpx;
+  height: 9rpx;
+  border-radius: 4.5rpx;
+}
+
+.box{
+  position: relative;
+}
+.isP{
+  width: 160rpx;
+  height: 132rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 60rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 10px #ccc;
+  border-radius: 6rpx;
+}
+
+.is-public-item {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 15rpx;
+}
+
+.blue-text {
+  color: #1675e1;
+  font-size: 26rpx;
+}
+
+.gray-text {
+  color: #a9a9a9;
+  font-size: 26rpx;
+}
+
+.line {
+  width: 100%;
+  height: 1rpx;
+  background-color: #eeeeee;
+}

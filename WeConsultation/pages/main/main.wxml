@@ -1,0 +1,16 @@
+<scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 1100rpx;">
+    <block wx:for="{{caseArray}}" wx:for-index="idx" wx:for-item="itemCase" wx:key="idx">
+        <navigator url="../case/case?id={{itemCase.id}}"> 
+            <view class="case-item" >
+                <view class="case-item-header">
+                    <image src="{{itemCase.Avatar}}" class="avatar"></image><text class="lawyer-name">{{itemCase.u_names}}</text>
+                    <text class="money">{{itemCase.Money}}元</text>
+                </view>
+                <view class="content">{{itemCase.desc}}</view>
+                <view class="case-item-footer">
+                    <text class="location">{{itemCase.city}}</text> <view class="count">{{itemCase.support_count}}点赞</view> <view class="count">{{itemCase.Comment_sum}}评论</view>
+                </view>
+            </view>
+        </navigator>
+    </block>
+</scroll-view>

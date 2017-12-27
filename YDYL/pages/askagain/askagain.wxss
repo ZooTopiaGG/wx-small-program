@@ -1,0 +1,26 @@
+.container{
+    background: #fff;
+    margin-top: 30rpx;
+    border-radius: 6px;
+}
+.bottom-btn{
+  height: 88rpx;
+  line-height: 88rpx;
+  color: #fff;
+  font-size: 36rpx;
+  margin:0 30rpx 30rpx;
+  background-color: #09BB07;
+  border-top:0;
+  outline: none;
+  border-radius:6px; 
+}
+.i-textarea{
+    width: 100%;
+}
+.text-area{
+    width: 100%;
+    height: 500rpx;
+    padding:15rpx; 
+    font-size: 28rpx;
+    line-height: 36rpx;
+}

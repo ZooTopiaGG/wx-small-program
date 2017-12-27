@@ -1,0 +1,123 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.big-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background: gainsboro;
+}
+
+.normal-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  background: gainsboro;
+}
+
+.little-avatar {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.item {
+  width: 100%;
+  background-color: white;
+  height: 87rpx;
+  line-height: 88rpx;
+  color: #353535;
+  border-bottom: 1rpx solid #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-text {
+  margin-left: 30rpx;
+  flex: 1;
+}
+
+.line {
+  background-color: eee;
+  height: 1rpx;
+}
+
+.edit-input {
+  width: 100%;
+  background: white;
+  height: 80rpx;
+  margin-top: 10rpx;
+}
+
+.bottom-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98rpx;
+  background: white;
+  color: white;
+  border-top: 1rpx solid #cccccc;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.big-text {
+  font-size: 34rpx;
+}
+
+.normal-text {
+  font-size: 28rpx;
+}
+
+.small-text {
+  font-size: 26rpx;
+}
+
+
+
+.item-icon {
+  width: 20rpx;
+  height: 30rpx;
+  margin-right: 30rpx;
+}
+
+.common-btn {
+    height: 88rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 88rpx;
+    color: white;
+    background: #09bb07;
+    margin-top: 30rpx;
+}
+
+page {
+  background: #eeeeee;
+}
+
+.rolling-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 30rpx;
+}
+
+.loading-info {
+  color: #aaa;
+}
+
+.progress {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+

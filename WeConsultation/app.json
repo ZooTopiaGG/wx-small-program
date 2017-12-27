@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/register/register",
+    "pages/person/person",
+    "pages/index/index",
+    "pages/lawyerInfo/lawyerInfo",
+    "pages/logs/logs",
+    "pages/case/case",
+    "pages/caselist/caselist",
+    "pages/consultation/consultation",
+    "pages/main/main",
+    "pages/myCase/myCase",
+    "pages/getCaseDetail/getCaseDetail",
+    "pages/supplementary/supplementary",
+    "pages/askagain/askagain",
+    "pages/lawyer/lawyer",
+    "pages/lawyerlist/lawyerlist",
+    "pages/fadeback/fadeback",
+    "pages/myAnswer/myAnswer",
+    "pages/getCaseDetail1/getCaseDetail1",
+    "pages/selectCase/selectCase",
+    "pages/hotConsultation/hotConsultation",
+    "pages/completeComment/completeComment",
+    "pages/commentLawyer/commentLawyer",
+    "pages/techUse/techUse",
+    "pages/switchcity/switchcity",
+    "pages/assignedMoney/assignedMoney",
+    "pages/caseCompelete/caseCompelete",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1675e1",
+    "navigationBarTitleText": "律师说",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#1675e1",
+    "borderStyle": "white",
+    "backgroundColor": "#f7f7f7",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/h1.png",
+        "selectedIconPath": "images/h2.png"
+      },
+      {
+        "pagePath": "pages/lawyer/lawyer",
+        "text": "律师",
+        "iconPath": "images/l1.png",
+        "selectedIconPath": "images/l2.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我",
+        "iconPath": "images/w1.png",
+        "selectedIconPath": "images/w2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 10000
+  }
+}

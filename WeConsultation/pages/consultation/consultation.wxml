@@ -1,0 +1,111 @@
+<view style="height: 110%">
+    <view class="content" >
+        <textarea class="content-text-arae" value="{{consultationContent}}" 
+        bindinput="bindconsultationContentBlur" focus="{{focus}}"
+        placeholder="请尽量详细的提出您要咨询的法律问题，这将有助于您获得更有用的律师专业解答。\n为保护用户的个人隐私，建议您在咨询内容中不要使用自己或者相关当事人的真实姓名。" maxlength="500"/>
+        
+        <view class="choose-city" catchtap="chooseCity">
+            <image src="../../images/58.png" class="icon"></image><view class="city">{{cityName}}</view>
+        </view>
+        <view class="stringNum">
+            <text>{{nums}}</text>/500
+        </view>
+    </view>
+    
+
+    <view class="images-wrapper"> 
+        <!--<text class="images-text">请选择图片</text>-->
+        <view class="images-list">
+            <block wx:for="{{imageList}}" wx:for-item="image" wx:for-index="idx" wx:key="idx">
+                <view class="images-image">
+                    <image src="{{image.mediaUrl}}" class="images-image" data-src="{{image.mediaUrl}}" bindtap="previewImage"></image>
+                    <image src="../../images/13@2X.png" class="close-img" bindtap="dropImage" id="{{idx}}"></image>
+                </view>
+            </block>
+            <view class="images-image image-plus" bindtap="chooseImage">
+                <view class="image-plus-horizontal"></view>
+                <view class="image-plus-vertical"></view>
+            </view>
+            <text class="images-num"><text>{{imageNum}}</text>/3</text>
+        </view>
+    </view>
+
+    <view class="gray_fine_line"></view>
+
+    <view class="prompt" bindtap="tech">
+      <text class="prompt-text">常见问题与咨询技巧</text>
+      <image src="../../images/15@2X.png" class="arrow-icon"></image>
+    </view>
+
+    <view class="gray_line"></view>
+
+    <!-- <view class="call-service">
+      <text class="big-text call-service-text">律师一对一电话解答</text>
+      <image src="../../images/38.png" class="mark-icon" bindtap="showPromptBox"></image>
+      <text class="big-text call-service-money">￥{{userPhonePrice}}元</text>
+      <switch type="switch" color="#1675e1" class="call-service-switch" bindchange="isCall"
+      checked="{{isCall}}"/>
+    </view> -->
+
+    <view class="gray_line"></view>
+
+    <view class="pay" wx:if="{{questionPrice==0}}">
+        <view class="pay-title">
+          <text class="pay-title-back" bindtap="back" >
+            <text wx:if="{{showInputSelf}}">返回</text>
+          </text>
+          <text class="pay-title-text">您愿意支付的赏金</text>
+          <text class="input-by-self" bindtap="inputBySelf" >
+            <text wx:if="{{!showInputSelf}}">我自己填</text>
+          </text>
+        </view>
+        <view class="pay-opts" wx:if="{{!showInputSelf}}">
+            <text class="pay-opts-m {{select1 == 1 ? 'optsed':'noopts'}}" bindtap="opts1" ><text>{{QuestionPrizeOne}}</text>元</text>
+            <text class="pay-opts-m pay-opts-center {{select2 == 1 ? 'optsed':'noopts'}}" bindtap="opts2" ><text>{{QuestionPrizeTwo}}</text>元</text>
+            <text class="pay-opts-m {{select3 == 1 ? 'optsed':'noopts'}}" bindtap="opts3"><text>{{QuestionPrizeThree}}</text>元</text>
+        </view>
+
+        <view class="input-money" wx:if="{{showInputSelf}}">
+          <input type="number" placeholder="{{QuestionPriceRange}}" placeholder-class="input-money-placeholder"              
+            class="input-money-text" bindinput="eveHandle"/>
+        </view>
+        <!--<view class="input-money">
+            <view class="input-title">我自己填</view>
+            <input type="digit" placeholder="10-999元" bindinput="eveHandle" value="{{price}}" class="input-money-text"/>
+        </view>-->
+    </view>
+    <view class="pay" wx:else>
+        <view class="pay-title">咨询费用</view>
+        <view class="question-price">￥{{questionPrice}}</view>
+        <view class="normal-text price-lawyer">该咨询费为{{name}}律师自定的价格</view>
+    </view>
+</view>
+
+    <view class="bottom-money">
+      <text class="total-money normal-text">总计金额</text>
+      <text wx:if="{{price}}" style="color: #f58144; font-size: 36rpx;margin-left: 27rpx">￥</text>
+      <text wx:if="{{price}}" class="total-money-num">{{price}}</text>
+      <view style="flex: 1"></view>
+      <view class="commit" bindtap="evaSubmit">立即提交</view>
+    </view>
+
+
+    <view class="line"></view>
+    <!--<view wx:if="{{questionPrice!=0}}" class="normal-text price-lawyer">该咨询费为{{name}}律师自定的价格</view>
+    <button class="this-bottom-btn"  bindtap="evaSubmit" type="primary" loading="{{isloading}}">立即提交</button>-->
+
+<view class="prompt-box" wx:if="{{showPromptBox}}">
+  <view class="prompt-content">
+    <view class="prompt-title">小提示</view>
+    <view style="width:100%; background-color:#eee; height:1rpx"></view>
+    <view class="prompt-content-text" style="margin-top: 40rpx;">1、保持通电话畅通，便于律师通话；</view>
+    <view class="prompt-content-text" style="margin-top: 20rpx;">2、隐私加密，双方电话号码不可见；</view>
+    <view class="prompt-content-text" style="margin-top: 20rpx;">3、只需接听电话，不产生额外话费；</view>
+    <view class="prompt-content-text" style="margin-top: 20rpx;">4、咨询将优先分配当地律师解答；</view>
+    <view class="prompt-content-text" style="margin-top: 20rpx;">5、平台收取的该部分电话服务费；</view>
+    <view class="prompt-content-text" style="margin-top: 20rpx;margin-bottom: 40rpx">6、律师获得的咨询费不含该费用;</view>
+    <view class="prompt-text-explain">* 服务过程如有任何疑问，可通过个人中心提交意见反馈或在工作日致电客服获得帮助客服电话<text style="color: #f58144"> 400-809-7791</text>获得帮助。</view>
+    <view style="width:100%; background-color:#eee; height:1rpx"></view>
+    <view class="prompt-know" bindtap="iKnow">我知道了</view>
+  </view>
+</view>

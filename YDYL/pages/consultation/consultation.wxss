@@ -1,0 +1,208 @@
+.consultation-header {
+    display: flex;
+    flex-direction: row;
+    height: 50rpx;
+}
+
+.title {
+    font-size: 35rpx;
+    font-weight: bold;
+    line-height: 50rpx;
+    margin-left: 30rpx;
+    flex: 1;
+}
+
+.city-name {
+    font-size: 30rpx;
+    line-height: 50rpx;
+    margin-right: 30rpx;
+}
+.content{
+  position: relative;
+  border-bottom: 1px solid #eee;
+    overflow: hidden;
+    padding: 30rpx;
+    background: white;
+}
+.content-text-arae {
+    width:100%;
+    height: 485rpx;
+    font-size:28rpx;
+}
+.content-prompt{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  padding:30rpx; 
+  color: #888;
+  line-height: 36rpx;
+  font-size: 28rpx;
+}
+.content-prompt text{
+  display: block;
+}
+.stringNum{
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  color:#888;
+}
+.consultation-footer {
+    position: fixed;
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    color: white;
+    bottom: 0;
+    background: deepskyblue;
+}
+
+.add-options {
+    position: fixed;
+    bottom: 120rpx;
+}
+
+.add-button {
+    height: 116rpx;
+    width: 116rpx;
+    background: gainsboro
+}
+
+.images-wrapper {
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.images-wrapper-text {
+  font-size: 28rpx;
+}
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-plus {
+  border: 1px solid #999;
+  position: relative;
+}
+.image-plus-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #d9d9d9;
+  width: 4rpx;
+  height: 80rpx;
+  transform: translate(-50%, -50%);
+}
+.image-plus-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #d9d9d9;
+  width: 80rpx;
+  height: 4rpx;
+  transform: translate(-50%, -50%);
+}
+.images-num{
+  position: relative;
+  top:80rpx;
+  color:#888;
+  left:10rpx;
+}
+
+.this-bottom-btn{
+  height: 88rpx;
+  color: #fff;
+  font-size: 36rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: #09BB07;
+  margin-top: 30rpx;
+}
+.pay{
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.pay-title{
+  height: 87rpx;
+  line-height: 87rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color:#888;
+  border-bottom: 1px solid #eee;
+}
+.pay-opts{
+  text-align: center;
+  margin: 30rpx 0;
+  display: flex;
+  flex-direction:row; 
+}
+.pay-opts .pay-opts-m{
+  flex:1;
+  height: 77.5rpx;
+  line-height: 77.5rpx;
+  border: 2rpx solid #dfdfdf;
+  background: #f8f8f8;
+  margin:0 30rpx
+}
+.pay-opts .optsed{
+  background: #09BB07;
+  color: #fff;
+  border: 2rpx solid #09BB07;
+}
+.pay-opts .noopts{
+   background: #f8f8f8;
+   color: #000;
+}
+.pay-opts .pay-opts-center{
+  margin: 0 23rpx;
+}
+.input-money{
+  padding: 30rpx;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input-money input[type=digit]{
+  margin-left: 30rpx;
+  font-size:28rpx;
+}
+
+.input-money-text {
+  flex: 1;
+}
+.input-title{
+  color: #353535;
+  font-size:34rpx;
+}
+
+.close-img {
+  height: 30rpx;
+  width: 30rpx;
+  z-index: 1;
+  position: absolute;
+  top: -15rpx;
+  right: -30rpx;
+}
+
+.images-image {
+  width: 116rpx;
+  height: 116rpx;
+  margin: 0 20rpx;
+  z-index: 0;
+  position: relative;
+}
+
+.bottom {
+  flex: 1;
+}
+
+page{
+  display: flex;
+  flex-direction: column;
+  height:100%
+}

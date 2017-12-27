@@ -1,0 +1,56 @@
+<view class="container" hidden="{{!isRolling}}">
+<view style="background:#fff; padding-bottom: 30rpx;width:750rpx">
+    <view class="lawyer-info-header"> 
+        <image src="{{lawyerInfo.avatar}}" class="normal-avatar avatar"></image>
+        <view style="flex: 1;">
+            <view class="lawyer-name-address big-text">{{lawyerInfo.lawyer_name}} | {{lawyerInfo.city_name}}</view>
+            <view class="normal-text answear-info">{{lawyerInfo.CompleteOrderCount}}次解答,{{lawyerInfo.score}}评分</view>
+        </view> 
+        <view class="hot-score"><text>关注热度</text><text>{{count}}</text></view>
+        </view>
+        <view class="lawyer-info small-text">执业于{{lawyerInfo.company_name}}, 已从业{{lawyerInfo.experience_years}}年</view>
+        <view wx:if="{{lawyerInfo.first_profession}}||{{lawyerInfo.second_profession}}||{{lawyerInfo.profession3}}" class="lawyer-info small-text margin-bottom">擅长<text wx:if="{{lawyerInfo.first_profession}}">{{lawyerInfo.first_profession}}、</text>
+        <text wx:if="{{lawyerInfo.second_profession}}" style="margin-left:15rpx">{{lawyerInfo.second_profession}}、</text>
+        <text wx:if="{{lawyerInfo.profession3}}" style="margin-left:15rpx">{{lawyerInfo.profession3}}</text>等专业领域</view>
+</view>
+        
+    <view class="navigator" >
+        <view class="{{currentTab==1?'active':'normal'}}" bindtap="switchTab1">最新解答</view>
+        <view class="{{currentTab==2?'active':'normal'}}" bindtap="switchTab2">用户评价</view>
+    </view>
+    <view style="background: #fff; margin-bottom: 100rpx;width:100%;" hidden="{{currentTab==1 ? '' : true}}">
+        <view wx:if="{{lawyerInfo.CompleteQuestions}}" wx:for="{{lawyerInfo.CompleteQuestions}}"  wx:for-index="idx" wx:for-item="itemCase" class="case-item" bindtap="gotoCaseDetail" id="{{itemCase.question_id}}">
+            <view class="content">{{itemCase.description}}</view>
+            <view class="small-text lawyers-name">
+                <text wx:if="{{itemCase.first_reply_info.lawyer_info.lawyer_name}}">解答律师 {{itemCase.first_reply_info.lawyer_info.lawyer_name}}</text><text wx:if="{{itemCase.second_reply_info.lawyer_info.lawyer_name}}"> | {{itemCase.second_reply_info.lawyer_info.lawyer_name}}</text>
+            </view>
+        </view>
+    </view>
+    <view style="background: #fff; margin-bottom: 100rpx;width:100%;" hidden="{{currentTab==2 ? '' : true}}">
+        <view wx:if="{{lawyerInfo.comment_list}}" wx:for="{{commentlist}}"  wx:for-index="idx" wx:for-item="itemCase" class="case-item" >
+            <view class="content" wx:if="{{itemCase.Content}}}">{{itemCase.Content}}</view>
+            <view class="small-text lawyers-name">评价来源:悬赏咨询</view>
+            <view class="evaluate-info">
+                <image src="{{itemCase.Avatar?itemCase.Avatar:defaultAvatar}}" class="little-avatar"></image>
+                <view class="column">
+                    <text class="commenter-name big-text">{{itemCase.TrueName}}</text>
+                    <text class="comment-date small-text">{{itemCase.ActionDate}}</text>
+                </view>
+                <view class="score">
+                    <view wx:for="{{Score}}">
+                        <image class="star-image" src="{{itemCase.Score > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+                        </image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view> 
+    <view class="bottom-btn" bindtap="consultation">
+        <view class="bottom-button">向Ta咨询</view>
+    </view>
+</view>
+
+<view class="progress" hidden="{{isRolling}}">
+        <image src="../../images/loading.svg" class="rolling-icon"></image>
+        <text class="small-text loading-info">努力载入中...</text>
+</view>

@@ -1,0 +1,84 @@
+.caseItem {
+    margin-top: 20rpx;
+    margin-bottom: 100rpx;
+}
+
+.case-item {
+    margin-top: 20rpx;
+    background-color: white;
+}
+
+.bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: blue;
+    text-align: center;
+    color: white;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.case-item-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.case-item-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    height: 50rpx;
+    width: 50rpx;
+    border-radius: 25rpx;
+    margin: 10rpx;
+    background-color: gainsboro;
+}
+
+.lawyer-name {
+    font-size: 30rpx;
+    font-weight: bold;
+    flex: 1;
+    line-height: 70rpx;
+}
+
+.money {
+    font-size: 28rpx;
+    font-weight: bold;
+    color: red;
+    line-height: 70rpx;
+    margin-right: 10rpx;
+}
+
+.content {
+    font-size: 28rpx;
+    font-weight: bold;
+    line-height: 60rpx;
+    margin-left: 70rpx;
+    max-height: 120rpx;
+    overflow : hidden;
+}
+
+.location {
+    font-size: 30rpx;
+    font-weight: bold;
+    flex: 1;
+    line-height: 70rpx;
+    margin: 10rpx;
+}
+
+.count {
+    background-color: gainsboro;
+    border-radius: 10rpx;
+    height: 50rpx;
+    width: 80rpx;
+    margin: 10rpx;
+    font-size: 25rpx;
+    text-align: center;
+    line-height: 50rpx;
+}
+

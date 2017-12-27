@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/litigation/litigation",
+    "pages/arbitration/arbitration",
+    "pages/overdueInterest/overdueInterest",
+    "pages/legalfee/legalfee"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  }
+}

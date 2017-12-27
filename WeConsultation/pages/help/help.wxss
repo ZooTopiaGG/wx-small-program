@@ -1,0 +1,10 @@
+/* help.wxss */
+
+.help { 
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+page {
+  background-color: white;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="telephone=no" name="format-detection">
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<title>常见问题及咨询小技巧</title>
+		<style type="text/css">
+			img{
+				width: 7.5rem;
+				height: 21.0rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<img src="images/zxts.png"/>
+				</div>
+			</div>
+			<!--<img src="images/zxts.png"/>-->
+			
+		</div>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: false
+			});
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0006 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+
+	body{   
+		line-height: 2;
+		font-size: 0.26rem;
+		color: #333;
+	}
+	.container{
+		padding: 0.2rem 0.3rem;
+		max-width: auto;
+		margin: 0 auto;
+	}
+	.container h1{
+		text-align: center;
+		margin-bottom: 0.2rem;
+		font-size: 0.32rem;
+	}
+	section{
+		text-indent: 2em;
+		margin-bottom: 0.2rem;
+	}
+	section h2{
+		margin: 0.2rem 0;
+    	font-size: 0.28rem;
+	}
+	section div{
+		margin-top: 0.1rem;
+	}
+	section div span{
+		font-weight: 600;
+	}
+	section>div>p{
+		text-indent: 2em;
+		margin-top: 0.1rem;
+	}
+
+
+@media only screen and (min-width: 768px) {
+	body{
+		line-height: 2;
+		font-size: 14px;
+		color: #333;
+	}
+	.container{
+		padding: 20px 60px 60px;
+		max-width: 698px;
+		margin: 0 auto;
+	}
+	.container h1{
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 28px;
+	}
+	section{
+		text-indent: 2em;
+		margin-bottom: 20px;
+	}
+	section h2{
+		margin: 20px 0;
+		font-size: 24px;
+	}
+	section div{
+		margin-top: 10px;
+	}
+	section div span{
+		font-weight: 600;
+	}
+	section>div>p{
+		text-indent: 2em;
+		margin-top: 10px;
+	}
+
+}

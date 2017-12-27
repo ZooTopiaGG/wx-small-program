@@ -1,0 +1,161 @@
+.case-item {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-bottom: 1rpx solid gainsboro;
+}
+
+.avatar {
+    margin: 40rpx 30rpx 30rpx 20rpx;
+}
+
+#name-year {
+    color: deepskyblue;
+    font-size: 35rpx;
+}
+
+#company_name {
+    font-size: 25rpx;
+    margin-top: 20rpx;
+}
+
+#good-area-item {
+    font-size: 25rpx;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    border: 1rpx solid gainsboro;
+    border-radius: 3rpx;
+}
+
+.good-area {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rpx;
+}
+
+.search-area {
+    width: 100%;
+    background-color: #efeff4;
+    height: 88rpx;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2rpx solid #eeeeee;
+}
+
+.search-text {
+    flex: 1;
+    background: #fff;
+    height: 58rpx;
+    margin: 15rpx;
+    border-radius: 10rpx;
+    font-size: 26rpx;
+    padding-left: 10rpx;
+}
+
+.top-title {
+    color: #a9a9a9;
+    background: white;
+    width: 100%;
+}
+
+.placeholder-text {
+    color: #b2b2b2;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+    width: 180rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background: white;
+    border: 0.5rpx solid #eeeeee;
+    color: #353535;
+}
+
+.lawyer-head {
+    display: flex;
+    flex-direction: row;
+}
+
+.lawyer-info-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background: white;
+    border-top: 1rpx solid #eeeeee;
+}
+
+.little-button {
+    width: 120rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 26rpx;
+    margin-right: 30rpx;
+    text-align: center;
+    background: #fff;
+    border-radius: 6rpx;
+    border: 1rpx solid #1675e1;
+    color: #1675e1;
+}
+
+.normal {
+    color: #353535;
+}
+
+.gray {
+    color: #999999;
+}
+
+.margin-top {
+    margin-top: 20rpx;
+}
+
+.lawyer-name-address {
+    color: #353535;
+    line-height: 50rpx;
+}
+
+.answear-info {
+    color: #aaa;
+    margin-top: 17rpx;
+}
+
+.lawyer-info {
+    color: #888;
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.margin-bottom {
+    margin-bottom: 20rpx;
+}
+
+.padding-bottom {
+    padding-bottom: 20rpx;
+}
+
+.price {
+  color: #f58144;
+  margin-top: 20rpx;
+  margin-bottom: 15rpx;
+  text-align: end;
+  margin-right: 30rpx;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 160rpx;
+}
+

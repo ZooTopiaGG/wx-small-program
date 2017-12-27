@@ -1,0 +1,9 @@
+<view style="margin-bottom: 100rpx; background: white">
+    <view class="case-item" wx:for="{{caseArray}}" wx:for-index="idx" wx:for-item="itemCase" bindtap="gotoCaseDetail" id="{{itemCase.id}}" >
+        <view class="content" >{{itemCase.desc}}</view>
+        <view class="small-text lawyers-name">解答律师:{{itemCase.u_names}}</view>
+    </view>
+</view>
+<view class="bottom-btn" bindtap="consultation">
+    <view class="bottom-button">我要咨询</view>
+</view>

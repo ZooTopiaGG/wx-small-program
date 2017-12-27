@@ -1,0 +1,64 @@
+text {
+    margin: 20rpx;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 10rpx;
+} 
+
+.head-area {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 30rpx;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30rpx;
+}
+
+.head-img {
+    height: 120rpx;
+    width: 120rpx;
+    border-radius: 60rpx;
+    background: gainsboro;
+}
+
+.consulatation-content {
+    display: flex;
+    flex-direction: row;
+    line-height: 120rpx;
+    width: 100%
+}
+
+.user-head-img {
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 50rpx;
+    background: gainsboro;
+    margin: 10rpx;
+}
+
+.images-image {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+
+.first-reply {
+    width: 100%;
+}
+
+.answer-content {
+    margin: 15rpx;
+}

@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="head">
+        <view class="big-text top-title" >从这里开始，解决您的法律问题。</view>
+        <view class="small-text top-title-desc">{{desc}}</view>
+        <view class="small-text top-little-title">有问必答   专业律师   快速响应</view>
+    </view>
+
+    <view class="navigator" >
+        <view class="{{currentTab==1?'active':'normal'}}" bindtap="switchTab1">我要咨询</view>
+        <view class="{{currentTab==2?'active':'normal'}}" bindtap="switchTab2">热门咨询</view>
+    </view>
+
+    <view class="tab1" hidden="{{currentTab==1 ? '' : true}}">
+        <view class="consultation">
+            <textarea class="consultation-content" placeholder-class="consultation-placeholder" placeholder="{{prompt}}" maxlength="500"  bindinput="bindconsultationContentBlur"/>
+            <view class="stringNum">{{nums}}/500</view>
+        </view>
+        <text class="Prompt normal-text">你愿意支付的咨询赏金</text>
+
+        <view class="pay-opts">
+            <text class="pay-opts-m {{select1 == 1 ? 'optsed':'noopts'}}" bindtap="opts1" ><text>15</text>元</text>
+            <text class="pay-opts-m pay-opts-center {{select2 == 1 ? 'optsed':'noopts'}}" bindtap="opts2" ><text>20</text>元</text>
+            <text class="pay-opts-m {{select3 == 1 ? 'optsed':'noopts'}}" bindtap="opts3"><text>30</text>元</text>
+            <input class="{{inputStyle}}" placeholder="{{placeholder}}" placeholder-class="pay-input-p normal-text"  bindinput="inputMoney" bindblur="payInputB" bindfocus="payInputF" value="{{inputMoney}}" type="number"/>
+        </view>
+        <button type="primary" class="commit-btn" bindtap="evaSubmit">立即提交</button>
+    </view>
+
+    <view class="case-item" wx:for="{{caseArray}}" wx:for-index="idx" wx:for-item="itemCase" hidden="{{currentTab==2 ? '' : true}}" bindtap="gotoCaseDetail" id="{{itemCase.id}}">
+        <view class="content" >{{itemCase.desc}}</view>
+        <view class="small-text lawyers-name">解答律师:{{itemCase.u_names}}<text class="consultation-fee">咨询费：{{itemCase.Money}}元</text></view>
+    </view>
+
+</view>
+
+<view class="progress normal-text" hidden="{{isRolling}}" wx:if="{{currentTab==1 ? '' : true}}"> 
+        <image src="../../images/loading.svg" class="rolling-icon"></image>
+        <text class="small-text loading-info">努力载入中...</text>
+</view>

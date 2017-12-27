@@ -1,0 +1,17 @@
+<view class="container">
+    <image src="../../images/53.png" class="bg-img"></image>
+    <view class="input" style="margin-top: 176rpx">
+        <!--<text class="input-label big-text"></text>-->
+        <image src="../../images/56.png" class="input-label"></image>
+        <input type="number" class="input-text" placeholder="手机号码" placeholder-class="placeholder" bindinput="EventHandle" value="{{mobile}}"/>
+    </view>
+
+    <view class="input">
+        <!--<text class="input-label big-text"></text>    -->
+        <image src="../../images/57.png" class="input-label"></image>
+        <input type="number" class="input-text" placeholder="验证码" placeholder-class="placeholder" maxlength="6" bindinput="EventHandleVerificationCode" focus="true"/>
+        <view class="get-verification-code-btn big-text" bindtap="getVerificationCode">{{getVerificationCodeBtnText}}</view>
+    </view>
+
+    <button class="common-btn big-text" style="width: 690rpx" bindtap="register">绑定手机</button>
+</view> 

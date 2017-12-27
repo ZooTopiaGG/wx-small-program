@@ -1,0 +1,63 @@
+<view  class="main">
+    接单律师
+    <view class="head-area">
+        <view class="head" wx:if="{{caseInfo.first_reply_info.lawyer_info}}">
+            <image src="{{caseInfo.first_reply_info.lawyer_info.avatar}}" class="head-img" />
+            <text>{{caseInfo.first_reply_info.lawyer_info.lawyer_name}}</text>
+        </view>
+        <view class="head" wx:if="{{caseInfo.second_reply_info.lawyer_info}}">
+            <image src="{{caseInfo.second_reply_info.lawyer_info.avatar}}" class="head-img" />
+            <text>{{caseInfo.second_reply_info.lawyer_info.lawyer_name}}</text>
+        </view>
+    </view>
+    咨询内容
+    <view class="consulatation-content">
+        <image src="{{caseInfo.user_info.avatar}}" class="user-head-img" /> 
+        <text>{{caseInfo.user_info.nick_name}}</text>
+        <text>{{caseInfo.user_info.provice_name}}</text>
+    </view>
+
+    <text>{{caseInfo.description}}</text>
+
+    <block wx:for="{{caseInfo.attach_list}}" wx:for-item="image">
+        <image src="{{image.media_url}}" class="images-image" data-src="{{image.media_url}}" bindtap="previewImage"></image>
+    </block>
+    
+    律师解答
+    <view class="consulatation-content" wx:if="{{caseInfo.first_reply_info.answer}}">
+        <image src="{{caseInfo.first_reply_info.lawyer_info.avatar}}" class="user-head-img" /> 
+        <text>{{caseInfo.first_reply_info.lawyer_info.lawyer_name}}</text>
+    </view>
+    <view class="first-reply" wx:if="{{caseInfo.first_reply_info.answer}}">
+        <view wx:if="caseInfo.first_reply_info.answer.prune_content">
+            咨询概述
+            <view class="answer-content">{{caseInfo.first_reply_info.answer.prune_content}}</view>
+        </view>
+        <view wx:if="caseInfo.first_reply_info.answer.content">
+            律师意见
+            <view class="answer-content">{{caseInfo.first_reply_info.answer.content}}</view>
+        </view>
+        <view wx:if="caseInfo.first_reply_info.answer.hold_legal_basis">
+            咨询概述
+            <view class="answer-content">{{caseInfo.first_reply_info.answer.hold_legal_basis}}</view>
+        </view>
+    </view>
+    <view class="consulatation-content" wx:if="{{caseInfo.second_reply_info.answer}}">
+        <image src="{{caseInfo.second_reply_info.lawyer_info.avatar}}" class="user-head-img" /> 
+        <text>{{caseInfo.second_reply_info.lawyer_info.lawyer_name}}</text>
+    </view>
+    <view class="first-reply" wx:if="{{caseInfo.second_reply_info.answer}}">
+        <view wx:if="caseInfo.second_reply_info.answer.prune_content">
+            咨询概述
+            <view class="answer-content">{{caseInfo.second_reply_info.answer.prune_content}}</view>
+        </view>
+        <view wx:if="caseInfo.second_reply_info.answer.content">
+            律师意见
+            <view class="answer-content">{{caseInfo.second_reply_info.answer.content}}</view>
+        </view>
+        <view wx:if="caseInfo.second_reply_info.answer.hold_legal_basis">
+            咨询概述
+            <view class="answer-content">{{caseInfo.second_reply_info.answer.hold_legal_basis}}</view>
+        </view>
+    </view>
+</view>

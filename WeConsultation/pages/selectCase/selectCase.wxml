@@ -1,0 +1,13 @@
+<import src="../../templates/template.wxml" />
+<view >
+    <view class="case-item" wx:for="{{caseArray}}" wx:for-item="itemCase" bindtap="gotoCaseDetail" id="{{itemCase.id}}" wx:key="{{itemCase.id}}"  >
+        <view class="content" >{{itemCase.desc}}</view>
+        <view class="small-text lawyers-name">
+          <text class="name">解答律师:{{itemCase.u_names}}</text> 
+          <text class="type">{{itemCase.type}}</text>
+        </view>
+    </view>
+
+</view>
+
+<template is="rolling" data="{{isRolling: !isLoding}}"></template>

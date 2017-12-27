@@ -1,0 +1,29 @@
+.law-type-menu {
+    position: fixed;
+    top: 82rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: gainsboro;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.law-type-cate {
+    flex: 1;
+}
+
+.top {
+    margin-top: 30rpx;
+}
+
+.answer-content {
+    z-index: 1;
+}
+
+textarea {
+    background: wheat;
+    width: 100%;
+    height: 250rpx;
+}

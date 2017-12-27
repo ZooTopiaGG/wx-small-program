@@ -1,0 +1,16 @@
+<import src="../../templates/template.wxml" />
+<view wx:for="{{lawTypeArray}}" wx:key="index" wx:for-item="itemCase" >
+  <view class="case-item" bindtap="gotoCaseList" id="{{itemCase.code}};{{itemCase.name}};{{itemCase.description}}">
+    <image src="{{itemCase.image_url}}" class="lawtype-img"></image>
+    <view class="lawtype-desc">
+      <text class="big-text name">{{itemCase.name}}</text>
+      <text class="small-text description">{{itemCase.description}}</text>
+      <text class="small-text questionSum">已公开{{itemCase.questionSum}}个咨询</text>
+    </view>
+  </view>
+  <view class="parting-line">
+    <view class="parting"></view>
+  </view>
+</view>
+
+<template is="rolling" data="{{isRolling: !isLoding}}"></template>

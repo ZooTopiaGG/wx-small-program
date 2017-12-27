@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="navigator" >
+        <view class="{{currentTab==1?'active':'normal'}}" bindtap="tab1">诉讼受理费</view>
+        <view class="{{currentTab==2?'active':'normal'}}" bindtap="tab2">诉讼申请费</view>
+    </view>
+
+    <!--<input class="normal-input" disabled="true" placeholder="{{litigation_cate}}" 
+            placeholder-class="normal-input-placeholder" bindtap="chooseCate" value="{{chooseCate}}"/>-->
+
+    <picker bindchange="bindCatePickerChange" value="{{index}}" range="{{cate}}" class="normal-input">
+        <view class="choose-cate">
+        <text class="place-holder" wx:if="{{!chooseCate}}">{{desc}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{chooseCate}}
+        </view>
+    </picker>
+    
+    <input class="normal-input" type="number" placeholder="标的额（元）" value="{{money}}" 
+            placeholder-class="normal-input-placeholder" bindinput="inputMoney"/>
+
+    <view class="button-container">
+        <view class="button-container-item"><button class="wa-button calculator" bindtap="Calculate">结算</button></view>
+        <view class="button-container-item"><button class="wa-button reset" bindtap="reset">重置</button></view>
+    </view>
+
+    <view class="result-container">
+        <view class="identity">计算结果(元)</view>
+        <view class="text-center result" wx:if="{{result}}">{{result}}</view>
+    </view>
+</view>
+
+<!--<view class="action-sheet-box">
+    <view class="action-sheet" wx:for="{{cate}}" wx:for-item="cate" wx:key="c" wx:if="{{isShowActionSheet}}">
+        <view class="wa-item" bindtap="chooseType" id="{{cate}}">{{cate}}</view>
+    </view>
+</view>-->

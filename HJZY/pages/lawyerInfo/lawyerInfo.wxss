@@ -1,0 +1,187 @@
+.container{
+    overflow-x: hidden
+}
+.case-item {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1rpx solid #eeeeee;
+}
+
+.answear-lawyer-names {
+    width: 100%;
+    display: flex;
+    flex: row;
+    font-size: 25rpx;
+    margin-left: 20rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid gainsboro;
+}
+
+.lawyer-head {
+    display: flex;
+    flex-direction: row;
+}
+
+.lawyer-info-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background: white;
+    border-top: 1rpx solid #eeeeee;
+}
+
+.avatar {
+    margin: 40rpx 30rpx 30rpx 20rpx;
+}
+
+
+.hot-score {
+    display: flex;
+    flex-direction: column;
+    color: #f25618;
+    font-size: 28rpx;
+    margin-right: 30rpx;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.normal {
+    color: #353535;
+}
+
+.gray {
+    color: #999999;
+}
+
+.margin-top {
+    margin-top: 20rpx;
+}
+
+.lawyer-name-address {
+    color: #353535;
+    line-height: 50rpx;
+}
+
+.answear-info {
+    color: #aaa;
+    margin-top: 17rpx;
+}
+
+.lawyer-info {
+    color: #888;
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.margin-bottom {
+    margin-bottom: 20rpx;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    margin-top: 20rpx;
+    background: white;
+    border-bottom:1rpx solid #eeeeee;
+}
+
+
+.active {
+    color: #09bb07;
+    margin: 60rpx;
+    width: 200rpx;
+    text-align: center;
+    line-height: 97rpx;
+    border-bottom: 2rpx solid #09bb07;
+}
+
+.normal {
+    width: 200rpx;
+    text-align: center;
+    margin: 60rpx;
+    color: #333;
+}
+
+.content {
+    margin: 0rpx 30rpx 30rpx 30rpx;
+    padding-top: 40rpx;
+    font-size: 34rpx;
+    color: #353535;
+    line-height: 50rpx;
+    max-height: 200rpx;
+    overflow: hidden;
+}
+
+.lawyers-name {
+    margin-left: 30rpx;
+    margin-bottom: 35rpx;
+    color: #a9a9a9
+}
+
+.bottom-button {
+    background: #09bb07;
+    border-radius: 10rpx;
+    height: 70rpx;
+    width: 360rpx;
+    margin-top: 14rpx;
+    text-align: center;
+    line-height: 70rpx;
+}
+
+.evaluate-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30rpx;
+    border-top: 1rpx solid #eeeeee;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+    flex: 1;
+}
+
+.avatar-margin {
+    margin-bottom: 30rpx;
+    flex: 1;
+}
+
+.commenter-name {
+    color: #353535;
+    line-height: 50rpx;
+} 
+
+.comment-date {
+    color: #bfbfbf;
+    line-height: 36rpx;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30rpx;
+}
+
+.star-image{
+  width: 28rpx;
+  height: 28rpx;
+  margin: 5rpx;
+  src: "../../images/9@2X.png";
+}
+
+.item{
+    margin: 5rpx;
+}
+.bottom-btn{
+    width: 750rpx;
+    overflow: hidden;
+}

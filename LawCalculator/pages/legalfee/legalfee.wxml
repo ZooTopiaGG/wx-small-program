@@ -1,0 +1,93 @@
+<view class="container">
+    <!--<input class="normal-input" disabled="true" placeholder="请选择所在地" 
+            placeholder-class="normal-input-placeholder" bindtap="chooseAreaList" value="{{area}}"/>-->
+    <picker bindchange="bindAreaPickerChange" value="{{index}}" range="{{areas}}" range-key="name" class="normal-input">
+        <view class="choose-cate">
+         <text class="place-holder" wx:if="{{!area}}">请选择所在地:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{area}}
+        </view>
+    </picker>
+<!--
+    <input class="normal-input" disabled="true" placeholder="请选择收费类型" 
+            placeholder-class="normal-input-placeholder" bindtap="chooseFrees" value="{{free}}"/>-->
+
+    <picker bindchange="bindFreePickerChange" value="{{freeIndex}}" range="{{frees}}" range-key="name" class="normal-input">
+        <view class="choose-cate">
+        <text class="place-holder" wx:if="{{!free}}">请选择收费类型:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text> {{free}}
+        </view>
+    </picker>
+
+
+    <input class="normal-input" type="number" placeholder="标的额(元)" wx:if="{{isShowValue}}"
+            placeholder-class="normal-input-placeholder" bindinput="inputValue" value="{{value}}"/>
+    <view class="time" wx:if="{{isShowTime}}">
+        <input class="inner-input-time" type="number" bindinput="hourlyPay" placeholder="收费标准" value="{{hourlyPay}}"/>
+        元/小时
+    </view>
+    <view class="time" wx:if="{{isShowTime}}">
+        <input class="inner-input-time" type="number" bindinput="length" placeholder="工作时数" value="{{length}}"/>
+        小时
+    </view>
+    
+    <view class="risk-agency" wx:if="{{isShowRiskAgency}}">
+        基础费用 
+        <input class="inner-input" type="number" bindinput="baseMoney" value="{{baseMoney}}"/>
+    </view>
+    <view class="risk-agency" wx:if="{{isShowRiskAgency}}">
+        一审 
+        <input class="inner-input" type="number" placeholder="约定标的" bindinput="onelabel" value="{{onelabel}}"/>*
+        <input class="inner-input" type="number" placeholder="比例" bindinput="onescale" value="{{onescale}}"/>%
+    </view>
+     <view class="risk-agency" wx:if="{{isShowRiskAgency}}">
+        二审 
+        <input class="inner-input" type="number" placeholder="约定标的" bindinput="secondlabel" value="{{secondlabel}}"/>*
+        <input class="inner-input" type="number" placeholder="比例" bindinput="secondscale" value="{{secondscale}}"/>%
+    </view>
+
+    <view class="value-container" wx:if="{{isImportant}}">
+        <text style="margin-left: 20rpx; ">重大、疑难、复杂案件:</text>
+        <text style="margin-left: 20rpx; flex: 1; color: #5d99ff">{{desc}}</text>
+        <switch style="margin-right: 20rpx" bindchange="important" checked="{{important}}"/>
+    </view>
+
+    <view class="value-container" wx:if="{{RiskFreeTitle}}">
+        <text style="margin-left: 20rpx; ">"{{RiskFreeTitle}}"</text>
+    </view>
+    <view class="value-container" wx:if="{{standard}}">
+        <text style="margin-left: 20rpx; " wx:if="{{standard}}" >{{standard}}</text>
+    </view>
+
+    <view class="button-container">
+        <view class="button-container-item"><button class="wa-button calculator" bindtap="calculate">结算</button></view>
+        <view class="button-container-item"><button class="wa-button reset" bindtap="reset">重置</button></view>
+    </view>
+
+    <view class="result-container">
+        <view class="identity">计算结果(元)</view>
+        <view class="text-center result" wx:if="{{result}}">{{result}}</view>
+    </view>
+
+    <view wx:if="{{isShowJijian}}" class="label">{{cases}}</view>
+    <view wx:if="{{isShowJijian}}" wx:for="{{desArr}}" wx:for-item="des" wx:key="d" class="item">
+        {{des.name}}:{{des.price}}
+    </view>
+    <view wx:if="{{isShowJijian}}" wx:for="{{CivilAction}}" wx:for-item="civil" wx:key="c" class="item">
+        <view class="in-label">{{civil.type}}</view>
+        {{civil.name}}:{{civil.price}}
+    </view>
+</view>
+
+<!--<view class="action-sheet-box" wx:if="{{isShowActionSheet}}">
+    <view class="action-sheet" wx:for="{{areas}}" wx:for-item="area" wx:key="a" >
+        <view class="wa-item" bindtap="chooseArea" id="{{area.sign}};{{area.name}}">{{area.name}}</view>
+    </view>
+</view>
+
+<view class="freestypes-action-sheet-box" wx:if="{{isShowActionSheet2}}">
+    <view class="action-sheet" wx:for="{{frees}}" wx:for-item="free" wx:key="f" >
+        <view class="wa-item" bindtap="chooseFree" id="{{free.id}};{{free.name}}">{{free.name}}</view>
+    </view>
+</view>-->
+
+<text class="explain" wx:if="{{dataResource}}" bindtap="document">该计算结果仅供参考，数据来源于{{releaseDate}}发布的
+<text style="color: #5d99ff" >{{dataResource}}</text>，实际律师费用可能根据不同地区年份有更新调整。
+</text>

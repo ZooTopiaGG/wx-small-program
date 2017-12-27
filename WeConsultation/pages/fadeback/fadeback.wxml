@@ -1,0 +1,51 @@
+<view class="prompt">
+  意见及错误反馈
+</view>
+
+<view class="content">
+  <textarea class="text-area" placeholder="亲爱的用户，您遇见什么系统BUG或者有什么功能建议吗？欢迎提交给我们，律师说的成长感谢有你帮助" placeholder-class="text-area-placeholder" value="{{fadebackCon}}" bindinput="textareaBlur"/>
+</view>
+
+<view class="prompt">
+  <text >图片</text> <text style="margin-left: 20rpx; color: #888">(选填、提供问题截图)</text>
+</view>
+
+<view class="images-wrapper"> 
+    <!--<text class="images-text">请选择图片</text>-->
+    <view class="images-list">
+        <block wx:for="{{imageList}}" wx:for-item="image" wx:key="idx" wx:for-index="idx">
+            <view class="images-image">
+                <image src="{{image.mediaUrl}}" class="images-image" data-src="{{image.mediaUrl}}"></image>
+                <image src="../../images/13@2X.png" class="close-img" bindtap="dropImage" id="{{idx}}"></image>
+            </view>
+        </block>
+        <view class="images-image image-plus" bindtap="chooseImage">
+            <view class="image-plus-horizontal"></view>
+            <view class="image-plus-vertical"></view>
+        </view>
+    </view>
+</view>
+
+<view class="feed-type">
+  <view class="feed-type-col">
+    <view class="feed-type-opts">
+      <view class="{{opt1? 'feed-type-opt-selected' : 'feed-type-opt'}}" bindtap="selectOpt1">反馈错误</view>
+    </view>
+    <view class="feed-type-opts">
+      <view class="{{opt2? 'feed-type-opt-selected' : 'feed-type-opt'}}" bindtap="selectOpt2">功能建议</view>
+    </view>
+  </view>
+
+  <view class="feed-type-col" style="margin-bottom: 40rpx">
+    <view class="feed-type-opts">
+      <view class="{{opt3? 'feed-type-opt-selected' : 'feed-type-opt'}}" bindtap="selectOpt3">举报投诉</view>
+    </view>
+    <view class="feed-type-opts">
+      <view class="{{opt4? 'feed-type-opt-selected' : 'feed-type-opt'}}" bindtap="selectOpt4">其他</view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom-btn">
+  <button class="bottom-button" bindtap="subFadeBack" >提交</button>
+</view>

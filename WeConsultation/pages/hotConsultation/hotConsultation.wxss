@@ -1,0 +1,46 @@
+.case-item {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lawtype-img {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 30rpx 20rpx 30rpx 30rpx;
+}
+
+.lawtype-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #353535;
+  margin-bottom: 15rpx;
+}
+
+.description {
+  margin-bottom: 15rpx;
+  color: #353535;
+}
+
+.questionSum {
+  color: #a9a9a9;
+}
+
+.parting-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.parting {
+  height: 1rpx;
+  background-color: #eee;
+  flex: 1;
+  margin-left: 30rpx;
+}

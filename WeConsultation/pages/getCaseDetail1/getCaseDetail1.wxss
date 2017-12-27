@@ -1,0 +1,399 @@
+text {
+    margin: 20rpx;
+}
+.container{
+    overflow-x: hidden
+}
+.consulatation-content {
+    display: flex;
+    flex-direction: row;
+    line-height: 120rpx;
+    width: 100%;
+    margin-top: 30rpx;
+}
+
+.answer-title {
+    margin-top: 30rpx;
+    font-weight: bold;
+}
+
+.first-reply {
+    width: 100%;
+    margin-bottom: 80rpx;
+}
+
+.talk-list {
+    background: #f9f9f9;
+    border-top: 2rpx solid #eee;
+}
+
+.talk-list-item {
+    margin: 40rpx 30rpx 45rpx 30rpx;
+}
+
+.talk-list-content {
+    line-height: 50rpx;
+    color: #888888
+}
+
+.lawyer {
+    line-height: 50rpx;
+    color: #1675e1;
+    margin: 0rpx;
+}
+
+.user {
+    line-height: 50rpx;
+    color: #333333;
+    margin: 0rpx;
+}
+
+.ask-again {
+    flex: 1;
+    align-self: center;
+    text-align: end;
+    color: deepskyblue;
+}
+
+.lawyer-avatar-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  justify-content: space-between;
+}
+
+.lawyer-avatar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lawyer-name {
+    margin-top: 20rpx;
+}
+
+.answer-state {
+    font-size: 30rpx;
+    margin-top: 10rpx;
+    color: deepskyblue;
+    border: 1rpx solid deepskyblue;
+    border-radius: 5rpx;
+    padding: 3rpx;
+}
+
+.down {
+    margin-bottom: 100rpx;
+}
+
+.consultation {
+    width: 100%;
+    display: flex;
+    background: white;
+    flex-direction: column;
+}
+
+.consultation-title {
+    color: #a9a9a9;
+    line-height: 88rpx;
+    flex: 1;
+}
+
+.is-call {
+  width: 88rpx;
+  height: 30rpx;
+  background: #1675e1;
+  border-radius: 4rpx;
+  color: white;
+  font-size: 20rpx;
+  line-height: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.end {
+  width: 88rpx;
+  height: 30rpx;
+  background: #c8c7cc;
+  border-radius: 4rpx;
+  color: white;
+  font-size: 20rpx;
+  line-height: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.consultation-content {
+    margin: 30rpx;
+}
+
+.consultation-detail {
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+    margin-bottom: 35rpx;
+    color: #a9a9a9;
+    flex: 1;
+}
+
+.lawyer-answear {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.reply {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40rpx;
+    margin:0 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.reply-lawyer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 20rpx;
+}
+
+.reply-lawyer-name {
+    color: #353535;
+}
+
+.reply-lawyer-price {
+    color: #aaaaaa;
+    margin-top: 20rpx;
+}
+
+.consultation-it {
+    height: 60rpx;
+    width: 120rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #1675e1;
+    border: 1rpx solid #1675e1;
+    border-radius: 6rpx;
+    margin-right: 30rpx;
+}
+
+.advice {
+    margin-left: 30rpxconsultation-title;
+}
+
+.advice-title {
+    color: #888888;
+    line-height: 37rpx;
+    margin-left: 30rpx;
+}
+
+.answer-content {
+    color: #353535;
+    margin-top: 30rpx;
+    margin-bottom: 40rpx;
+    margin-left: 30rpx;
+}
+
+.consultation-head {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1rpx solid #eee;
+    margin-left: 30rpx;
+    height: 88rpx;
+    align-items: center;
+    margin-right: 30rpx;
+}
+
+.bottom-button {
+    background: #1675e1;
+    flex: 1;
+    border-radius: 6rpx;
+    height: 89rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    text-align: center;
+    line-height: 89rpx;
+}
+
+
+.bottom-btn{
+    width: 100%;
+    display: flex;
+    height: 120rpx;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inner-line {
+    background: #eee;
+    height: 1rpx;
+}
+
+.answear {
+    width: 90rpx;
+    height: 38rpx;
+    border-radius: 6rpx;
+    background: #1675e1;
+    color: white;
+    text-align: center;
+    line-height: 38rpx;
+    margin-top: 20rpx;
+}
+
+.get-case {
+    width: 90rpx;
+    height: 38rpx;
+    border-radius: 6rpx;
+    border: 2rpx solid #dfdfdf;
+    background: white;
+    color: #888888;
+    text-align: center;
+    line-height: 38rpx;
+    margin-top: 20rpx;
+}
+
+.no-answear {
+    width: 100%;
+    color: #888888;
+    text-align: center;
+    margin-top: 60rpx;
+    margin-bottom: 60rpx;
+}
+
+.prompt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 88rpx;
+  background-color: #fbf6d9;
+  color: #e3a255;
+  align-items: center;
+  justify-content: center;
+}
+
+.prompt-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 15rpx;
+}
+
+.consultation-time-price {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #eee;
+}
+
+.case-state {
+  color: #1675e1;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 35rpx;
+}
+
+.consultation-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15rpx;
+}
+
+.attach-img {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0 15rpx;
+}
+
+.mini-icon {
+  height: 20rpx;
+  width: 20rpx;
+  margin-left: 10rpx;
+}
+
+.surplus {
+  color: #1675e1;
+  margin-top: 20rpx;
+}
+
+.row-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.is-same-city {
+  height: 28rpx;
+  width: 60rpx;
+  color: white;
+  background-color: #f58144;
+  font-size: 20rpx;
+  margin-left: 10rpx;
+  text-align: center;
+  line-height: 28rpx;
+  border-radius: 4rpx;
+}
+
+.answear-time {
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.lawyer-title-box {
+  background-color: white;
+  width: 100%;
+}
+
+
+.lawyer-title {
+  height: 88rpx;
+  color: #999;
+  border-bottom: 1rpx solid #eee;
+  line-height: 88rpx;
+  align-items: center;
+  text-align: start;
+  margin-left: 30rpx;
+}
+
+.lawyer-avatar-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1rpx solid #eee;
+}
+
+.lawyer-avatar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35rpx;
+}
+
+.lawyer-name {
+    margin-top: 20rpx;
+    color: #353535;
+}
+
+.answear-state {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+
+.answear-state-ing {
+  color: #1675e1;
+  font-size: 24rpx;
+}
+
+.answear-icon {
+  height: 30rpx;
+  width: 30rpx;
+  margin: 10rpx;
+}

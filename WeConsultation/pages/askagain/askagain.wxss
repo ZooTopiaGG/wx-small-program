@@ -1,0 +1,35 @@
+.container{
+    background: #fff;
+    margin-top: 30rpx;
+    border-radius: 6px;
+}
+
+.bottom-button {
+    background: #1675e1;
+    flex: 1;
+    border-radius: 6rpx;
+    height: 89rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    text-align: center;
+    line-height: 89rpx;
+}
+
+.bottom-btn{
+    width: 100%;
+    display: flex;
+    height: 120rpx;
+    flex-direction: row;
+    align-items: center;
+}
+
+.i-textarea{
+    width: 100%;
+}
+.text-area{
+    width: 100%;
+    height: 500rpx;
+    padding:15rpx; 
+    font-size: 28rpx;
+    line-height: 36rpx;
+}

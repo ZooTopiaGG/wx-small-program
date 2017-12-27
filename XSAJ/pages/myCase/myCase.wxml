@@ -1,0 +1,6 @@
+<!--<scroll-view bindscrolltolower="lower" scroll-y="true" lower-threshold="5" style="height: 100%;">-->
+    <view wx:for="{{caseArray}}"  wx:for-index="idx" wx:for-item="itemCase" class="case-item"  id="{{itemCase.id}}" bindtap="goToCaseDetail">
+        <view class="content" >{{itemCase.brief_info}}</view>
+        <view class="small-text lawyers-name">{{itemCase.create_time}} | {{itemCase.price}}元</view>
+    </view>
+<!--</scroll-view>-->

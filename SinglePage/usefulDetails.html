@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="telephone=no" name="format-detection">
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<title>我要咨询</title>
+		<style type="text/css">
+			/*img{
+				width: 7.5rem;
+				height: 21.0rem;
+			}*/
+			.mui-content{
+				background: #fff;
+			}
+			.view{
+				padding: 11px 15px;
+			}
+			ul li{
+				display: none;
+			}
+			h4{
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="view">
+						<li>
+							<h4>1、咨询后多久解答？</h4>
+							<p>支付并发布成功后，正常作息时间内， 10分钟内即可得到律师接单响应，30分钟内即可得到律师解答；如果深夜发布咨询，平台认证的律师可能已经休息，第二天一早也会得到解答哦；</p>
+						</li>
+						<li>
+							<h4>2、没有律师解答怎么办？</h4>
+							<p>有问必答是我们和律师共同的目标，运营超过2年的律师说，目前还没有出现过无律师解答的咨询；同时我们也承诺，如果您的咨询在24小时内都无任何律师响应解答，我们将自动为您办理全额退款，最迟下一个工作日到达您支付的账户中，使您的权益得到保障。</p>
+							
+						</li>
+						<li>
+							<h4>3、解答咨询的都是律师么？</h4>
+							<p>律师说平台所有律师，均经过法律从业人员严格的资质审核后，才能为您提供解答咨询的服务；</p>
+						</li>
+						<li>
+							<h4>4、担心解答不满意怎么办？</h4>
+							<p>我们引入了最多两位律师参与解答的机制，您可以根据解答对您的有用程度分配不同比例的咨询费，咨询完成后还能给予律师客观的评价；同时其他用户对律师的评价也会帮助你选择更合适的律师进行咨询解答。</p>
+							
+						</li>
+						<li>
+							<h4>5、什么是一对一电话咨询？</h4>
+							<p>一对一电话咨询是最新推出的，优选律师为您提供一对一的电话+文字解答的咨询服务，除去必须的文字解答，您和律师之间，还将由律师发起的对双方电话加密的通话，更方便快捷，尽情体验！</p>
+							
+						</li>
+						<li>
+							<h4>6、我不想我咨询的问题被别人看到</h4>
+							<p>律师说平台使用了业界领先的SHA-256高强度加密标准，为用户隐私保驾护航；您发布咨询时，只有接单律师和您本人才能看到咨询的问题。咨询结束后，我们将对咨询内容中涉及个人隐私的部分进行处理后，默认进行公开以帮助更多遭遇类似纠纷的用户，当然您也可以随时进入订单中心，将咨询订单设置为不公开即可。</p>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: false
+			});
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0006 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			});
+			$(function(){
+				var $index = location.href.split('#')[1];
+				$('.view li').eq($index).show();
+			})
+		</script>
+	</body>
+</html>

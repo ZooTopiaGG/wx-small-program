@@ -1,0 +1,54 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  border-bottom: 1rpx solid #aaa;
+}
+
+.placeholder {
+  color: #aaa
+}
+
+input {
+  background: white;
+  height: 80rpx;
+  line-height: 30rpx;
+}
+
+.username {
+  margin-top: 50rpx;
+}
+
+button {
+  margin: 20rpx;
+}
+
+input {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.input-info {
+   width: 100%;
+}
+
+.input-button {
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

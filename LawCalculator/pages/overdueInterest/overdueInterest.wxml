@@ -1,0 +1,30 @@
+<view class="container">
+    <input class="normal-input" type="number" placeholder="输入尚未履行的债务金额(元)" value="{{money}}" 
+            placeholder-class="normal-input-placeholder" bindinput="inputMoney"/>
+    <input class="normal-input" type="number" placeholder="输入约定年利率(%)" value="{{interest_rate}}" 
+            placeholder-class="normal-input-placeholder" bindinput="inputInterestRate"/>
+    <!--<input class="normal-input" type="number" placeholder="输入延迟履行时间(天)" value="{{days}}" 
+            placeholder-class="normal-input-placeholder" bindinput="inputDays"/>-->
+
+    <picker mode="date" class="normal-input" bindchange="bindStartDateChange">
+        <view class="choose-cate">
+        <text class="place-holder" wx:if="{{!startDay}}">请选择约定日期:</text> {{startDay}}
+        </view>
+    </picker>
+
+    <picker mode="date" class="normal-input" bindchange="bindEndDateChange">
+        <view class="choose-cate">
+        <text class="place-holder" wx:if="{{!endDay}}">请选择延迟日期:</text> {{endDay}}
+        </view>
+    </picker>
+
+    <view class="button-container">
+        <view class="button-container-item"><button class="wa-button calculator" bindtap="calculate">计算</button></view>
+        <view class="button-container-item"><button class="wa-button reset" bindtap="reset">重置</button></view>
+    </view>
+
+    <view class="result-container">
+        <view class="identity">计算结果(元)</view>
+        <text class="text-center result" wx:if="{{result}}">{{result}}</text>
+    </view>
+</view>

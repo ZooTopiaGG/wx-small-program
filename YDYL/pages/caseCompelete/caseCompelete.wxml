@@ -1,0 +1,12 @@
+<view class="main">
+    <icon type="success" size="130"/>
+
+    <view class="success big-text">操作成功</view>
+    <view class="info normal-text" style="margin-top: 30rpx">咨询发布成功，律师解答后短信会通知您</view>
+    <view class="info normal-text" style="margin-top: 10rpx">下载[律师说]app体验更好服务</view>
+
+    <button type="primary" class="button" bindtap="gotoMyCase">我的咨询</button>
+    <button class="button" style="color: #333; margin-top: 30rpx;" bindtap="goHome">返回首页</button>
+    <view class="app-name normal-text" >律师说</view>
+    <view class="app-copy-right small-text" >Copyright © 2013-2017 JiuYiHengTai</view>
+</view>

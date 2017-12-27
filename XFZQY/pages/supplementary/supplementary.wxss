@@ -1,0 +1,5 @@
+.input-area {
+    width: 100%;
+    background: wheat;
+    height: 500rpx;
+}

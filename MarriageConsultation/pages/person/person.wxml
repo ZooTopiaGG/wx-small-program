@@ -1,0 +1,33 @@
+<view >
+    <view class="header">
+        <image src="{{userInfo.avatarUrl}}" class="my-avatar" style="margin: 30rpx;"></image>
+        <text class="normal-text name">{{userInfo.nickName}}</text>
+        <text class="normal-text name" style="margin-top: 20rpx">{{userPhoneNum}}</text>
+    </view>
+
+    <view class="bind-phone" hidden="{{isHiddenBind}}">
+        <view class="bind-phone-button big-text" bindtap="gotoBindPhone">绑定手机</view>
+        <text class="bind-text small-text">绑定手机号，享受便捷服务</text>
+    </view>
+
+    <view class="item big-text" style="margin-top: 30rpx" bindtap="goToMyCase">
+        <text class="item-text">我的咨询</text>
+        <image src="../../images/15@2X.png" class="item-icon"></image>
+    </view>
+
+    <view class="item big-text" style="margin-top: 30rpx" bindtap="goToFadeBack">
+        <text class="item-text">用户反馈</text>
+        <image src="../../images/15@2X.png" class="item-icon"></image>
+    </view>
+    <!--<view class="item big-text">
+        <text class="item-text">关于我们</text>
+        <image src="../../images/15@2X.png" class="item-icon"></image>
+    </view>-->
+    <view class="item big-text" bindtap="makePhoneCall">
+        <text class="item-text">联系客服</text>
+        <text class="customer-num" >400-809-7791</text>
+    </view>
+
+    <view class="small-text explain">【WE法律咨询】由【律师说】荣誉出品</view>
+    
+</view>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

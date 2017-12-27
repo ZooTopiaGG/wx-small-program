@@ -1,0 +1,22 @@
+<view class="container">
+
+  <view class="banner">
+    <image src="../../images/49.png" class="banner-image"></image>
+    <view class="banner-bg">
+      <view class="banner-text"></view>
+    </view>
+  </view>
+  <view class="big-text banner-text-top">从这里开始，解决您的法律问题</view>
+  <view class="normal-text banner-text-bottom">有问必答 专业律师 快速响应</view>  
+
+  <view class="select-case" bindtap="gotoSelectCase">
+    <image src="../../images/50.png" class="case-img" ></image>
+  </view>
+  <view class="select-case" bindtap="gotoHotConsultation">
+    <image src="../../images/51.png" class="case-img2"></image>
+  </view>
+
+  <view class="select-case">
+    <button class="consultation-button big-text" bindtap="consultation">我要咨询</button>
+  </view>
+</view>

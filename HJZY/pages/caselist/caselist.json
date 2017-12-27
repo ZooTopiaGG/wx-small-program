@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "热门咨询",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeeeee"
+}

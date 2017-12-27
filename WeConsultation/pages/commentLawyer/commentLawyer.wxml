@@ -1,0 +1,72 @@
+<!--commentLawyer.wxml-->
+<view class="comment-lawyer" wx:if="{{firstReplyInfo.lawyer_info}}">
+  <view class="lawyer-info">
+    <image src="{{firstReplyInfo.lawyer_info.avatar}}" class="lawyer-avatar"></image>
+    <view class="lawyer-info-detail">
+      <view class="big-text">
+        {{firstReplyInfo.lawyer_info.lawyer_name}}|{{firstReplyInfo.lawyer_info.city_name}}
+      </view>
+      <view class="narmal-text" style="margin-top: 20rpx;">
+        {{firstReplyInfo.lawyer_info.company_name}}
+      </view>
+    </view>
+  </view>
+
+
+  <view class="mark">
+    <view class="normal-text" style="margin-left: 30rpx;">给Ta打分</view>
+
+    <block wx:for="{{stars}}" wx:key="index">
+      <image class="star-image" style="left: {{item*90}}rpx" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+        <view class="item" style="left:0rpx" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+        <view class="item" style="left:35rpx" data-key="{{item+1}}" bindtap="selectRight"></view>
+      </image>
+    </block>
+
+  </view>
+
+  <textarea class="write-comment normal-text" placeholder="写下您对该律师本次服务的评价" placeholder-style="color: #999" bindinput="commentContent1" />
+
+  <view class="is-anonymous" bindtap="isAnonymousf">
+    <image src="{{checkPic}}" class="check-pic"></image>匿名评价
+  </view>
+</view>
+
+<view style="padding-bottom: 150rpx;" wx:if="{{secondReplyInfo.lawyer_info}}">
+  <view class="comment-lawyer2">
+    <view class="lawyer-info">
+      <image src="{{secondReplyInfo.lawyer_info.avatar}}" class="lawyer-avatar"></image>
+      <view class="lawyer-info-detail">
+        <view class="big-text">
+          {{secondReplyInfo.lawyer_info.lawyer_name}}|{{secondReplyInfo.lawyer_info.city_name}}
+        </view>
+        <view class="narmal-text" style="margin-top: 20rpx;">
+          {{secondReplyInfo.lawyer_info.company_name}}
+        </view>
+      </view>
+    </view>
+
+
+    <view class="mark">
+      <view class="normal-text" style="margin-left: 30rpx;">给Ta打分</view>
+
+      <block wx:for="{{stars2}}" wx:key="index">
+        <image class="star-image" style="left: {{item*90}}rpx" src="{{key2 > item ?(key2-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+          <view class="item" style="left:0rpx" data-key="{{item+0.5}}" bindtap="selectLeft2"></view>
+          <view class="item" style="left:35rpx" data-key="{{item+1}}" bindtap="selectRight2"></view>
+        </image>
+      </block>
+
+    </view>
+
+    <textarea class="write-comment normal-text" placeholder="写下您对该律师本次服务的评价" placeholder-style="color: #999" bindinput="commentContent2" />
+
+    <view class="is-anonymous" bindtap="isAnonymousS">
+      <image src="{{checkPics}}" class="check-pic"></image>匿名评价
+    </view>
+  </view>
+</view>
+
+<view class="bottom-btn" bindtap="comment">
+  <view class="bottom-button big-text">提交</view>
+</view>

@@ -1,0 +1,6 @@
+<!--completeComment.wxml-->
+<view class="container">
+<image src="../../images/21.png" class="circle"></image>
+
+<view class="normal-text commnet-suc">评价成功</view>
+</view>

@@ -1,0 +1,37 @@
+<!--assignedMoney.wxml-->
+<image src="../../images/34.png" class="bg-pic"></image>
+
+<view class="lawyer">
+  <view class="lawyer-info">
+    <image src="{{firstReplyInfo.lawyer_info.avatar}}" class="lawyer-avatar"></image>
+    <view class="lawyer-name big-text">{{firstReplyInfo.lawyer_info.lawyer_name}}</view>
+    <view class="money">
+      <view class="money-num">{{proportion1}}</view>
+    </view>
+  </view>
+
+  <view class="lawyer-info">
+    <image src="{{secondReplyInfo.lawyer_info.avatar}}" class="lawyer-avatar"></image>
+    <view class="lawyer-name big-text">{{secondReplyInfo.lawyer_info.lawyer_name}}</view>
+    <view class="money">
+      <view class="money-num">{{proportion2}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="assigned-money">
+  <view class="assigned-money-bg">
+    <view class="total-money big-text">解答更好，分配更多。</view>
+    <view class="picker-view">
+      <view class="assigned-text">分配比例</view>
+      <picker-view class="picker" indicator-class="picker-indicator" value="{{pickerNum}}" bindchange="bindProportionChange">
+        <picker-view-column>
+          <view wx:for="{{proportion}}" wx:key="index" class="picker-col">{{item}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+    <view class="assigned-sure">
+      <button class="assigned-sure-button" bindtap="sure">确认解答</button>
+    </view>
+  </view>
+</view>

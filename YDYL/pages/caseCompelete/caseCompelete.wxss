@@ -1,0 +1,48 @@
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150rpx 0;
+  box-sizing: border-box;
+} 
+
+.success {
+    font-weight: bold;
+    margin-top: 30rpx;
+    color: #333;
+}
+
+.info {
+    color: #a9a9a9;
+}
+
+.button {
+    margin-top: 50rpx;
+    height: 90rpx;
+    width: 650rpx;
+    text-align: center;
+    line-height: 90rpx;
+    color: white;
+}
+
+.app-name {
+    position: fixed;
+    bottom: 80rpx;
+    color: darkslateblue;
+    width: 100%;
+    text-align: center;
+}
+
+.app-copy-right {
+    position: fixed;
+    bottom: 30rpx;
+    color: #a9a9a9;
+    width: 100%;
+    text-align: center;
+}
+
+page {
+    background: white;
+}
