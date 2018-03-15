@@ -1,0 +1,212 @@
+/* pages/conferencemail/conferencemail.wxss */
+.userCell{
+    background-color: red;
+}
+
+.userCellActive{
+    background-color: green;
+}
+page{
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  margin: 0rpx;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-size: 100% 100%;
+  background-color: #fafafa;
+}
+.container-content{
+  width: 690rpx;
+  height: 1050rpx;
+  margin: auto;
+  margin-top: 40rpx;
+  border-radius: 5rpx;
+  background-color: #ffffff;
+  box-shadow: 0 0 12rpx #e6e6e6;
+   /*box-shadow: 0 1px 4rpx rgba(0, 0, 0, 0.27), 0 0 40rpx rgba(0, 0, 0, 0.06);*/
+}
+.container-content-t{
+  width: 100%;
+  height: 80rpx;
+  border-top-left-radius: 5rpx;
+  border-top-right-radius: 5rpx;
+  background-color: #574e5f;
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.content-person-all{
+  width: 100%;
+  height: 800rpx;
+}
+.content-person{
+  width: 95rpx;
+  height: 130rpx;
+  float: left;
+  padding: 26rpx 10rpx 0 10rpx;
+  position: relative;
+  z-index: 99;
+}
+.content-person-t{
+  width: 98rpx;
+  height: 98rpx;
+  /*position: relative;*/
+}
+.content-person-t-img{
+  width: 98rpx;
+  height: 98rpx;
+}
+.xuanzhong{
+  width: 35rpx;
+  height: 33rpx;
+  position: absolute;
+  display: none;
+  top: 24rpx;
+  right: 4rpx;
+  z-index: 99;
+}
+.nochoice{
+  width: 35rpx;
+  height: 33rpx;
+  position: absolute;
+  display: bolck;
+  top: 24rpx;
+  right: 4rpx;
+  z-index: 99;
+}
+.xuanzhong-img{
+  width: 35rpx;
+  height: 33rpx;
+}
+.content-person-b{
+  width: 98rpx;
+  font-size: 24rpx;
+  color: #020202;
+  opacity: 0.6;
+  text-align: center;
+  line-height: 40rpx;
+}
+.content-describe{
+  width: 100%;
+  height: 90rpx;
+  background-color: #eae9ea;
+  position: relative;
+  
+}
+.content-describe-order{
+  width: 70rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 30rpx;
+  right: 40rpx;
+  font-size: 24rpx;
+  color: #666666;
+  opacity: 0.9;
+  text-align: center;
+}
+textarea{
+  width: 100%;
+  height: 60rpx;
+  padding-top: 30rpx;
+  text-indent: 20rpx;
+}
+.bottom-btn{
+  width: 100%;
+  height: 85rpx;
+  background-color: #574e5f;
+  border-bottom-left-radius: 5rpx;
+  border-bottom-right-radius: 5rpx;
+}
+.bottom-btn-l{
+  width: 49%;
+  height: 65rpx;
+  float: left;
+  line-height: 65rpx;
+  margin-top: 12rpx;
+  text-align: center;
+  color: #b6b2b7;
+  border-right: 1rpx solid #393838;
+}
+.false{
+  display: block;
+  width: 100%;
+  height: 60rpx;
+  background-color: #574e5f;
+  border: 0px;
+  outline: none;
+  border-right: 1rpx solid #393838;
+}
+.bottom-btn-r{
+  width: 49%;
+  height: 65rpx;
+  float: left;
+  margin-top: 12rpx;
+  line-height: 65rpx;
+  text-align: center;
+  color: #f3f1f2;
+  border-left: 1rpx solid #574e5f;
+}
+.true{
+  display: block;
+  width: 100%;
+  height: 60rpx;
+  background-color: #574e5f;
+  border: none;
+  border-left: 1rpx solid #574e5f;
+}
+
+
+
+
+.all_person{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-start;
+  height: 1000rpx; 
+}  
+.person_avatar{
+  margin: 20rpx 16rpx 20rpx 32rpx;
+  flex-grow:1;
+  width:120rpx;
+  height: 160rpx;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.person_avatar>image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.person_avatar>view{
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.checked{
+  width: 35rpx;
+  height: 33rpx;
+  position: absolute;
+  display: bolck;
+  top: 0rpx;
+  right: 0rpx;
+  z-index: 99;
+}
+.nochecked{
+  width: 35rpx;
+  height: 33rpx;
+  position: absolute;
+  display: none;
+  top: 0rpx;
+  right: 0rpx;
+  z-index: 99;
+}
+.checked>image{
+  width: 35rpx;
+  height: 33rpx;
+}

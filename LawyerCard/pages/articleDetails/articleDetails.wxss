@@ -1,0 +1,154 @@
+/* pages/articleDetails/articleDetails.wxss */
+.container, .art{
+  min-height: 100%;
+  background: #fff;
+  line-height: 1;
+  position: relative;
+  z-index: 6
+}
+.article-header{
+  padding: 0 40rpx;
+}
+.ah{
+  padding: 62rpx 0 36rpx;
+  line-height: 1.5
+}
+.ah-title{
+  font-size: 19px;
+  color: rgb(51,51,51)
+}
+.ah-info{
+  font-size: 14px;
+  color: rgb(72,72,72)
+}
+.ah-avatar{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100%;
+  margin-right: 15rpx;
+}
+.ah-label-text{
+  border: 1px solid rgb(51,51,51);
+  border-radius: 100rpx;
+  color: rgb(72,72,72);
+  padding: 5rpx 13rpx;
+}
+.art-content{
+  padding: 30rpx 35rpx 30rpx;
+  line-height: 1.5
+}
+.art-sup{
+  background: #fff;
+  padding: 30rpx 0 200rpx;
+}
+.sup-btn{
+  height: 160rpx;
+  width: 140rpx;
+  padding: 10rpx;
+}
+.sup-icon{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 100%;
+  box-shadow: 0 1px 8px rgba(55,76,141,0.25), 0 0 1px rgba(55,76,141,0.25), 0 0 1px rgba(55,76,141,0.25);
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.sup-icon-av {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 auto;
+}
+#sup-text{
+  font-size: 14px;
+  color: rgb(153,153,153);
+  margin:0;
+  line-height: 1;
+  padding: 0;
+  border: none;
+  outline:none;
+  background: #fff;
+}
+#sup-text::after{
+  width: 0;
+  height: 0;
+}
+.art-footer{
+  background: #f7f7f7;
+  padding: 0 15rpx;
+  height: 160rpx;
+}
+.ft-box{
+  height: 80rpx;
+  background: #fff;
+  padding: 0 45rpx;
+  font-size: 16px;
+  color: rgb(68,88,149);
+  border-radius: 100rpx;
+}
+.ft-btn{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 14rpx;
+}
+.anim-content{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 9;
+}
+.canvas-content{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  /* display: none;  */
+}
+#mycanvas{
+  box-sizing: border-box;
+  background: #fff;
+}
+.share-content{
+  height: 202rpx;
+  padding: 62rpx 128rpx 35rpx;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: rgb(51,51,51);
+  background: #fff;
+}
+.share-icon{
+  width: 80rpx;
+  height: 80rpx;
+}
+.share-btn{
+  border:none;
+  padding:0;
+  line-height:1;
+  background-color: #fff;
+  outline: none;
+  margin: 0;
+  font-size: 14px;
+  color: rgb(51,51,51);
+}
+.share-btn::after{
+  width: 0;
+  height: 0;
+}
+.sup-avatar{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100%;
+}
+.sup-num{
+  margin-left: 10rpx;
+}
+.ft-fixed {
+  position:fixed;
+  width: 100%;
+  bottom:0;
+}

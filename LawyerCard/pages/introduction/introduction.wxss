@@ -1,0 +1,115 @@
+.container{
+  display: flex;
+  flex:1;
+  color: rgb(51,51,51);
+}
+.bg{
+  width: 100%;
+  height: 337rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.intro-bg{
+  width: 100%;
+  height: 337rpx;
+}
+.intro{
+  position: relative;
+  z-index: 1;
+  padding: 0 30rpx;
+  margin-bottom: 25rpx;
+}
+.lawyer-info{
+  width: 650rpx;
+  height: 166rpx;
+  background: #fff;
+  margin: 184rpx auto 25rpx;
+  box-shadow: 0 3px 3px rgb(232,232,232);  
+  padding: 47rpx 20rpx 30rpx;
+}
+.intro-second{
+  box-shadow: 0 3px 3px rgb(232,232,232);  
+}
+.li-avatar{
+  width: 200rpx;
+  height: 218rpx;
+  background: rgb(245, 245, 245);
+  position: relative;
+  top: -67rpx;
+  margin-right: 17rpx;
+}
+.li-name{
+  margin-bottom: 30rpx;
+  font-size: 16px;
+  color: rgb(9,9,10)
+}
+.li-addr{
+  color: rgb(102,102,102);
+  margin-bottom: 12rpx;
+}
+.li-firm{
+  color: rgb(102,102,102)
+}
+.intro-second{
+  background: #fff;
+}
+.ga-header{
+  height: 89rpx;
+  padding-right: 10rpx;
+}
+.ga-title-text{
+  font-size: 16px;
+}
+.ga-title-icon{
+  width: 45rpx;
+  height: 89rpx;
+}
+.ga-num-icon{
+  width: 90rpx;
+  height: 89rpx;
+}
+.ga-list, .honor-list{
+  margin: 0 10rpx;
+  border-bottom:1px solid rgb(215,215,215)
+}
+.honor-list{
+  padding-bottom: 30rpx;
+}
+.ga-list{
+  flex-wrap: wrap;
+  padding-bottom: 10rpx;
+}
+.ga-list-cell{
+  border: 1px solid #c4b1d3;
+  border-radius: 100rpx; 
+  padding: 0 8rpx;
+  background: rgb(245, 245, 246);
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  min-width: 132rpx;
+  text-align: center;
+  height:52rpx;
+  line-height:52rpx; 
+}
+.honor-header{
+  padding-right: 10rpx;
+}
+.honor-list{
+  margin: 0 17rpx;
+}
+.honor-list-cell{
+  margin-bottom: 10rpx;
+}
+.honor-list-cell:last-child{
+  margin-bottom: 0
+}
+.honor-year{
+  width: 200rpx;
+}
+.honor-content{
+  padding:0 17rpx 30rpx;
+  line-height: 1.6;
+  text-align: justify;
+}

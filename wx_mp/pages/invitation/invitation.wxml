@@ -1,0 +1,120 @@
+<!--invitation.wxml-->
+<view class="yd_image" hidden="{{closeMcImage!==0}}" bindtap="closeMc">
+    <image src="../../images/yd_image.png"></image>
+  </view>
+
+  <!--引导页-->
+ 
+  <!--<view class="meeting-name">{{met_name}}</view>
+  <image class="invi_bg_this" src="../../images/invi_bg.png"></image>
+  <image class="invi_font" src="../../images/invi_font.png"></image>
+  <view class="meeting-adr">{{met_adr}}</view>
+  <view class="meeting-time">{{met_time}}</view>
+</view>
+<view class="">
+  <view class="bg_line_box">
+    <image class="bg_line" src="../../images/bg_line.png"></image>
+    <view class="bg_sj-box">
+      <image class="bg_sj" src="../../images/bg_sj.png"></image>
+      <view class="bg_sj-font">报名中</view>
+    </view>
+    <view class="bm_num">现在已有{{addNum}}人参加报名</view>
+    <view class="user_avatar_list_area">
+      <scroll-view scroll-x="true" style="" class="user_avatar_list">
+        <view class="addPerson" wx:for="{{addPersonArray}}" wx:for-index="idx" wx:for-item="itemCase">
+          <image src="{{itemCase.HeadUrl}}"></image>
+        </view>
+      </scroll-view>
+      <view class="chose_dinner">
+        <view class="">是否参加午宴、晚宴？</view>
+        <view class="">
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class="enter_btn" bindtap="backMyMeeting" hidden="{{btnShow!==0}}">返回会议</view>
+      <view class="enter_btn" bindtap="enrollMeeting" hidden="{{btnShow!==1}}">会议报名</view>
+      
+    </view>
+  </view>
+</view>-->
+
+<!--invitation.wxml-->
+<!--<view class="yd_image" hidden="{{closeMcImage!==0}}" bindtap="closeMc">
+    <image src="../../images/yd_image.png"></image>
+  </view>
+<view class="invi_bg">-->
+<!--引导页-->
+
+<view class="body">
+  <view class="body-top">
+    <image class="body-top-img" src="../../images/invi_bg.png"></image>
+  </view>
+  <view class="body-content">
+    <view class="body-content-title">{{met_name}}</view>
+    <view class="body-content-line"></view>
+    <view class="body-content-time">时间： {{met_time}}</view>
+    <view class="body-content-addr">地址： {{met_adr}}</view>
+  </view>
+  <view class="body-detail">
+    <view class="body-detail-order">报名中</view>
+    <view class="chose_dinner">
+      <view class="">是否参加午宴、晚宴？</view>
+      <view class="">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <scroll-view scroll-x="true" style="" class="user_avatar_list">
+        <view class="addPerson" wx:for="{{addPersonArray}}" wx:for-index="idx" wx:for-item="itemCase">
+          <image src="{{itemCase.HeadUrl}}"></image>
+        </view>
+    </scroll-view>
+     <view class="bm_num">现在已有{{addNum}}人参加报名</view>
+  </view>
+  <view class="enter_btn" bindtap="backMyMeeting" hidden="{{btnShow!==0}}">返回会议</view>
+  <view class="enter_btn" bindtap="enrollMeeting" hidden="{{btnShow!==1}}">会议报名</view>
+</view>
+
+<!--<view class="meeting-name">{{met_name}}</view>
+  <image class="invi_bg_this" src="../../images/invi_bg.png"></image>
+  <image class="invi_font" src="../../images/invi_font.png"></image>
+  <view class="meeting-adr">{{met_adr}}</view>
+  <view class="meeting-time">{{met_time}}</view>
+</view>
+<view class="">
+  <view class="bg_line_box">
+    <image class="bg_line" src="../../images/bg_line.png"></image>
+    <view class="bg_sj-box">
+      <image class="bg_sj" src="../../images/bg_sj.png"></image>
+      <view class="bg_sj-font">报名中</view>
+    </view>
+    <view class="bm_num">现在已有{{addNum}}人参加报名</view>
+    <view class="user_avatar_list_area">
+      <scroll-view scroll-x="true" style="" class="user_avatar_list">
+        <view class="addPerson" wx:for="{{addPersonArray}}" wx:for-index="idx" wx:for-item="itemCase">
+          <image src="{{itemCase.HeadUrl}}"></image>
+        </view>
+      </scroll-view>
+      <view class="chose_dinner">
+        <view class="">是否参加午宴、晚宴？</view>
+        <view class="">
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}">
+                <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class="enter_btn" bindtap="backMyMeeting" hidden="{{btnShow!==0}}">返回会议</view>
+      <view class="enter_btn" bindtap="enrollMeeting" hidden="{{btnShow!==1}}">会议报名</view>
+      
+    </view>
+  </view>
+</view>-->

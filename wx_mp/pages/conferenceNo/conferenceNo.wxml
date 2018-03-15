@@ -1,0 +1,16 @@
+<!--pages/conferenceNo/conferenceNo.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="content-order">
+     抱歉，你还没有加入任何会议
+    </view>
+    <view class="content-orde-img">
+      <image class="content-orde-img" src="../../images/中间卡牌@2x.png"></image>
+    </view>
+    <view class="saoma">
+     <image class="saoma-bg" src="../../images/底部按钮@2x.png"></image>
+     <view class="saoma-order">扫码加入会议</view>
+    </view>
+  </view>
+
+</view>

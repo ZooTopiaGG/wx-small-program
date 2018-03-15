@@ -1,0 +1,53 @@
+/**app.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+  background: rgb(247, 247, 247);
+  line-height: 1;
+  -webkit-font-smoothing:antialiased;
+}
+.container {
+  font-size: 14px;
+  font-family:'PingFang SC','Hiragino Sans GB','Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+/**点击效果**/
+ .ripple{  
+    background-color: rgb(112,126,172);  
+    border-radius: 100%;  
+    height:10px;  
+    width:10px;  
+    margin-top: -90px;  
+    position: absolute;  
+    transform: scale(0);  
+    overflow: hidden;
+    z-index: 9999;
+}  
+@keyframes ripple {  
+    100% {  
+    transform: scale(8);  
+    transform: scale(8);  
+    background-color: transparent;  
+    }
+}  
+/* flex公共布局 */
+/*轴定义： 取决于flex-direction: column(主轴垂直方向，交叉轴水平方向) row(主轴水平方向，交叉轴垂直方向)*/
+/*默认水平方向 排序*/
+.flex{display:flex;}
+/*垂直方向 排序*/
+.flex-v{flex-direction:column;}
+.flex-1{flex:1;}
+.flex-2{flex:2;}
+/*交叉轴对齐方向 */
+.flex-align-center{align-items:center;}
+/*左对齐*/
+.flex-align-top{align-items:flex-start;}
+/*右对齐*/
+.flex-align-bottom{align-items:flex-end;}
+/*居中对齐*/
+.flex-pack-center{justify-content:center;}
+.flex-pack-right{justify-content:flex-end;}
+.flex-pack-left{justify-content:flex-start;}
+/*分散对齐*/
+.flex-pack-justify{justify-content:space-between;}
+/*距离盒子两边间距相同*/
+.flex-pack-around{-webkit-box-pack:justify;-webkit-justify-content:space-around;-ms-flex-pack:justify;justify-content:space-around;}

@@ -1,0 +1,132 @@
+<!--pages/conferenceDetailed/conferenceDetailed.wxml-->
+<!--会议详情页面-->
+<view class="container">
+  <view class="c-top">
+
+  <view class="c-top-body">
+     <view class="c-top-bg">
+      <image class="c-top-bg-img" src="../../images/bj1a2x.png"></image>
+    </view>
+    <!--<view class="c-top-content">
+      <view class="c-top-title">
+        <text>{{title}}</text>
+      </view>
+      <view class="line">
+        <image class="line-img" src="../../images/line_03.png"></image>
+      </view>-->
+      <view class="c-top-content">
+        <view class="c-top-title">
+          <text>{{title}}</text>
+        </view>
+        <view class="line">
+          <image class="line-img" src="../../images/line_03.png"></image>
+        </view>
+        <view class="style">
+          <view class="style-l">
+            <image class="style-l-img" src="../../images/meet_style.png"></image>
+          </view>
+          <view class="style-r">
+            <text>类型.{{meetType}}</text>
+          </view>
+        </view>
+        <view class="date">
+          <view class="date-l">
+            <image class="date-l-img" src="../../images/list_time.png"></image>
+          </view>
+          <view class="date-r">
+            <text>{{startTime}}</text>
+          </view>
+        </view>
+        <view class="addr">
+          <view class="addr-l">
+            <image class="addr-l-img" src="../../images/list_dw.png"></image>
+          </view>
+          <view class="addr-r">
+            <text>{{location}}</text>
+          </view>
+        </view>
+        <view class="share">
+          <view class="share-l">
+            <image class="share-l-img" src="../../images/met_da_name.png"></image>
+          </view>
+          <view class="share-r">
+            <text>分享者-{{createUser}}</text>
+          </view>
+        </view>
+        <view class="triangle">
+          <image class="triangle-img" src="../../images/xiajiantou.png"></image>
+          <view class="introduction">
+            <text>简介</text>
+          </view>
+        </view>
+
+      </view>
+    <!--</view>-->
+  </view>
+  </view>
+   
+
+  <!--<view class="c-top-title">
+      <text>{{title}}</text>
+    </view>
+    <view class="line">
+      <image class="line-img" src="../../images/line_03.png"></image>
+    </view>
+    <view class="c-top-content">
+      <view class="style">
+        <view class="style-l">
+          <image class="style-l-img" src="../../images/meet_style.png"></image>
+        </view>
+        <view class="style-r">
+          <text>类型.{{meetType}}</text>
+        </view>
+      </view>
+      <view class="date">
+        <view class="date-l">
+          <image class="date-l-img" src="../../images/list_time.png"></image>
+        </view>
+        <view class="date-r">
+          <text>{{startTime}}</text>
+        </view>
+      </view>
+      <view class="addr">
+        <view class="addr-l">
+          <image class="addr-l-img" src="../../images/list_dw.png"></image>
+        </view>
+        <view class="addr-r">
+          <text>{{location}}</text>
+        </view>
+      </view>
+      <view class="share">
+        <view class="share-l">
+          <image class="share-l-img" src="../../images/met_da_name.png"></image>
+        </view>
+        <view class="share-r">
+          <text>分享者-{{createUser}}</text>
+        </view>
+      </view>
+      <view class="triangle">
+        <image class="triangle-img" src="../../images/xiajiantou.png"></image>
+        <view class="introduction">
+          <text>简介</text>
+        </view>
+      </view>
+
+    </view>
+  </view>-->
+
+  <!--简介部分-->
+
+  <view class="c-bottom">
+    <image class="c-bottom-bj" src="../../images/bj2@2x.png"></image>
+    <view class="c-bottom-content">
+      <view class="page-section">
+        <view class="page-section-spacing">
+          <scroll-view scroll-y="true" style="height: 500rpx;width: 620rpx;">
+            <text>{{meetIntroduce}}</text>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

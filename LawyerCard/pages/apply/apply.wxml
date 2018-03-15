@@ -1,0 +1,60 @@
+<!--pages/apply/apply.wxml-->
+<view class='container flex flex-v'>
+  <view class='apply-top'>
+    <view class='flex flex-v'>
+      <view class='apply-80 flex flex-align-center flex-pack-center'>
+        <view class='apply-line'></view>
+        <text class='apply-80-text'>立 即 预 约</text>
+        <view class='apply-line'></view>
+      </view>
+      <image class='apply-bg' src='../../images/123.jpg'></image>
+      <view class='apply-border'>
+        <text class='apply-80'>预约自己的律师小程序</text>
+      </view>
+    </view>
+    <view class='apply-list flex flex-v apply-border'>
+      <text class='apply-title'>一：律师小程序的特色：</text>
+      <text>1. 打造移动互联网时代律师专业新形象</text>
+      <text>2.一键通话，在线留言，便捷导航全功能整合</text>
+      <text>3.快速获取超过9亿微信用户的关注</text>
+      <text>4.[律师说]品牌自媒体联合推广，轻松获得精准用户</text>
+      <text>5.产品先天的社交属性，让传播分享轻而易举</text>
+      <text>6.多样化的用户访问路径，线上线下全打通</text>
+      <text>7.去中心化，完全属于律师个人的互联网产品</text>
+    </view>
+    <view class='apply-list flex flex-v apply-border'>
+      <text class='apply-title'>二：预约流程：</text>
+      <text>1. 填写并提交表单信息</text>
+      <text>2.保持电话畅通</text>
+      <text>3.等待客服专员联系</text>
+    </view>
+    <view class='apply-80 apply-remind'>
+     <text> * 非工作日的预约，顺延到下个工作日处理。</text>
+    </view>
+  </view>
+  <view class='apply-bottom'>
+    <view class='apply-80 apply-form-title'>
+      <text>联系方式</text>
+    </view>
+    <form class='form' bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section form-section flex">
+        <view class="section__title">
+          <image class='form-icon' src='../../images/name.png'></image>
+        </view>
+        <input class='form-input flex-1' name="username" placeholder="姓名" />
+      </view>
+      <view class="section form-section flex">
+        <view class="section__title">
+          <image class='form-icon' src='../../images/tel2.png'></image>
+        </view>
+        <input class='form-input flex-1' maxlength='11' type='number' name="phonenum" placeholder="手机" />
+      </view>
+      <view class="section">
+        <textarea class='form-textarea' placeholder="填写其他您认为重要的信息（非必填项）" name="remark" placeholder-style="color:rgb(153, 153, 153);" />
+      </view>
+      <view class="section">
+        <button class='form-button' data-by='asa' formType="submit">立 即 提 交</button>
+      </view>
+    </form>
+  </view>
+</view>

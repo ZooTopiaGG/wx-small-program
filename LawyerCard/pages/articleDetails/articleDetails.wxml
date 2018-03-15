@@ -1,0 +1,71 @@
+<!--pages/articleDetails/articleDetails.wxml-->
+<!-- <import src='../../utils/wxParse/wxParse.wxml' />   -->
+<view class='container flex flex-v'>
+    <!-- 文章详情头部 自定义 ah -->
+    <view class='flex flex-v article-header'>
+      <view class='ah'>
+        <text class='ah-title'>{{articleContent.title}}</text>
+      </view>
+      <view class='flex flex-pack-justify'>
+        <view class='flex flex-align-center ah-info'>
+          <image class='ah-avatar' wx:if="{{articleContent.personalheadurl}}" src='{{articleContent.personalheadurl}}'></image>
+          <image class='ah-avatar' wx:else src='../../images/atu.png'></image>
+          <text>{{articleContent.name}}律师</text>
+        </view>
+        <view class='flex flex-align-center ah-label'>
+          <text class='ah-label-text'>{{articleContent.type}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 文章内容 -->
+    <view class='art-content flex flex-1'>
+       <!-- <view style='display:none;'><template is="wxParse" data="{{wxParseData:article.nodes}}"/> </view> -->
+      <rich-text nodes="{{art}}"></rich-text>
+    </view>
+    <!-- 文章底部 点赞 分享 -->
+    <view class='art-sup flex flex-v flex-align-center flex-pack-justify'>
+      <button id="sup-text" class='flex flex-v flex-align-center' open-type="getUserInfo" bindgetuserinfo="supportBtn">
+        <view class='sup-btn'>
+          <view class='sup-icon flex flex-align-center'>
+            <image class='sup-icon-av' src='{{supImg}}'></image>
+          </view>
+        </view>
+        <view class='flex flex-align-center'>
+          <block wx:for="{{supAvatar}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+            <image wx:if="item && item != ''" class='sup-avatar' src='{{item}}'></image>
+            <image wx:else class='sup-avatar' src='../../images/default-avatar.png'></image>
+          </block>
+          <text class='sup-num'>{{supNum}}人赞过</text>
+        </view>
+      </button>
+    </view>
+    <view class='ft-fixed'>
+      <view class='art-footer flex flex-pack-justify flex-align-center'>
+        <view class='ft-zx ft-box flex flex-align-center' bindtap='gotolink'>
+          <image class='ft-zx-btn ft-btn' src='../../images/tel.png'></image>
+          <text>咨询该律师</text>
+        </view>
+        <view class='ft-fx ft-box flex flex-align-center' bindtap='createAnimations'>
+          <image class='ft-zx-btn ft-btn' src='../../images/afx.png'></image>
+          <text>分享给好友</text>
+        </view>
+      </view>
+    </view>
+    <view animation="{{animationData}}" class="anim-content flex flex-v" style='transform:translateY({{ty}});opacity:{{oy}}'>
+      <view class='flex-1' catchtap='hideAnimations'></view>
+      <view class="share-content flex flex-pack-justify">
+        <button class='flex flex-v flex-align-center share-btn' open-type="getUserInfo" bindgetuserinfo="createPoster">
+          <image class='share-icon' src='../../images/axz.png'></image>
+          <text>生成分享海报</text>
+        </button>
+        <button class='flex flex-v flex-align-center share-btn' open-type='share'>
+          <image class='share-icon' src='../../images/av.png'></image>
+          <text>转发给好友</text>
+        </button>
+      </view>
+    </view>
+    <view class='canvas-content' style='z-index: {{zi}}' bindtap='hideCanvas'>
+      <canvas canvas-id="myCanvas" id="mycanvas" style="width:100%;height:{{contentHeight}}px"/>
+    </view>
+
+</view>

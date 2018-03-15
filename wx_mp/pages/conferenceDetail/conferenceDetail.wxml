@@ -1,0 +1,83 @@
+<!--pages/conferenceDetail/conferenceDetail.wxml-->
+
+<!--为防止命名污染，本页面所以view以conferenceDetail的简写cd开头-->
+<view class="conferenceDetail-container">
+  <image class="conferenceDetail-container-img" src="../../images/bg.jpg"></image>
+  <!--名片顶部-->
+  <view class="cd-top">
+    <image class="cd-top-img" src="../../images/jiantou.png"></image>
+    <view class="cd-top-content">
+      <view class="cd-top-title">
+        <text>{{meetTitle}}</text>
+      </view>
+      <view class="cd-top-ing">
+        <image class="cd-top-ing-img" src="../../images/ing_03.jpg"></image>
+      </view>
+      <view class="cd-top-time">
+        <!--<image class="cd-top-time-img" src="../../images/list_time_h.png"></image>-->
+        <view>{{startTime}}</view>
+      </view>
+      <view class="cd-top-map">
+        <!--<image class="cd-top-map-img" src="../../images/list_dw_h.png" bindtap=""></image>-->
+        <text>{{location}}</text>
+      </view>
+    </view>
+  </view>
+  <!--中间部分-->
+  <view class="cd-mid-all">
+    <view class="cd-mid">
+      <navigator url="../conferenceDetailed/conferenceDetailed?meetID={{meetID}}" hover-class="changestyle">
+        <view class="cd-mid-1">
+          <view class="cd-mid-1-1">
+            <image class="cd-mid-1-1-img" src="../../images/cd-icon1_03.png"></image>
+          </view>
+          <view class="cd-mid-1-2">
+            <text>会议详情</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../conferenceData/conferenceData?meetID={{meetID}}" hover-class="changestyle">
+        <view class="cd-mid-1">
+          <view class="cd-mid-1-1">
+            <image class="cd-mid-1-1-img" src="../../images/cd-icon2_03.png"></image>
+          </view>
+          <view class="cd-mid-1-2">
+            <text>会议资料</text>
+          </view>
+        </view>
+      </navigator>
+      <view bindtap="goMaillist">
+        <view class="cd-mid-1">
+          <view class="cd-mid-1-1">
+            <image class="cd-mid-1-1-img" src="../../images/cd-icon3_03.png"></image>
+          </view>
+          <view class="cd-mid-1-2">
+            <text>会议通讯录</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <!--底部-->
+  <view class="cd-bottom">
+    <view class="cd-bottom-content">
+      <view class="cd-bottom-content-order">
+        <text>会议共{{addNum}}位参会，跟TA交换名片吧!</text>
+      </view>
+      <view class="cd-b-c-list">
+
+        <view class="cd-b-c-list-child" wx:for="{{addPersonArray}}" wx:for-index="idx" wx:for-item="itemCase">
+          <view class="cd-b-c-list-child-t">
+            <image class="cd-b-c-list-child-t-img" src="{{itemCase.HeadUrl}}"></image>
+          </view>
+          <view class="cd-b-c-list-child-b">
+            <text>{{itemCase.UserName}}</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+</view>

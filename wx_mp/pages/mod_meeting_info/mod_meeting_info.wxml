@@ -1,0 +1,120 @@
+<!--create_meeting.wxml-->
+<view class="bg_this">
+  <image src="../../images/bj@2x.png"></image>
+</view>
+<view class="">
+  <view class="met_banner_this">
+    <image src="../../images/banner_this.png"></image>
+    <!--<view class="chose_ban_btn">
+       <image src="../../images/met_fm.png"></image>
+       <view>封面</view>
+    </view>-->
+  </view>
+
+  <view class="wrt_info">
+    <view class="info_title">基本信息</view>
+    <view class="wrt_info_box">
+      <view class="form_box">
+        <view class="met_title">会议标题</view> 
+        <view class="">
+          <input class="title_input" placeholder="填写一个会议标题" value="{{metTitle}}" bindinput="input_title"/>
+        </view>
+      </view>
+      <view class="form_box">
+        <view class="time_box_tilte">开始时间</view>
+           <!--<view bindtap="startTap" class="time_show">开始时间：{{startDate}}</view>
+           <view bindtap="endTap" class="time_show">结束时间：{{endDate}}</view>-->
+            <picker mode="date" value="{{startDate}}" start="2017-05-26" end="2099-12-31" bindchange="bindDateChange">
+              <view class="picker chose_date_picker">
+                {{startDate}}
+              </view>
+            </picker>
+             <picker mode="time" value="{{startTime}}" start="{{loadStartTime}}" end="24:00" bindchange="bindTimeChange">
+              <view class="picker chose_date_time">
+                {{startTime}}
+              </view>
+             </picker>
+      </view>
+
+
+      <view class="form_box">
+              <view class="time_box_tilte">结束时间</view>
+                <!--<view bindtap="startTap" class="time_show">开始时间：{{startDate}}</view>
+                <view bindtap="endTap" class="time_show">结束时间：{{endDate}}</view>-->
+                  <picker mode="date" value="{{endDate}}" start="2017-05-26" end="2099-12-31" bindchange="bindDateChange2">
+                    <view class="picker chose_date_picker">
+                      {{endDate}}
+                    </view>
+                  </picker>
+                  <picker mode="time" value="{{endTime}}" start="{{loadStartTime}}" end="24:00" bindchange="bindTimeChange2">
+                    <view class="picker chose_date_time">
+                      {{endTime}}
+                    </view>
+                  </picker>
+       </view>
+
+      <view class="form_box place_box">
+        <view class="">举办地点</view> 
+        <view class="location_this" >
+            <input placeholder="请输入举办地址" value="{{adressName}}" bindinput="input_location" placeholder-style="#333333"/>
+        <!--{{location.province}} {{location.city}} {{location.district}} {{location.name}} {{location.address}}-->
+        </view>
+
+        <view class="location_img"  bindtap="chooseLocation">
+           <image src="../../images/plc.png"></image>
+        </view>
+      </view>
+      <view class="form_box">
+        <view class="">会议类型</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker chose_mt_type">
+          {{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="form_des">
+        <view class="form_des_title">会议简介（必填）</view>
+        <textarea placeholder="" value="{{meetDes}}" bindinput="input_metDes"/>
+      </view>
+   </view> 
+
+   <view class="info_title">会议资料</view>   
+   <view class="add_file_area" bindtap="upFile">
+     <image src="../../images/met_more.png"></image>
+     <view>现阶段我们只支持PDF格式</view>
+   </view>
+
+   <view class="info_title">互动功能</view>
+   <view class="interactive-function">
+     <view class="interactive-des">当您成功创建会议后，可以免费使用这些功能</view>
+     <view class="interactive-btn-area">
+        <view class="interactive-btn">
+          <image src="../../images/met_invi.png"></image>
+          <view>会议邀请</view>
+        </view>
+        <view class="interactive-btn">
+          <image src="../../images/met_hz.png"></image>
+          <view>参会回执</view>
+        </view>
+        <view class="interactive-btn">
+          <image src="../../images/met_pho.png"></image>
+          <view>通讯录</view>
+        </view>
+        <view class="interactive-btn">
+          <image src="../../images/met_dat.png"></image>
+          <view>数据统计</view>
+        </view>
+     </view>
+   </view>
+
+   <view class="creat_btn" bindtap="upDataMeetingInfo">
+     <image src="../../images/met_cre_btn.png"></image>
+     <view>立即修改</view>
+   </view>
+
+  </view>
+</view>
+
+
+
+<include src="../tools/wxml/picker_datetime.wxml"/>

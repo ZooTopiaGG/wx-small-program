@@ -1,0 +1,197 @@
+<!--participants.wxml-->
+<!--导航条-->  
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+  
+<!--全部-->  
+<view hidden="{{currentTab!==0}}">  
+  <view class="all_person_area ">
+    <scroll-view scroll-y="true" class="all_person">
+          <!--<view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>-->
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+      </scroll-view>
+  </view>
+</view>  
+  
+<!--已签到-->  
+<view hidden="{{currentTab!==1}}">  
+   <view class="all_person_area ">
+    <scroll-view scroll-y="true" class="all_person">
+          <!--<view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>-->
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+      </scroll-view>
+  </view>
+</view>  
+  
+<!--未签到-->  
+<view hidden="{{currentTab!==2}}">  
+  <view class="all_person_area ">
+    <scroll-view scroll-y="true" class="all_person">
+          <!--<view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>-->
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+          <view class="flex-item person_avatar">
+            <image src="../../images/u_exm.jpg"></image>
+            <view class="">雷浩然</view>
+          </view>
+      </scroll-view>
+  </view>
+</view>  

@@ -1,0 +1,24 @@
+<!--pages/linkme/linkme.wxml-->
+<view class='container flex flex-v'>
+  <map id="map" class='flex-1' longitude="{{addrInfo.lng}}" latitude="{{addrInfo.lat}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+  <!-- 联系底部 link-ft lf-->
+  <view class='link-ft'>
+    <!-- <image class='lf-img' src='../../images/linkbg.png'></image> -->
+    <view class='lf-content'>
+      <view class='flex flex-align-center lf-addr'>
+        <view class='flex-1 flex flex-v'>
+          <text class='addr'>{{addrInfo.practicelaw}}</text>
+          <text class='addrable'>{{addrInfo.address}}</text>
+        </view>
+        <image bindtap='markertap' class='lf-icon' src='../../images/linkdh.png'></image>
+      </view>
+      <view class='flex flex-align-center lf-tel'>
+        <view class='flex-1  flex flex-v'>
+          <text class='tel'>{{addrInfo.tel}}</text>
+          <text class='telable'>致电时间9:00 - 21:00</text>
+        </view>
+        <image bindtap='calltap' class='lf-icon' src='../../images/linktel.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

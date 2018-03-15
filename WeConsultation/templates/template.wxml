@@ -9,4 +9,4 @@
     <image src="../../images/loading.svg" class="rolling-icon"></image>
     <text class="small-text loading-info">努力载入中...</text>
   </view>
-</template>>
+</template>

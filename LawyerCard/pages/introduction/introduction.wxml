@@ -1,0 +1,82 @@
+<view class='container'>
+  <view class='bg'>
+     <image src='../../images/jj.jpg' class='intro-bg'></image>
+  </view>
+  <view class='intro flex flex-v'>
+    <view class="lawyer-info li flex">
+      <image class='li-avatar' src='../../images/introAvatar.png'></image>
+      <view class='flex flex-v'>
+        <text class='li-name'>{{introList.username}} {{introList.professionaltitle}}</text>
+        <text class='li-addr'>{{introList.province}}{{introList.city || ''}}</text>
+        <text class='li-firm'>{{introList.practicelaw}}</text>
+      </view>
+    </view>
+    <view class='intro-second flex-1'>
+      <view class='good-area ga flex flex-v'>
+        <view class='flex ga-header '>
+          <view class='ga-title flex-1 flex flex-align-center'>
+            <image class='ga-title-icon' src='../../images/jx@2x.png'></image>
+            <text class='ga-title-text'>擅长领域</text>
+          </view>
+          <view class='ga-num-approve flex flex-align-center'>
+            <image class='ga-num-icon' src='../../images/sj@2x.png'></image>
+          </view>
+        </view>
+        <view class='ga-list flex'>
+          <view wx:if="{{introList.tag1}}" class="ga-list-cell">{{introList.tag1}}</view>
+          <view wx:if="{{introList.tag2}}" class="ga-list-cell">{{introList.tag2}}</view>
+          <view wx:if="{{introList.tag3}}" class="ga-list-cell">{{introList.tag3}}</view>
+          <view wx:if="{{introList.tag4}}" class="ga-list-cell">{{introList.tag4}}</view>
+          <view wx:if="{{introList.tag5}}" class="ga-list-cell">{{introList.tag5}}</view>
+        </view>
+      </view>
+      <view class='flex flex-v honor'>
+        <view class='honor-header flex'>
+          <view class='flex-1 flex flex-align-center'>
+            <image class='ga-title-icon' src='../../images/jx@2x.png'></image>
+            <text class='ga-title-text'>履历</text>
+          </view>
+          <view class='flex flex-align-center'>
+            <image class='ga-num-icon' src='../../images/jp@2x.png'></image>
+          </view>
+        </view>
+        <view class='flex flex-v honor-list'>
+          <view class='flex flex-pack-justify honor-list-cell' wx:if="{{introList.curriculumvitae1}}">
+            <text class='honor-year'>{{introList.year1 || ''}}</text>
+            <text>{{introList.curriculumvitae1}}</text>
+          </view>
+          <view class='flex flex-pack-justify honor-list-cell' wx:if="{{introList.curriculumvitae2}}">
+            <text class='honor-year'>{{introList.year2 || ''}}</text>
+            <text>{{introList.curriculumvitae2}}</text>
+          </view>
+          <view class='flex flex-pack-justify honor-list-cell' wx:if="{{introList.curriculumvitae3}}">
+            <text class='honor-year'>{{introList.year3 || ''}}</text>
+            <text>{{introList.curriculumvitae3}}</text>
+          </view>
+          <view class='flex flex-pack-justify honor-list-cell' wx:if="{{introList.curriculumvitae4}}">
+            <text class='honor-year'>{{introList.year4 || ''}}</text>
+            <text>{{introList.curriculumvitae4}}</text>
+          </view>
+          <view class='flex flex-pack-justify honor-list-cell' wx:if="{{introList.curriculumvitae5}}">
+            <text class='honor-year'>{{introList.year5 || ''}}</text>
+            <text>{{introList.curriculumvitae5}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='flex flex-v'>
+        <view class='honor-header flex'>
+          <view class='flex-1 flex flex-align-center'>
+            <image class='ga-title-icon' src='../../images/jx@2x.png'></image>
+            <text class='ga-title-text'>简介</text>
+          </view>
+          <view class='flex flex-align-center'>
+            <image class='ga-num-icon' src='../../images/tc@2x.png'></image>
+          </view>
+        </view>
+        <view class='honor-content'>
+          <text>{{introList.summary}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

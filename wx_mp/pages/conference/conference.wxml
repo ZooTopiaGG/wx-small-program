@@ -1,0 +1,24 @@
+<!--conference.wxml-->
+<view class="container">
+  <image class="conference-bg" src="../../images/bg.jpg"></image>
+  <view class="sign-success">
+    <image class="sign-success-bg" src="../../images/sign-success-bg.png"></image>
+    <view class="sign-success-content">
+      <image class="sign-success-img" src="../../images/sign-success1.jpg"></image>
+      <view class="sign-success-propmit">
+        <text>签到成功</text>
+      </view>
+      <view class="sign-success-con">
+        <text>恭喜你，你已经成功加入会议</text>
+      </view>
+      <view class="sign-success-line">
+        <image class="sign-success-line-img" src="../../images/line_03.png"></image>
+      </view>
+      <!--<view class="conference-see" bindtap="goConferenceDetail">-->
+      <!--查看会议-->
+      <view class="conference-see">
+        <view bindtap="goMeetingDetail" hover-class="changestyle">查看会议</view>
+      </view>
+    </view>
+  </view>
+</view>

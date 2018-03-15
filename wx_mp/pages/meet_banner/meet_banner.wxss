@@ -1,0 +1,9 @@
+/* pages/meet_banner/meet_banner.wxss */
+.banner_cont view{
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.banner_cont view image{
+  width: 698rpx;
+  height: 312rpx;
+}

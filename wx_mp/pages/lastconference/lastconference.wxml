@@ -1,0 +1,79 @@
+<!--pages/lastconference/lastconference.wxml-->
+<!--pages/bussinesscard/bussinesscard.wxml-->
+<!--最后一个页面-->
+<view class="container">
+  <image class="index-bg" src="../../images/index-bg.jpg"></image>
+  <view class="lastconference">
+    <image class="lastconference-img" src="../../images/备用北京.png"></image>
+    <view class="lastconference-content">
+      <view class="lastconference-content-title">
+        <text>你最后一次参加的会议</text>
+      </view>
+      <view class="lastconference-content-name">
+        <view class="lastconference-content-name-l">
+          <image class="lastconference-content-name-l-img" src="../../images/会议long_03.jpg"></image>
+        </view>
+        <view class="lastconference-content-name-r">
+          <text>成都律师协会</text>
+        </view>
+      </view>
+      <view class="lastconference-content-detail-all">
+        <view class="lastconference-content-detail">
+          <view class="lastconference-content-detail-title">
+            <text>成都市律协关注青少年成长会议</text>
+          </view>
+
+
+          <view class="lastconference-content-detail-content">
+            <view class="lastconference-content-detail-content-time">
+              <view class="lastconference-content-detail-content-time-l">
+                <image class="lastconference-content-detail-content-time-l-img" src="../../images/时间、@2x.png"></image>
+              </view>
+              <view class="lastconference-content-detail-content-time-r">
+                <text>5月13日</text>
+              </view>
+            </view>
+            <view class="lastconference-content-detail-content-addr">
+              <view class="lastconference-content-detail-content-addr-l">
+                <image class="lastconference-content-detail-content-addr-l-img" src="../../images/定位@2x.png"></image>
+              </view>
+              <view class="lastconference-content-detail-content-addr-r">
+                <text>锦江区</text>
+              </view>
+            </view>
+            <view class="lastconference-content-detail-content-lawyer">
+              <view class="lastconference-content-detail-content-lawyer-l">
+                <image class="lastconference-content-detail-content-lawyer-l-img" src="../../images/类型@2x.png"></image>
+              </view>
+              <view class="lastconference-content-detail-content-lawyer-r">
+                <text>5月13日</text>
+              </view>
+            </view>
+          </view>
+
+
+        </view>
+
+      </view>
+
+
+    </view>
+  </view>
+</view>
+<view>
+<view class="testxuanzhuan" style="z-index: 5" bindtap="tapName">{{text}}</view>
+<view class="bottom-btn">
+  <view class="bottom-btn-l">
+    <image class="bottom-btn-l-img" src="../../images/bottom-btn-l.png"></image>
+  </view>
+  <view class="bottom-btn-r" bindtap="getseq">
+    <image class="bottom-btn-r-img" src="../../images/jujingdi.png"></image>
+    <view class="bottom-btn-r-t" animation="{{dotAnData}}">
+      <image class="bottom-btn-r-t-img" src="../../images/bottom-btn-r-t.png"></image>
+    </view>
+    <view class="top-img">
+     <image class="top-img-icon" src="../../images/ewmt.png"></image>
+    </view>
+  </view>
+</view>
+</view>

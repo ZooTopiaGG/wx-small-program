@@ -1,0 +1,79 @@
+/* conference.wxss */
+page{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  flex: 1;
+  padding: 0rpx;
+}
+.conference-bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.sign-success{
+  width: 584rpx;
+  height: 700rpx;
+  /*z-index: 2;*/
+  position: relative;
+  margin-top: 160rpx;
+}
+.sign-success-bg{
+  display: block;
+  width: 584rpx;
+  height: 738rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+.sign-success-content{
+  width: 94%;
+  height: 100%;
+  position: absolute;
+  left: 20rpx;
+  top: 10rpx;
+  z-index: 4;
+}
+.sign-success-img{
+  display: block;
+  width: 544rpx;
+  height: 430rpx;
+  margin-bottom: 40rpx;
+}
+.sign-success-propmit{
+  text-align: center;
+  line-height: 50rpx;
+  font-family: 'PingFang-SC-Medium';
+  font-size: 28rpx;
+  color: #020202;
+  opacity: 0.4; 
+
+}
+.sign-success-con{
+  text-align: center;
+  line-height: 50rpx;
+  font-family: 'PingFang-SC-Medium';
+  font-size: 28rpx;
+  color: #000000;
+  opacity: 0.2; 
+}
+.sign-success-line-img{
+  width: 544rpx;
+  height: 2rpx;
+}
+.conference-see{
+  text-align: center;
+  font-size: 32rpx;
+  color: #685d6b;
+  line-height: 13px;
+  margin-top: 25rpx;
+  font-weight: 600;
+  opacity: 0.8;
+  z-index: 4;
+}

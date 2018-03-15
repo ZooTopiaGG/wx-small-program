@@ -1,0 +1,47 @@
+<!--pages/cases/cases.wxml-->
+<view class='ripple' style='{{rippleStyle}}'></view>
+<view class='container flex flex-v' bindtouchstart='containerTap'>
+  <!-- 头部图片 icon-f-->
+   <view class='case-icon-f'>
+     <image class='case-icon' src='../../images/case.jpg'></image> 
+  </view> 
+  <!-- 案例列表 case-list -->
+  <view class='articles-cases-list acl flex flex-v'>
+    <view class='acl-top flex flex-pack-justify flex-align-center'>
+      <view class='acl-title flex-1 flex flex-align-center'>
+        <image class='acl-title-img' src='../../images/title.png'></image>
+        <text>全部文章与案例</text>
+      </view>
+    </view>
+    <view class='acl-list'>
+      <view class='acl-list-item flex flex-align-center' wx:for='{{articleList.list}}' wx:for-index='index' wx:for-item='item' wx:key='index' bindtap='entryCaseDetails' id="{{item.articleid}}">
+        <image class='acl-list-img' wx:if="{{item.picurl}}" src='{{item.picurl}}'></image>
+        <image class='acl-list-img' wx:else src='../../images/diary-2134246_1920@2x-2.png'></image>
+        <view class='flex flex-v flex-1'>
+          <view class='acl-list-title'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='flex flex-pack-justify acl-list-info'>
+            <text>{{item.type}}</text>
+            <text>{{item.thumbnum}}人赞过</text>
+          </view>
+        </view>
+        <view class='hideZindex'></view>
+      </view>
+      <view class='acl-banner flex flex-align-center'>
+        <view class='banner-b banner-left'>
+          <image class='banner-btn banner-btn-left' bindtap='prevBtn' src='../../images/rightc.png'></image>
+        </view>
+        <view class='banner-btn-list flex flex-1 flex-pack-justify'>
+          <view class='banner-list' wx:for='{{bannerList}}' wx:for-index='index' wx:for-item='item' wx:key='index' style='color: {{index+1 == idx ? "rgb(55,76,141)": "rgb(102,102,102)"}};font-size: {{index+1 == idx ? "18px": "16px"}}' bindtap='indexBtn' id="{{index + 1}}">
+          {{index + 1}}
+          </view>
+        </view>
+        <view class='banner-b banner-left'>
+          <image class='banner-btn' bindtap='nextBtn' src='../../images/rightc.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

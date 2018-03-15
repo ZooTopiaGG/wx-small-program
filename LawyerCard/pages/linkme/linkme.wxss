@@ -1,0 +1,51 @@
+/* pages/linkme/linkme.wxss */
+.container{
+  min-height: 100%;
+}
+.link-ft{
+  position: relative;
+  height: 300rpx;
+  background: #fff;
+}
+#map{
+  width: 100%;
+  /* height: calc(100%-367rpx); */
+  height: 100%;
+  position: relative;
+  z-index: 98;
+}
+.lf-img{
+  width: 100%;
+  height: 367rpx;
+  position: absolute;
+  top: -67rpx;
+  z-index: 99;
+}
+.lf-content{
+  position: relative;
+  z-index: 100;
+  padding: 0 43rpx;
+}
+.addr, .tel{
+  font-size: 16px;
+  color: rgb(51,51,51);
+  margin-bottom: 12rpx;
+}
+.addrable{
+  color: rgb(102,102,102)
+}
+.lf-icon{
+  width: 96rpx;
+  height: 96rpx;
+}
+.lf-addr{
+  padding: 24rpx 0;
+  border-bottom: 1px solid rgb(205,205,205)
+}
+.lf-tel{
+  padding-top: 30rpx;
+}
+.telable{
+  font-size: 12px;
+  color: rgb(102,102,102)
+}

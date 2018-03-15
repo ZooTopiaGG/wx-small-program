@@ -1,0 +1,260 @@
+/* invitation.wxss */
+
+/*.invi_bg {
+  text-align: center;
+  position: relative;
+}
+
+.invi_bg image.invi_bg_this {
+  width: 736rpx;
+  height: 437rpx;
+}
+
+.invi_bg image.invi_font {
+  width: 236rpx;
+  height: 81rpx;
+  position: absolute;
+  top: 220rpx;
+  right: 254rpx;
+}
+
+.meeting-name {
+  width: 750rpx;
+  text-align: center;
+  position: absolute;
+  top: 70rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.meeting-adr, .meeting-time {
+  position: absolute;
+  color: #ececec;
+}
+
+.meeting-adr {
+  top: 350rpx;
+  left: 220rpx;
+  font-size: 24rpx;
+}
+
+.meeting-time {
+  top: 400rpx;
+  left: 280rpx;
+  font-size: 28rpx;
+}
+
+.bg_line_box {
+  text-align: center;
+  position: relative;
+}
+
+.bg_line {
+  width: 710rpx;
+  height: 318rpx;
+  position: absolute;
+  top: -80rpx;
+  right: 20rpx;
+}
+
+.bg_sj-box {
+  position: absolute;
+  right: 290rpx;
+  top: -120rpx;
+}
+
+.bg_sj {
+  width: 172rpx;
+  height: 82rpx;
+}
+
+.bg_sj-font {
+  color: #fff;
+  font-size: 28rpx;
+  position: absolute;
+  top: 6rpx;
+  left: 46rpx;
+}
+
+.bm_num {
+  text-align: center;
+  font-size: 28rpx;
+  position: relative;
+  top: -20rpx;
+  margin-top: -10rpx;
+}
+
+.user_avatar_list_area {
+  width: 660rpx;
+  height: 120rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rpx;
+}
+
+.user_avatar_list {
+  white-space: nowrap;
+  display: flex;
+  width: 660rpx;
+  height: 120rpx;
+}
+
+.user_avatar_list view {
+  width: 120rpx;
+  height: 120rpx;
+  display: inline-block;
+  margin-right: 36rpx;
+}
+
+.user_avatar_list image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.chose_dinner {
+  display: flex;
+  font-size: 28rpx;
+}
+
+.chose_dinner>view {
+  margin-top: 12rpx;
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+}
+
+.chose_dinner>view:nth-child(1) {
+  margin-top: 16rpx;
+}
+
+.enter_btn {
+  width: 660rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  color: white;
+  line-height: 90rpx;
+  background-color: #574e5f;
+  border-radius: 4px;
+  margin-top: 16rpx;
+}*/
+
+.yd_image {
+  position: fixed;
+  z-index: 999;
+}
+
+.yd_image image {
+  width: 750rpx;
+  height: 1250rpx;
+  opacity: 0.85;
+}
+.body{
+  flex: 1;
+  overflow: hidden;
+}
+.body-top{
+  width: 736rpx;
+  height: 437rpx;
+  margin: auto;
+}
+.body-top-img{
+  width: 736rpx;
+  height: 437rpx;
+}
+.body-content-title{
+    font-size: 40rpx;
+    color: #333333;
+    text-align: center;
+    line-height: 70rpx;
+  }
+  .body-content-line{
+    width: 60rpx;
+    height: 4rpx;
+    background-color: #8b8590;
+    margin: 10rpx auto;
+  }
+  .body-content-time{
+    font-size: 32rpx;
+    color: #333333;
+    text-align: center;
+    line-height: 50rpx;
+  }
+   .body-content-addr{
+    font-size: 32rpx;
+    color: #333333;
+    text-align: center;
+    line-height: 50rpx;
+  }
+  .body-detail{
+    width: 670rpx;
+    height: 317rpx;
+    margin: auto;
+    margin-top: 60rpx;
+    padding-top: 50rpx;
+    border: 1rpx solid #aba6ae;
+    border-radius: 10rpx;
+    position: relative; 
+  }
+    .body-detail-order{
+      width: 160rpx;
+      height: 80rpx;
+      border-radius: 5rpx;
+      background-color: #574e5f;
+      position: absolute;
+      left: 255rpx;
+      top: -40rpx;
+      color: #fff;
+      line-height: 80rpx;
+      text-align: center;
+    }
+    .chose_dinner {
+  display: flex;
+  font-size: 28rpx;
+}
+
+.chose_dinner>view {
+  margin-top: 12rpx;
+  margin-left: 20rpx;
+  margin-right: 30rpx;
+}
+
+.chose_dinner>view:nth-child(1) {
+  margin-top: 16rpx;
+}
+
+.enter_btn {
+  width: 660rpx;
+  height: 90rpx;
+  margin: auto;
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  line-height: 90rpx;
+  background-color: #574e5f;
+  border-radius: 4px;
+  margin-top: 16rpx;
+}
+
+ .user_avatar_list{
+    white-space: nowrap; 
+    display: flex; 
+    width: 660rpx;
+    height: 120rpx;
+    padding: 0 20rpx;
+  }
+  .user_avatar_list view{
+    width: 120rpx;
+    height: 120rpx; 
+    display: inline-block;
+    margin-right:50rpx;
+
+  }
+  .user_avatar_list image{
+    width: 120rpx;
+    height: 120rpx;
+    /*margin-right: 36rpx;*/
+  }
+   .bm_num{
+    text-align: center;
+    font-size: 28rpx;
+    margin-top:88rpx;
+  }

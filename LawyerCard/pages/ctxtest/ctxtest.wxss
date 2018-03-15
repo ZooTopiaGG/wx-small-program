@@ -1,0 +1,8 @@
+/* pages/ctxtest/ctxtest.wxss */
+.container{
+  width: 100%;
+  /* display: none; */
+}
+#mycanvas{
+  box-sizing: border-box;
+}

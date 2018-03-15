@@ -1,0 +1,187 @@
+/* meeting_list.wxss */
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;
+  width: 616rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30rpx; 
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+  background-color: #584F62;
+  color: #B2B2B2;
+  font-size: 32rpx;
+}  
+.navbar>.item:nth-child(1){
+  border-radius: 5px 0 0 5px;
+}
+.navbar>.item:nth-child(2){
+  border-radius: 0 5px 5px 0;
+}
+.navbar .item.active{  
+  color: #ffffff;  
+}  
+/*.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;      
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 6rpx;  
+  background: #B4CCDB;  
+}*/
+.met_list{
+  width: 616rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30rpx; 
+}
+.met_list_cont{
+  position: relative;
+}
+.met_list_bg{
+  width: 608rpx;
+  height: 350rpx;
+  position: relative;
+}
+.user_info{
+  position: absolute;
+  top: 40rpx;
+  left: 60rpx;
+}
+.user_info image{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: -16rpx;
+  border-radius: 50%;
+}
+.user_info text{
+  font-size: 28rpx;
+  margin-left: 29rpx;
+}
+.met_info_out{
+  width: 476rpx;
+  height: 116rpx;
+  border: 2px solid #B2B2B2;
+  position: absolute;
+  top:115rpx;
+  left: 50rpx;
+  padding: 12rpx;
+}
+.met_info_in{
+  border: 1px solid #B2B2B2;
+  border-radius: 6rpx;
+  height: 114rpx;
+}
+.met_info_title{
+  font-size:30rpx;
+  text-align: center;
+  padding-top: 20rpx;
+}
+.met_info_des{
+  /*margin-top: 8rpx;*/
+  display: flex;
+  justify-content: space-around;
+}
+.list_time{
+  width: 19rpx;
+  height: 19rpx;
+}
+.list_dw{
+  width: 16rpx;
+  height: 23rpx;
+  vertical-align: -4rpx;
+}
+.list_fl{
+  width: 22rpx;
+  height: 22rpx;
+  vertical-align: -4rpx;
+}
+.met_info_des_box text{
+  font-size: 22rpx;
+  margin-left: 8rpx;
+}
+.list_tag_box{
+  position: absolute;
+  top:50rpx;
+  right: 70rpx;
+}
+.list_tag_box image{
+  width: 134rpx;
+  height: 111rpx;
+}
+
+/*没有会议样式*/
+
+/*page {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-size: 100% 100%;
+  background-color: #fafafa;
+}*/
+.content{
+  width: 608rpx;
+}
+.content-order{
+  width: 100%;
+  height: 60rpx;
+  font-size: 32rpx;
+  color: #666666;
+  line-height: 60rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}
+.content-orde-img{
+  width: 100%;
+  height: 364rpx;
+  margin-top: 30rpx;
+}
+.content-orde-img-bg{
+  width: 100%;
+  height: 364rpx;
+}
+.saoma{
+  width: 100%;
+  height: 124rpx;
+  margin-top: 120rpx;
+  position: relative;
+  }
+  .saoma-bg{
+  width: 100%;
+  height: 124rpx;
+  margin-top: 120rpx;
+  position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    z-index: 3;
+  }
+  .saoma-order{
+    width: 100%;
+    height: 124rpx;
+    position: absolute;
+    left: 0rpx;
+    top: 120rpx;
+    color: #695e6c;
+    font-size: 32rpx;
+    line-height:120rpx;
+    text-align: center;
+    z-index: 5;
+  }

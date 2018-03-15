@@ -1,0 +1,49 @@
+<view class="bg_this">
+  <image src="../../images/bj@2x.png"></image>
+</view>
+<view class="my_card_write">
+   <text class="input_title">必填项 <text>*</text></text>
+   <view class="write_1">
+      <view class="input_box1 input_this">
+        <image src="../../images/wt_xm.png"></image><input placeholder="请输入您的名字"  placeholder-style="color: #999999;" style="color:#333333;" bindinput="input_name" value="{{cardName}}"/>
+      </view>
+      <view class="input_box2 input_this input_second">
+        <image src="../../images/wt_dh.png"></image><input placeholder="请输入手机号码"  placeholder-style="color: #999999;" style="color:#333333;" bindinput="input_phoneNum" value="{{cardPhoneNum}}"/>
+      </view>
+      <view class="input_box3 input_this">
+        <image src="../../images/wt_gs.png"></image><input placeholder="请输入公司名字"  placeholder-style="color: #999999;" style="color:#333333;" bindinput="input_ComName" value="{{cardComName}}"/>
+      </view>
+      <view class="input_box4 input_this final_input">
+        <image src="../../images/wt_zw.png"></image><input placeholder="请输入公司职位"  placeholder-style="color: #999999;" style="color:#333333;" bindinput="input_Job" value="{{cardJob}}"/>
+      </view>
+      <image class="userinfo-avatar" src="{{userAvatar}}" background-size="cover"></image>
+   </view>
+
+   <text class="input_title">选填项</text>
+   <view class="write_2">
+      <view class="input_box5 input_this">
+        <image src="../../images/wt_yx.png"></image><input placeholder="请输入邮箱地址"  placeholder-style="color: #999999;" style="color:#333333;" value="{{cardEmail}}"/>
+      </view>
+      <view class="input_box6 input_this final_input">
+        <image src="../../images/wt_wx.png"></image><input placeholder="请输入常用微信"  placeholder-style="color: #999999;" style="color:#333333;" value="{{cardWeChat}}"/>
+      </view>
+   </view>
+   
+   <view class="des_content" >
+        <textarea class="content-text-arae" value="{{user_des}}" 
+        bindinput="bindDesContentBlur" focus="{{focus}}"
+        placeholder="请较为详细的填写您的简介内容，字数在限制之内。"  placeholder-style="color: #999999;" style="color:#333333;" maxlength="150"/>
+        <view class="stringNum">
+            <text>{{nums}}</text> / 150
+        </view>
+        <view class="des_icon">
+          <image src="../../images/sjx.png"></image>
+          <text>简介</text>
+        </view>
+   </view>
+   
+   <view class="create_btn">
+    <image src="../../images/dbjx.png"></image>
+    <view class="create_des" bindtap="modCardInfo">修改电子名片</view>
+  </view>
+</view>

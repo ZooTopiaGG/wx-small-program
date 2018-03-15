@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container" >
+  <image class="index-bg" src="../../images/bg.jpg"></image>
+  <view class="index-logo">
+    <image class="index-logo-img" src="../../images/logo.png"></image>
+  </view>
+  <view class="index-logo-order">
+    <image class="index-logo-order-img" src="../../images/logo-order.png"></image>
+  </view>
+  <view class="index-summary">专注于会议体验</view>
+  <view class="testxuanzhuan" style="z-index: 5" bindtap="tapName">{{text}}</view>
+  <view class="bottom-btn">
+    <view class="bottom-btn-l" bindtap="createMeeting">
+      <image class="bottom-btn-l-img" src="../../images/bottom-btn-l.png"></image>
+    </view>
+    <view class="bottom-btn-r" bindtap="getseq">
+      <image class="bottom-btn-r-img" src="../../images/bottom-btn-r-b.png"></image>
+      <view class="bottom-btn-r-t" animation="{{dotAnData}}">
+        <image class="bottom-btn-r-t-img" src="../../images/bottom-btn-r-t.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

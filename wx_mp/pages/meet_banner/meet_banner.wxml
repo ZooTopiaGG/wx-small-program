@@ -1,0 +1,15 @@
+<!--pages/meet_banner/meet_banner.wxml-->
+<view class="banner_cont">
+  <view class="">
+    <image src="../../images/hy_fm1.png"></image>
+  </view>
+  <view class="">
+    <image src="../../images/hy_fm2.png"></image>
+  </view>
+  <view class="">
+    <image src="../../images/hy_fm3.png"></image>
+  </view>
+  <view class="">
+    <image src="../../images/hy_fm4.png"></image>
+  </view>
+</view>

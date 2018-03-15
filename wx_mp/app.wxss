@@ -1,0 +1,38 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.pick_datetime {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    overflow:hidden;
+    background-color: white;
+    z-index: 999;
+}
+.pick_datetime_tool {
+    display:flex;
+    justify-content:space-between;
+    height:92rpx;
+    line-height:92rpx;
+    border-top:2rpx solid #eee;
+    border-bottom:2rpx solid #eee;
+    padding:0 30rpx;
+}
+.pick_datetime_ok {font-size:28rpx;color:limegreen;}
+.pick_datetime_clear {font-size:28rpx;color:#666;}
+.pick_datetime picker-view {
+    font-size:32rpx;
+}
+.pick_datetime_column {
+    height:40px;
+    line-height:40px;
+    text-align:center;
+} 

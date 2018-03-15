@@ -1,0 +1,108 @@
+/* index.wxss */
+page{
+  width: 100%;
+  /*height:100%;*/
+  margin-left: -2rpx;
+  margin: 0rpx;
+  padding: 0rpx;
+  }
+.container{
+  flex: 1;
+  /*position: relative;*/
+}
+.index-bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.index-logo{
+  width: 330rpx;
+  height: 254rpx;
+  margin: auto;
+  margin-top: 180epx;
+  z-index: 1;
+}
+.index-logo-img{
+  width: 330rpx;
+  height: 290rpx;
+}
+.index-logo-order{
+  width: 180rpx;
+  height: 66rpx;
+  z-index: 2;
+  margin-top: 0rpx;
+}
+.index-logo-order-img{
+  width: 180rpx;
+  height: 66rpx;
+}
+.index-summary{
+  z-index: 2;
+  margin-top: 46rpx;
+  font-size: 32rpx;
+  letter-spacing:32rpx;
+  font-weight: 600;
+  color: #624887;
+  text-align: center;
+}
+.bottom-btn{
+  width: 100%;
+  height: 190rpx;
+  position: absolute;
+  bottom: 96rpx;
+  z-index: 2; 
+}
+.bottom-btn-l{
+  width: 110rpx;
+  height: 110rpx;
+  float: left;
+  margin-left: 70rpx;
+  margin-top: 90rpx;
+}
+.bottom-btn-l-img{
+  display: inline-block;
+  width: 110rpx;
+  height: 110rpx;
+}
+.bottom-btn-r{
+  width: 320rpx;
+  height: 195rpx;
+  float: right;
+  margin-right: 70rpx;
+  position: relative;
+}
+.bottom-btn-r-img{
+  display: inline-block;
+  width: 320rpx;
+  height: 195rpx;
+  margin-right: 70rpx;
+}
+.bottom-btn-r-t{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  right: 26rpx;
+  bottom: 24rpx;
+}
+.bottom-btn-r-t-img{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+
+
+.animation-box{
+  width: 176rpx;
+  height: 176rpx;
+}
+.time-crl-path{
+  width: 176rpx;
+  height: 176rpx;
+}
+.crl-dot{
+  width: 9rpx;
+  height: 9rpx;
+}

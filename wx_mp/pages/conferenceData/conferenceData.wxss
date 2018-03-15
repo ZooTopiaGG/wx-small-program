@@ -1,0 +1,51 @@
+/* pages/conferenceData/conferenceData.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  margin: 0rpx;
+  background-color: #fafafa;
+}
+.container{
+  padding: 0rpx;
+  }
+.content{
+  width: 690rpx;
+  min-height: 500rpx;
+  margin: auto;
+  margin-top: 36rpx;
+  background-color: #ffffff;
+   box-shadow: 0 0 12rpx #e6e6e6;
+}
+.content-file{
+  width: 690rpx;
+  height: 124rpx;
+  margin: auto;
+  margin-top: 0rpx;
+}
+.content-file-l{
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  margin: 40rpx 0 0 40rpx;
+  box-shadow: 0 0 20rpx #cdcecb;
+}
+.content-file-l-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+.content-file-r{
+  /*width: 560rpx;*/
+  height: 124rpx;
+  float: left;
+  margin-left: 30rpx;
+  line-height: 140rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.no_file{
+  text-align: center;
+  height: 500rpx;
+  line-height: 500rpx;
+  font-size: 32rpx;
+}

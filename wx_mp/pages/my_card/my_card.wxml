@@ -1,0 +1,73 @@
+<!--my_card.wxml-->
+<view class="bg_this">
+  <image src="../../images/bj@2x.png"></image>
+</view>
+<view class="bg_mc {{showView?'show_bg_mc':'hide_bg_mc'}}" id="bg_mc" bindtap="onChangeShowState2"></view>
+
+<view class="code_mc {{showCode?'show_code':'hide_code'}}">
+         <text>扫描二维码<text class="check_color">查看</text>名片</text>
+         <image class="code_bj" src="../../images/code_bj.png"></image>
+         <image class="code_exm" src="{{codeUrl}}"></image>
+         <view class="the_close" bindtap="onCloseCode"></view>
+</view>
+
+<view class="card_content">
+      <!--<view class="card_bj_this">
+        <image class="card_bj" src="../../images/mpbj.png"></image>
+      </view>-->
+      <view class="card_bg_under_to"></view>
+      <view class="card_bg_under"></view>
+      <view class="card_bg_on">
+          <view class="user-avatar-box">
+            <image class="user-avatar" src="{{userAvatar}}"></image>
+          </view>
+          <view class="mod_btn" bindtap="modInfo" hidden="{{hideMod!==0}}">
+            <image src="../../images/card_xg_btn.png"></image>
+          </view>
+
+          <view class="user-info">
+            <view class="user-name">{{user_name}}</view>
+            <view class="user-zw">{{user_job}}</view>
+          </view>
+          <view class="user-comp">{{user_comp}}</view>
+          <view class="des_content_this">
+            <view class="des_icon">
+              <!--<image src="../../images/sjx.png"></image>-->
+              <text class="des_title_box">简 介</text>
+            </view>
+            <text class="des_content">{{user_des}}</text>
+          </view>
+
+          <view class="user-oth-info">
+            <view class="user-tel">
+              <image src="../../images/my_card/name-card-tel.png"></image><text>{{user_phone}}</text>
+            </view>
+            <view class="user-email">
+              <image src="../../images/my_card/name-card-email.png"></image><text>{{user_email}}</text>
+            </view>
+            <view class="user-wechat">
+              <image src="../../images/my_card/name-card-wx.png"></image><text>{{user_wechat}}</text>
+            </view>
+          </view>
+          <!--菜单按钮-->
+          <view class="mean_btn" >
+            <!--<image src="../../images/mean_btn.png"></image>-->
+            <image src="../../images/my_card/more_btn_bg.png"></image>
+            <view class="mean_btn_on " bindtap="onChangeShowState1">
+               <image class="{{scoreBtn?'score_btn':'score_back_btn'}}" src="../../images/my_card/more_btn_on.png"></image>
+            </view>
+          </view>
+
+          <view class="code_btn {{showView?'show_btn':'hide_btn'}}" bindtap="onChangeCodeShow">
+            <image src="../../images/code_btn.png"></image>
+          </view>
+          <view class="txl_btn {{showView?'show_btn':'hide_btn'}}" bindtap="addPhoneContact">
+            <image src="../../images/txl_btn.png"></image>
+          </view>
+          
+          <view class="dh_btn {{showView?'show_btn':'hide_btn'}}" bindtap="callPhone">
+            <image src="../../images/dh_btn.png"></image>
+          </view>
+      </view>
+      
+</view>

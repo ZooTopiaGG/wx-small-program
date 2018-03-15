@@ -1,0 +1,16 @@
+<!--pages/conferenceData/conferenceData.wxml-->
+<!--会议资料页面-->
+<view class="container">
+  <view class="content">
+    <view class="content-file" hidden="{{noFile!==0}}" wx:for="{{fileList}}" wx:for-index="idx" wx:for-item="itemCase" bindtap="openFile" id="{{itemCase.FilePath}}">
+      <view class="content-file-l">
+        <image class="content-file-l-img" src="../../images/pdf.png"></image>
+      </view>
+      <view class="content-file-r">
+        <text>{{itemCase.Filename}}</text>
+    </view>
+    </view>
+
+    <view class="no_file" hidden="{{noFile!==1}}">还没有任何会议资料哦！</view>
+  </view>
+</view>

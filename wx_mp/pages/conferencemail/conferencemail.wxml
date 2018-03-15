@@ -1,0 +1,42 @@
+<!--pages/conferencemail/conferencemail.wxml-->
+<view class="container" style="scroll-y: false">
+  <view class="container-content">
+    <view class="container-content-t">
+      <text>选择会议成员</text>
+    </view>
+    <view class="content-person-all">
+
+      <scroll-view  scroll-y="true" class="all_person" style="height: 800rpx;width: 690rpx;">
+        <view class="content-person" wx:for="{{lists}}" bindtap="choice" wx:for-index="idx" wx:for-item="item" wx:key="{{item.userId}}" data-idx="{{idx}}" id="{{item.ID}}${{item.UserType}}">
+          <view class="content-person-t">
+            <image class="content-person-t-img" src="{{item.HeadUrl}}"></image>
+            <view class="{{userCellId==idx?'nochoice':'xuanzhong'}}">
+              <image class="xuanzhong-img" src="../../images/gou_03.png"></image>
+            </view>
+          </view>
+          <view class="content-person-b">
+            <text>{{item.UserName}}</text>
+            <!--<text>{{item.ID}}</text>-->
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="content-describe" hidden="{{showTextArea!==0}}">
+      <view class="content-describe-order">
+        10/10
+      </view>
+      <textarea class="the-textarea" bindinput="bindTextAreaBlur" maxlength="10" placeholder="{{ textInformation}}" value="{{textDes}}" placeholder-style="font-size: 24rpx; color: #666666;opacity: 0.9;line-height: 90rpx;" />
+    </view>
+    <texta />
+    <view class="bottom-btn">
+      <view class="bottom-btn-l">
+        <navigator url="../mailList/mailList" hover-class="changestyle">返回</navigator>
+
+      </view>
+      <view class="bottom-btn-r" bindtap="savetext">
+        <!--<navigator url="../maillistadmin/maillistadmin" hover-class="changestyle" bindtap="savetext">确定</navigator>-->
+        确定
+      </view>
+    </view>
+  </view>
+</view>

@@ -9,6 +9,7 @@ App({
     wx.setStorageSync('logs', logs)
   },
   getUserInfo:function(cb){
+    console.log(1)
     var that = this
     // if(this.globalData.userInfo){
     //   typeof cb == "function" && cb(this.globalData.userInfo)

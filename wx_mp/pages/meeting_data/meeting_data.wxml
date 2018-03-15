@@ -1,0 +1,92 @@
+<!--meeting_data.wxml-->
+<view class="">
+   <view class="meeting-title">{{meetName}}</view>
+   <view class="data-box">
+     <view class="classname">会议统计</view>
+
+     <view class="data-box-this">
+      <view class="data-box-this-left">
+        <image src="../../images/met_da_name.png"></image>
+        <text>报名数</text>
+      </view> 
+      <view class="data-box-this-right">
+        <text>{{Enrollment_num}}</text>
+        <image src="../../images/met_jt.png"></image>
+      </view>
+     </view>
+     
+     <view class="data-box-this">
+      <view class="data-box-this-left">
+        <image src="../../images/met_da_qd.png"></image>
+        <text>签到人数</text>
+      </view> 
+      <view class="data-box-this-right">
+        <text>{{Signs}}</text>
+        <image src="../../images/met_jt.png"></image>
+      </view>
+     </view>
+     <view class="data-box-this">
+      <view class="data-box-this-left">
+        <image src="../../images/met_dat_wy.png"></image>
+        <text>晚宴人数</text>
+      </view> 
+      <view class="data-box-this-right data-wy">
+        <text>{{Diners}}</text>
+      </view>
+     </view>
+
+   </view>
+
+   <view class="data-box data-box-2">
+     <view class="classname">会议设置</view>
+
+     <view class="data-box-this" bindtap="goFilePage">
+      <view class="data-box-this-left">
+        <image src="../../images/met_da_file.png"></image>
+        <text>会议文件</text>
+      </view> 
+      <view class="data-box-this-right">
+        <text>{{Files}}</text>
+        <image src="../../images/met_jt.png"></image>
+      </view>
+     </view>
+     
+     <view class="data-box-this" bindtap="goMyCode">
+      <view class="data-box-this-left">
+        <image src="../../images/met_da_code.png"></image>
+        <text>签到二维码</text>
+      </view> 
+      <view class="data-box-this-right">
+       
+        <image src="../../images/met_jt.png"></image>
+      </view>
+     </view>
+
+     <view class="data-box-this" bindtap="goMeetInvitation">
+      <view class="data-box-this-left">
+        <image src="../../images/met_invait.png"></image>
+        <text>会议邀请函</text>
+      </view> 
+      <view class="data-box-this-right">
+  
+        <image src="../../images/met_jt.png"></image>
+      </view>
+     </view>
+
+     <view class="data-box-this" bindtap="goModMeetInfo">
+      <view class="data-box-this-left">
+        <image src="../../images/met_da_sz.png"></image>
+        <text>会议修改</text>
+      </view> 
+      <view class="data-box-this-right">
+  
+        <image src="../../images/met_jt.png"></image>
+      </view>
+     </view>
+   </view>
+
+   <view class="in_met_btn" bindtap="signInMyMeeting">
+     <image src="../../images/in_met_btn.png"></image>
+     <view>进入会议</view>
+   </view>
+</view>

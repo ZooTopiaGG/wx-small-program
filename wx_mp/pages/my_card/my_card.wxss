@@ -1,0 +1,291 @@
+/* my_card.wxss */
+.bg_this{
+  position: fixed;
+  z-index: -1;
+}
+.bg_this image{
+  width: 750rpx;
+  height: 1357rpx;
+}
+.card_content{
+  /*margin-top:120rpx; */
+  padding: 120rpx 60rpx 0 60rpx;
+  position: relative;
+}
+.card_bj_this{
+   position: fixed;
+  z-index: -1;
+}
+.card_bj{
+  width: 654rpx;
+  height: 812rpx;
+}
+.user-avatar-box{
+  width: 132rpx;
+  height: 132rpx;
+  border: 5rpx solid white;
+  border-radius: 50%;
+  position: absolute;
+  top:-78rpx;
+  left:240rpx;
+  box-shadow: 0 2rpx 4rpx #666666;
+  overflow: hidden;
+}
+.user-avatar{
+  width: 132rpx;
+  height: 132rpx;
+  /*position: absolute;
+  top:-78rpx;
+  left:240rpx;
+  border-radius:50%; 
+  box-shadow: 0 0 10rpx #666666;*/
+}
+.user-info{
+  padding: 120rpx 0 20rpx 60rpx;
+}
+.user-name{
+  padding-right: 20rpx;
+  border-right:1px solid #e8e8e8;
+  font-size: 38rpx;
+  font-family: "微软雅黑"; 
+}
+.user-zw{
+  font-size: 26rpx;
+  font-family: "微软雅黑"; 
+  padding-left: 20rpx;
+  color: #584f60;
+}
+.user-info view{
+  display: inline-block;
+}
+.user-comp{
+ padding-left: 60rpx;
+ font-size: 26rpx;
+ font-family: "微软雅黑"; 
+  color: #584f60;
+}
+.des_content_this{
+  width: 610rpx;
+  margin-top: 50rpx;
+  margin-left: auto;
+  margin-right: auto;
+  border-top:1px solid #e8e8e8;
+  position: relative;
+}
+.des_icon image{
+  width: 118rpx;
+  height: 52rpx;
+  position: absolute;
+  top: -1rpx;
+  left: 240rpx;
+}
+.des_icon text{
+  position: absolute;
+  top:-26rpx;
+  left:240rpx;
+  font-size:26rpx;
+  font-family: "微软雅黑";
+  color: #ffffff;
+}
+.des_content{
+  width: 416rpx;
+  font-size: 24rpx;
+  color: #666666;
+  display: inline-block;
+  /*width: 610rpx;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 86rpx 78rpx 52rpx 78rpx;
+  font-family: "微软雅黑";
+  height:114rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #e8e8e8;
+}
+.user-tel,
+.user-email,
+.user-wechat{
+  padding-left: 60rpx;
+  padding-top: 10rpx;
+}
+.user-tel image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 20rpx;
+  vertical-align: middle;
+}
+.user-email image{
+  width: 40rpx;
+  height: 30rpx;
+  padding-right: 20rpx;
+  vertical-align: middle;
+}
+.user-wechat image{
+  width: 50rpx;
+  height: 39rpx;
+  padding-right: 12rpx;
+  vertical-align: middle;
+}
+.user-tel text,
+.user-email text,
+.user-wechat text{
+  font-size: 24rpx;
+  font-family: "微软雅黑";
+  color: #666666;
+}
+.mean_btn{
+  position: absolute;
+  bottom:30rpx;
+  right:-21rpx;
+  z-index: 5;
+}
+.mean_btn>image{
+  width:141rpx;
+  height:272rpx;
+}
+.mean_btn_on{
+ position: absolute;
+ top:85rpx;
+ left:26rpx;
+
+}
+.mean_btn_on>image{
+  width: 104rpx;
+  height: 104rpx;
+}
+.score_btn{
+  transform: rotate(45deg);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s; 
+}
+.score_back_btn{
+  transform: rotate(0deg);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s; 
+}
+.mod_btn{
+  position: absolute;
+  top:50rpx;
+  right:32rpx;
+}
+.mod_btn image{
+   width: 50rpx;
+   height: 50rpx;
+   opacity: 0.8;
+}
+.bg_mc{
+  width: 750rpx;
+  height: 1357rpx;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  display: none;
+}
+.code_mc{
+  width: 750rpx;
+  height: 1357rpx;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  z-index: 6;
+}
+.code_mc>text{
+  position: fixed;
+  left: 255rpx;
+  top: 280rpx;
+  z-index: 9;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+}
+.check_color{
+  color: #569bc8;
+}
+.code_mc image.code_bj{
+   position: fixed;
+   width: 425rpx;
+   height: 553rpx;
+   left: 165rpx;
+   top: 240rpx;
+   z-index: 8;
+}
+.code_mc image.code_exm{
+  width: 263rpx;
+  height: 263rpx;
+  position: fixed;
+  top: 440rpx;
+  left: 250rpx;
+  z-index: 8;
+}
+.show_bg_mc{
+  display: block;
+}
+.hide_bg_mc{
+  display: none;
+}
+.code_btn image,
+.txl_btn image,
+.dh_btn image{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  z-index: 6;
+}
+.code_btn image{
+ bottom:258rpx;
+ right:58rpx;
+}
+.txl_btn image{
+ bottom:148rpx;
+ right:136rpx;
+}
+.dh_btn image{
+ bottom:26rpx;
+ right:58rpx;
+}
+.show_btn,.show_code{
+  display: block;
+}
+.hide_btn,.hide_code{
+  display: none;
+}
+.the_close{
+   width: 750rpx;
+   height: 1200rpx;
+   z-index: 7;
+   position: fixed;
+   top: 0;
+}
+.card_bg_on{
+  background-color: white;
+  position: relative;
+  padding-bottom: 30rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 10rpx 20rpx #DEDEDE;
+}
+.card_bg_under{
+  background-color: #F0F0F0;
+  width: 570rpx;
+  height:768rpx;
+  position: absolute;
+  top: 125rpx;
+  left: 90rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 10rpx 30rpx #ADADAD;
+}
+.card_bg_under_to{
+  background-color: #E5E5E5;
+  width: 500rpx;
+  height:802rpx;
+  position: absolute;
+  top: 125rpx;
+  left: 126rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 10rpx 30rpx #ADADAD;
+}
+.des_title_box{
+  width: 120rpx;
+  height: 50rpx;
+  background-color: #685D6B;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  top: -5rpx;
+}

@@ -1,0 +1,109 @@
+/* pages/erweima/erweima.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  margin: 0rpx;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-size: 100% 100%;
+  background-color: #fafafa;
+}
+.erweima-logo{
+  width: 601rpx;
+  height: 601rpx;
+  margin: auto;
+  margin-top: 50rpx;
+  margin-bottom: 0rpx;
+  position: relative;
+}
+.erweima-logo-bj{
+  display: block;
+  width: 601rpx;
+  height: 601rpx;
+}
+.order{
+  width: 100%;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #000;
+  position: absolute;
+  top: 50rpx;
+}
+.erweima-logo-img{
+  width: 363rpx;
+  height: 367rpx;
+  margin: auto;
+  position: absolute;
+  top: 120rpx;
+  left: 120rpx;
+}
+.erweima-logo-img-bj{
+  width: 363rpx;
+  height: 367rpx;
+}
+.bottom{
+  width: 726rpx;
+  height: 440rpx;
+  margin: auto;
+  position: relative;
+}
+.bottom-bj{
+  width: 726rpx;
+  height: 440rpx;
+}
+.bottom-order{
+  width: 580rpx;
+  height: 76rpx;
+  position: absolute;
+  left: 60rpx;
+  top: -30rpx;
+  z-index: 3;
+}
+.bottom-order-bg{
+  display: inline-block;
+  width: 580rpx;
+  height: 80rpx;
+}
+.bottom-order-text{
+  width: 580rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 5
+}
+.bottom-advertisement{
+  width: 95%;
+  height: 287rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 20rpx;
+}
+.bottom-advertisement-c{
+  width: 180rpx;
+  height: 287rpx;
+  margin: 15rpx 25rpx;
+  float: left;
+}
+.bottom-advertisement-c-img{
+  width: 180rpx;
+  height: 287rpx;
+}
+.bottom-advertisement-c-b{
+  width: 100%;
+  height: 32rpx;
+  text-align: center;
+  line-height: 32rpx;
+  font-size: 24rpx;
+  color: #666666;
+}

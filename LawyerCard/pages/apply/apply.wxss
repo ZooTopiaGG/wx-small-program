@@ -1,0 +1,95 @@
+/* pages/apply/apply.wxss */
+.container{
+  min-height: 100%;
+  margin: 30rpx 15rpx;
+  color: rgb(51,51,51)
+}
+.apply-bg{
+  width: 666rpx;
+  height: 400rpx;
+}
+.apply-top, 
+.apply-bottom{
+  box-shadow: 0 3px 3px rgb(232,232,232);
+  background: #fff;
+  padding: 0 27rpx;
+}
+.apply-top{
+  margin-bottom: 10rpx;
+}
+.apply-bottom{
+  padding-bottom: 30rpx;
+}
+.apply-line{
+  width: 130rpx;
+  height: 1px;
+  background: rgb(83, 83, 83);
+}
+.apply-80-text{
+  margin: 0 20rpx;
+}
+.apply-80{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 16px;
+}
+.apply-border{
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding-left: 8rpx;
+}
+.apply-title{
+  margin-top: 25rpx;
+  font-size: 14px;
+  color: rgb(51,51,51)
+}
+.apply-list{
+  color: rgb(102, 102, 102);
+  line-height: 1.6;
+}
+.apply-list text:last-child{
+  margin-bottom: 22rpx;
+}
+.apply-remind{
+  font-size: 12px;
+  color: rgb(153, 153, 153)
+}
+.apply-form-title{
+  text-align: center;
+  font-size: 16px;
+}
+.form-icon{
+  width: 90rpx;
+  height: 80rpx;
+  position: relative;
+  top: -2rpx;
+}
+.form-section{
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}
+ .section__title{
+  border: 1px solid rgb(221, 221, 221);
+  border-right: 0;
+  border-radius: 6rpx 0 0 6rpx;
+  box-sizing: border-box;
+} 
+.form-input{
+  height: 80rpx;
+  border: 1px solid rgb(221, 221, 221);
+  border-left: 0;
+  border-radius: 0 6rpx 6rpx 0;
+  box-sizing: border-box;
+}
+.form-textarea{
+  border: 1px solid rgb(221, 221, 221);
+  height: 290rpx;
+  width: 100%;
+  border-radius: 6rpx;
+  margin-bottom: 30rpx;
+  padding:5rpx 16rpx;
+  box-sizing: border-box;
+}
+.form-button{
+  background: #211f45;
+  color: #fff;
+}

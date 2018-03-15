@@ -1,0 +1,81 @@
+/* meeting_data.wxss */
+page{
+  background-color: #F0F0F0;
+}
+.meeting-title{
+  text-align: center;
+  margin:30rpx 0;
+  font-size: 32rpx;
+}
+.data-box{
+  width: 700rpx;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8rpx;
+  box-shadow: 0 0 14rpx #e6e6e6;
+}
+.data-box>view{
+  border-bottom:1px solid #e6e6e6; 
+  padding: 22rpx 22rpx;
+}
+.data-box>view:nth-child(1){
+  text-align: center;
+  font-size: 32rpx;
+  padding: 30rpx 0;
+}
+.data-box>view:last-child{
+  border-bottom: none;
+}
+.data-box-this{
+  display: flex;
+  flex-wrap:nowrap; 
+  justify-content: space-between;
+}
+.data-box-this-left image{
+  width: 41rpx;
+  height: 41rpx;
+  vertical-align: -8rpx;
+}
+.data-box-this-left text{
+  font-size: 28rpx;
+  margin-left: 16rpx;
+}
+.data-box-this-right image{
+  width: 13rpx;
+  height: 24rpx;
+   vertical-align: -2rpx;
+}
+.data-box-this-right text{
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}
+.data-wy{
+  margin-right: 12rpx;
+}
+.data-box-2{
+  margin-top:30rpx;
+}
+.in_met_btn{
+  margin-top: 40rpx;
+  text-align: center;
+  position: relative;
+  width: 690rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.in_met_btn image{
+  width: 690rpx;
+  height: 130rpx;
+}
+.in_met_btn>view{
+  position: absolute;
+  width: 690rpx;
+  height: 130rpx;
+  line-height: 130rpx;
+  top: 0;
+  left: 0;
+  font-size: 36rpx;
+  color: #685d6b;
+}

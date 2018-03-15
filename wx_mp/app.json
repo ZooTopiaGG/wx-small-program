@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/invitation/invitation",
+    "pages/my_card/my_card",
+    "pages/meeting_list/meeting_list",
+    "pages/conferenceDetail/conferenceDetail",
+    "pages/conferenceDetailed/conferenceDetailed",
+    "pages/conferenceData/conferenceData",
+    "pages/conferenceNo/conferenceNo",
+    "pages/conference/conference",
+    "pages/erweima/erweima",
+    "pages/mod_meeting_info/mod_meeting_info",
+    "pages/write_card_info/write_card_info",
+    "pages/maillistadmin/maillistadmin",
+    "pages/mailList/mailList",
+    "pages/conferencemail/conferencemail",
+    "pages/participants/participants",
+    "pages/mod_card_info/mod_card_info",
+    "pages/meeting_data/meeting_data",
+    "pages/create_meeting/create_meeting",
+    "pages/meet_banner/meet_banner",
+    "pages/business_card_index/business_card_index", 
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#e9eae6",
+    "borderStyle": "white",
+    "selectedColor":"#333333",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/nav-icon-l.png",
+        "selectedIconPath": "images/nav-icon-ls.png"
+      },
+      {
+        "pagePath": "pages/meeting_list/meeting_list",
+        "text": "会议",
+        "iconPath": "images/nav-icon-m.png",
+        "selectedIconPath": "images/nav-icon-ms.png"
+      },
+      {
+        "pagePath": "pages/business_card_index/business_card_index",
+        "text": "名片",
+        "iconPath": "images/nav-icon-r.png",
+        "selectedIconPath": "images/nav-icon-rs.png"
+      }
+    ]
+  }
+}

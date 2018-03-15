@@ -1,0 +1,9 @@
+<!--pages/bussinesscard/bussinesscard.wxml-->
+<view class="container">
+<!--<navigator url="../miallistadmin/miallistadmin" hover-class="changestyle>去主办方通讯录</navigator>-->
+<navigator url="../maillistadmin/maillistadmin" hover-class="changestyle">去主办方通讯录</navigator>
+<navigator url="../conferencemail/conferencemail" hover-class="changestyle">去会议通讯录</navigator>
+<navigator url="../lastconference/lastconference" hover-class="changestyle">去最后一次会议</navigator>
+<navigator url="../erweima/erweima" hover-class="changestyle">签到二维码</navigator>
+<navigator url="../conferenceNo/conferenceNo" hover-class="changestyle">会议未创建</navigator>
+</view>

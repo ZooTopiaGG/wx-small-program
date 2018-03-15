@@ -1,0 +1,189 @@
+.bg_this{
+  position: fixed;
+  z-index: -1;
+}
+.bg_this image{
+  width: 750rpx;
+  height: 1357rpx;
+}
+.my_card_write{
+  padding: 20rpx 56rpx;
+}
+.input_title{
+  font-size: 30rpx;
+  margin: 34rpx 0 14rpx 0;
+  display: inline-block;
+}
+.write_1,.write_2{
+  background-color: white;
+  /*padding: 40rpx;*/
+  border-radius: 8rpx;
+  box-shadow: 0 0 12px rgba(153,153,153,0.5);
+}
+.input_box1 image{
+  width: 41rpx;
+  height: 41rpx;
+}
+.input_box2 image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.input_box3 image{
+  width: 45rpx;
+  height: 40rpx;
+}
+.input_box4 image{
+  width: 39rpx;
+  height: 39rpx;
+}
+.input_box5 image{
+  width: 40rpx;
+  height: 34rpx;
+}
+.input_box6 image{
+  width: 47rpx;
+  height: 37rpx;
+}
+.input_this{
+  height: 50rpx;
+  padding: 20rpx 40rpx;
+  border-bottom: 1px solid #E8E8E8;
+  display: flex;
+}
+.input_second{
+   border-bottom: 4rpx solid #E8E8E8;
+}
+.final_input{
+  border-bottom: none;
+}
+.input_this image{
+  margin-top: 10rpx;
+  /*vertical-align: -4rpx;*/
+}
+@media screen and (max-width: 361px) {
+  .input_this image {
+    /*margin-top: 16rpx;*/
+    vertical-align: 12rpx;
+  }
+}
+.write_1 view input,.write_2 view input{
+  display: inline-block;
+  width: 334rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #bfbfbf;
+  line-height: 60rpx;
+}
+.input_box1 input,
+.input_box2 input{
+  margin-left: 55rpx;
+}
+.input_box3 input{
+  margin-left: 50rpx;
+}
+.input_box4 input{
+  margin-left: 56rpx;
+}
+.input_box5 input{
+  margin-left: 55rpx;
+}
+.input_box6 input{
+  margin-left: 48rpx;
+}
+.des_content{
+  margin-top: 10rpx;
+  padding: 30rpx 88rpx 30rpx 88rpx;
+  background-color: white;
+  border-radius: 8rpx;
+  box-shadow: 0 0 12px rgba(153,153,153,0.5);
+  position: relative;
+}
+.des_content textarea{
+  width:100%;
+  height: 160rpx;
+  padding-top: 40rpx;
+  letter-spacing: 5rpx;
+  font-size: 28rpx;
+  color: #cfcfcf;
+}
+.stringNum{
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.create_btn{
+  margin-top: 40rpx;
+  text-align: center;
+  position: relative;
+  width: 105%;
+  height: 120rpx;
+  margin-left: -20rpx;
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+.create_btn image{
+  /*margin-top: 110rpx;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  width: 100%;
+  height: 120rpx;
+  /*text-align: center*/
+}
+.create_btn {
+  margin-top: 40rpx;
+  text-align: center;
+  position: relative;
+  /*width: 538rpx;*/
+  width: 105%;
+  height: 120rpx;
+  margin-left: -14rpx;
+}
+
+.create_btn image {
+  /*margin-top: 110rpx;*//*margin-left: auto;*//*margin-right: auto;*/
+  width: 100%;
+  height: 120rpx;
+  /*text-align: center*/
+}
+
+.create_des {
+  position: absolute;
+  width: 100%;
+  height: 120rpx;
+  line-height: 114rpx;
+  top: 0;
+  left: 0;
+  font-size: 36rpx;
+  text-indent: 14rpx;
+  color: #fff;
+}
+
+.des_icon image {
+  width: 140rpx;
+  height: 56rpx;
+  position: absolute;
+  top: 0;
+  left: 260rpx;
+}
+
+.des_icon text {
+  position: absolute;
+  top: 4rpx;
+  left: 295rpx;
+  font-size: 28rpx;
+  text-indent: 8rpx;
+  color: #fff;
+}
+
+.userinfo-avatar{
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  border-radius: 20rpx;
+  top:55rpx;
+  right: 52rpx;
+  box-shadow: 0rpx 0rpx 40rpx #e2e0e3;
+}

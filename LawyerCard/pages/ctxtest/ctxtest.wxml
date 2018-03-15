@@ -1,0 +1,4 @@
+<!--pages/ctxtest/ctxtest.wxml-->
+<view class='container'>
+  <canvas canvas-id="myCanvas" id="mycanvas"  style="width:100%;height:{{contentHeight}}px"/>
+</view>

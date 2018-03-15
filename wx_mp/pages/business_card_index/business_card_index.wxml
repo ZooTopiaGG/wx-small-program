@@ -1,0 +1,12 @@
+<view class="bg_this">
+  <image src="../../images/bj@2x.png"></image>
+</view>
+<view class="card_index">
+  <view class="card_xf_bg">
+    <image class="xf_img" src="../../images/xf_bg.png"></image>   
+  </view>
+  <view class="create_btn" bindtap="goAndCreateCard">
+    <image src="../../images/jx_1.png"></image>
+    <view class="create_des">我的电子名片</view>
+  </view>
+</view>

@@ -1,0 +1,115 @@
+<!--pages/mailList/mailList.wxml-->
+<!--通讯录页面-->
+<view class="container">
+  <view class="content">
+    <view class="content-c">
+      <view class="swiper-tab">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav" style="border-right: 2rpx solid white">会务人员</view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">参会人员</view>
+      </view>
+    </view>
+
+    <swiper class="swiper-box" current="{{currentTab}}" duration="300" bindchange="bindChange">
+      <!-- 会务人员 -->
+      <swiper-item>
+        <view class="swiper-item-body-l">
+          <view class="page-section-spacing">
+            <scroll-view scroll-y="true" style="height: 930rpx;width: 700rpx;padding-top: 60rpx;">
+
+
+              <view class="contacts"  wx:for="{{participantList}}" wx:for-index="idx" wx:for-item="itemCase">
+                <view class="contacts-l">
+                  <image class="contacts-l-img" src="{{itemCase.HeadUrl}}"></image>
+                </view>
+                <view class="contacts-m">
+              
+                  <view class="contacts-m-t">{{itemCase.UserName}}</view>
+                  <view class="contacts-m-b">{{itemCase.UserType=='0' ? '主办方' : '参会人员'}}</view>
+                </view>
+                <view class="contacts-r">
+                  <view class="contacts-r-l" id="{{itemCase.Tel}}" bindtap="cellThisPhone">
+                   {{itemCase.Tel}}
+                  </view>
+                  <view class="contacts-r-r" id="{{itemCase.ID}}" bindtap="goThisCard">
+                    <image class="contacts-r-r-img" src="../../images/nav-icon-r.png"></image>
+                  </view>
+                </view>
+              </view>
+            </scroll-view>
+          </view>
+        </view>
+
+      </swiper-item>
+      <!-- 参会人员 -->
+      <swiper-item>
+      <!--演讲嘉宾-->
+        <view class="swiper-item-body-r-t">
+          <view class="speaker">
+            <image class="speaker-img" src="../../images/speaker_03.png"></image>
+          </view>
+          
+          <view class="page-section-spacing">
+            <scroll-view scroll-y="true" style="height: 280rpx;width: 700rpx;padding-top: 60rpx;">
+                <view class="contacts"  wx:for="{{guestList}}" wx:for-index="idx" wx:for-item="itemCase">
+                  <view class="contacts-l">
+                   
+                    <image class="contacts-l-img" src="{{itemCase.HeadUrl}}"></image>
+                  </view>
+                  <view class="contacts-m">
+                  
+                    <view class="contacts-m-t">{{itemCase.UserName}}</view>
+                    <view class="contacts-m-b">{{userType}}</view>
+                  </view>
+                  <view class="contacts-r">
+                    <view class="contacts-r-l" id="{{itemCase.Tel}}" bindtap="cellThisPhone">
+                    {{itemCase.Tel}}
+                    </view>
+                    <view class="contacts-r-r" id="{{itemCase.ID}}" bindtap="goThisCard">
+                      <image class="contacts-r-r-img" src="../../images/nav-icon-r.png"></image>
+                    </view>
+                  </view>
+              </view>
+               <view class="no_speaker" hidden="{{no_speaker!==0}}">暂时还没有演讲嘉宾</view>
+            </scroll-view>
+          </view>
+        </view>
+        <!--游客-->
+        <view class="swiper-item-body-r-b">
+          <view class="participants">
+            <image class="participants-img" src="../../images/Participants_03.png"></image>
+          </view>
+          <view class="page-section-spacing">
+            <scroll-view scroll-y="true" style="height: 580rpx;width: 700rpx;padding-top: 60rpx;">
+
+
+              <view class="contacts"  wx:for="{{addPersonArray}}" wx:for-index="idx" wx:for-item="itemCase">
+                <view class="contacts-l">
+                 
+                  <image class="contacts-l-img" src="{{itemCase.HeadUrl}}"></image>
+                </view>
+                <view class="contacts-m">
+                 
+                  <view class="contacts-m-t">{{itemCase.UserName}}</view>
+                  <view class="contacts-m-b">{{itemCase.UserType=='0' ? '主办方' : '参会人员'}}</view>
+                </view>
+                <view class="contacts-r">
+                  <view class="contacts-r-l" id="{{itemCase.Tel}}" bindtap="cellThisPhone">
+                   {{itemCase.Tel}}
+                  </view>
+                  <view class="contacts-r-r" id="{{itemCase.ID}}" bindtap="goThisCard">
+                    <image class="contacts-r-r-img" src="../../images/nav-icon-r.png"></image>
+                  </view>
+                </view>
+              </view>
+
+            </scroll-view>
+          </view>
+        </view>
+        <!--1111-->
+      </swiper-item>
+    </swiper>
+
+
+
+  </view>
+</view>

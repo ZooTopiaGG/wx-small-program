@@ -1,0 +1,275 @@
+/* pages/conferenceDetailed/conferenceDetailed.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  margin: 0rpx;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-size: 100% 100%;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.c-top {
+  width: 655rpx;
+  min-height: 410rpx;
+  position: relative;
+  top: 66rpx;
+  left: 47.5rpx;
+  z-index: 4;
+}
+
+.c-top-body {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+/*.c-top-content{
+  width: 640rpx;
+  height: 280rpx;
+  position: absolute;
+  top: 110rpx;
+}*/
+
+.c-top-bg {
+  width: 655rpx;
+  min-height: 100%;
+  position: absolute;
+  left: -45rpx;
+  top: 0rpx;
+  z-index: 5;
+}
+
+.c-top-bg-img {
+  width: 655rpx;
+  height: 410rpx;
+}
+
+.c-top-content {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  z-index: 6;
+}
+
+.c-top-title {
+  width: 85%;
+  height: 122rpx;
+  line-height: 122rpx;
+  text-align: center;
+  color: #333;
+  font-size: 32rpx;
+  /*position: absolute;
+  left: -1rpx;
+  top: 0rpx;
+  z-index: 4;*//*margin-top: 50rpx;*/
+}
+
+.line {
+  width: 630rpx;
+  height: 2rpx;
+  margin-top: -40rpx;
+  margin-bottom: 20rpx;
+  margin-left: -35rpx;
+  /*position: absolute;
+  left: 14rpx;
+  top: 80rpx;
+  z-index: 5;*/
+}
+
+.line-img {
+  width: 630rpx;
+  height: 2rpx;
+}
+
+.style {
+  width: 580rpx;
+  height: 30rpx;
+  margin-top: 50rpx;
+  /*position: absolute;
+  top: 150rpx;
+  left: 50rpx;
+  z-index: 5;*/
+}
+
+.style-l {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.style-l-img {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.style-r {
+  width: 510rpx;
+  height: 30rpx;
+  float: left;
+  margin-left: 28rpx;
+  margin-top: 2rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.date {
+  width: 580rpx;
+  height: 30rpx;
+  margin-top: 20rpx;
+  /*position: absolute;
+  top: 200rpx;
+  left: 50rpx;
+  z-index: 5;*/
+}
+
+.date-l {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.date-l-img {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.date-r {
+  width: 510rpx;
+  height: 30rpx;
+  float: left;
+  margin-left: 28rpx;
+  margin-top: 2rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.addr {
+  width: 580rpx;
+  /*min-height: 30rpx;*/
+  overflow: hidden;
+  margin-top: 20rpx;
+  /*position: absolute;
+  top: 260rpx;
+  left: 50rpx;
+  z-index: 5;*/
+}
+
+.addr-l {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.addr-l-img {
+  width:30rpx;
+  height:40rpx;
+}
+
+.addr-r {
+  width: 510rpx;
+  /*height: 30rpx;*/
+  float: left;
+  margin-left: 28rpx;
+  margin-top: 2rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.share {
+  width: 580rpx;
+  height: 30rpx;
+  margin-top: 20rpx;
+  /*position: absolute;
+  top: 310rpx;
+  left: 50rpx;
+  z-index: 5;*/
+}
+
+.share-l {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.share-l-img {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.share-r {
+  width: 510rpx;
+  height: 30rpx;
+  float: left;
+  margin-left: 28rpx;
+  margin-top: 2rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.triangle {
+  position: absolute;
+  top: 395rpx;
+  left: 190rpx;
+}
+
+.triangle-img {
+  width: 188rpx;
+  height: 72rpx;
+}
+
+.introduction {
+  position: absolute;
+  top: -10rpx;
+  width: 188rpx;
+  height: 72rpx;
+  z-index: 6;
+  font-size: 32rpx;
+  color: #fff;
+  opacity: 0.9;
+  text-align: center;
+  line-height: 72rpx;
+}
+
+.c-bottom {
+  width: 713rpx;
+  height: 802rpx;
+  position: absolute;
+  top: 312rpx;
+  left: 20rpx;
+  z-index: 2;
+}
+
+.c-bottom-bj {
+  width: 713rpx;
+  height: 802rpx;
+}
+
+.c-bottom-content {
+  width: 100%;
+  height: 540rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 15rpx;
+  padding: 15rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+scroll-view {
+  width: 100%;
+  height: 540rpx;
+  text-align: justify;
+  padding: 20rpx;
+}

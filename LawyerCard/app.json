@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/apply/apply",
+    "pages/successBack/successBack",
+    "pages/introduction/introduction",
+    "pages/cases/cases",
+    "pages/linkme/linkme",
+    "pages/ctxtest/ctxtest",
+    "pages/articleDetails/articleDetails",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#211f45",
+    "navigationBarTitleText": "律师小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#211f45",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/11.png"
+      },
+      {
+        "pagePath": "pages/introduction/introduction",
+        "text": "简介",
+        "iconPath": "images/2.png",
+        "selectedIconPath": "images/22.png"
+      },
+      {
+        "pagePath": "pages/cases/cases",
+        "text": "案例",
+        "iconPath": "images/3.png",
+        "selectedIconPath": "images/33.png"
+      },
+      {
+        "pagePath": "pages/linkme/linkme",
+        "text": "联系我",
+        "iconPath": "images/4.png",
+        "selectedIconPath": "images/44.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 10000
+  }
+}

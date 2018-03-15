@@ -1,0 +1,147 @@
+<view class='ripple' style='{{rippleStyle}}'></view>
+<view class="container" bindtouchstart='containerTap'>
+  <!-- 背景图 -->
+   <image class='bj' src='../../images/bj.png'></image>
+  <!-- 律师头像以及信息 -->
+  <view class='banner flex-1'>
+     <image class='banner-img' src='../../images/avatar.png'></image> 
+  </view>
+  <view class='base'>
+    <view class='info flex flex-v flex-align-center'>
+      <text class='info-name'>{{userInfo.username}}</text>
+      <text class='info-id'>{{userInfo.practicelaw}} {{userInfo.professionaltitle}}</text>
+    </view>
+    <!-- 基本信息 -->
+    <view class='base-info'>
+      <!-- 业务范围 bl-->
+      <view class='business-list bl flex flex-pack-justify'>
+        <view class='flex flex-v flex-align-center' bindtap='calltap'>
+          <image class='bl-icon' src='../../images/dhzx@2x.png'></image>
+          <text>电话咨询</text>
+        </view>
+        <view class='flex flex-v flex-align-center' style='position:relative'>
+          <view class="guest-button">
+            <contact-button type="default-light" size="27" session-from="weapp" send-message-title="{{userInfo.username}}">
+            </contact-button>
+            <contact-button type="default-light" size="27" session-from="weapp" send-message-title="{{userInfo.username}}">
+            </contact-button>
+            <contact-button type="default-light" size="27" session-from="weapp" send-message-title="{{userInfo.username}}">
+            </contact-button>
+            <contact-button type="default-light" size="27" session-from="weapp" send-message-title="{{userInfo.username}}">
+            </contact-button>
+          </view>
+          <image class='bl-icon' src='../../images/zxly@2x.png'></image>
+          <text>在线留言</text>
+        </view>
+        <view class='flex flex-v flex-align-center' bindtap='gototap'>
+          <image class='bl-icon' src='../../images/smfw@2x.png'></image>
+          <text>上门拜访</text>
+        </view>
+      </view>
+      <view class='box-border'></view>
+      <!-- 擅长领域 ga-->
+      <view class='good-area ga flex flex-v'>
+        <view class='flex ga-header'>
+          <view class='ga-title flex-1'>擅长领域</view>
+          <view class='ga-num-approve'>{{userInfo.tagthumbnum}}人认可</view>
+        </view>
+        <view class='ga-list flex'>
+          <view class='ga-list-cell-btn'>
+            <button wx:if="{{userInfo.tag1}}" open-type="getUserInfo" data-tag='1' class="ga-list-cell" bindgetuserinfo="approveBtn">{{userInfo.tag1}}</button>
+          </view>
+          <view class='ga-list-cell-btn'>
+            <button wx:if="{{userInfo.tag2}}" open-type="getUserInfo" data-tag='2' class="ga-list-cell" bindgetuserinfo="approveBtn">{{userInfo.tag2}}</button>
+          </view>
+          <view class='ga-list-cell-btn'>
+            <button wx:if="{{userInfo.tag3}}" open-type="getUserInfo" data-tag='3' class="ga-list-cell" bindgetuserinfo="approveBtn">{{userInfo.tag3}}</button>
+          </view>
+          <view class='ga-list-cell-btn'>
+            <button wx:if="{{userInfo.tag4}}" open-type="getUserInfo" data-tag='4' class="ga-list-cell" bindgetuserinfo="approveBtn">{{userInfo.tag4}}</button>
+          </view>
+          <view class='ga-list-cell-btn'>
+            <button wx:if="{{userInfo.tag5}}" open-type="getUserInfo" data-tag='5' class="ga-list-cell" bindgetuserinfo="approveBtn">{{userInfo.tag5}}</button>
+          </view>
+        </view>
+        <view class='box-border'></view>
+      </view>
+      <!-- 记录拜访人数 vn-->
+      <view class='visitor-num vn flex flex-pack-justify flex-align-center'>
+        <view class='vn-left flex-1 flex flex-align-center'>
+          <view class='vn-title'>近期来访</view>
+          <view class='vn-list flex flex-align-center flex-1'>
+            <view class='vn-list-avatar' wx:for='{{headurl}}' style="left: {{ index*42 }}rpx; zIndex:{{index}}" wx:for-index='index' wx:for-item='item' wx:key='index'>
+              <image class='vn-list-img' src='{{item}}'></image>
+            </view>
+            <view class='vn-all-num' style='left: {{(userInfo.totalnum > 5 ? 5 :userInfo.totalnum) * 42 + 40}}rpx'>等{{userInfo.totalnum}}人</view>
+          </view>
+        </view>
+        <view>
+          <button open-type='share' id='share-btn' class='flex flex-align-center flex-pack-right'>
+            <image class='vn-zf' src='../../images/fx@2x.png'></image>
+          </button>
+        </view>
+      </view>
+    </view>
+    <!-- 保存电话到通讯录 spn-->
+    <view class='save-phone-num spn flex flex-pack-justify'>
+      <view class='spn-width-60 flex-align-center flex-pack-center flex'>
+        <image class='spn-tel' src='../../images/dh@2x.png'></image>
+        <text>Tel:{{userInfo.tel}}</text>
+      </view>
+      <view>
+        <text>|</text>
+      </view>
+      <view class='spn-width-40 flex-align-center flex-pack-center flex' bindtap="savephonetap">
+        <image class='spn-save-btn' src='../../images/txl@2x.png'></image>
+        <text>保存到通讯录</text>
+      </view>
+    </view>
+    <!-- 文章与案例列表 acl-->
+    <view class='articles-cases-list acl flex flex-v'>
+      <view class='acl-top flex flex-pack-justify flex-align-center'>
+        <view class='acl-title flex-1 flex flex-align-center'>
+          <image class='acl-title-img' src='../../images/wj@2x.png'></image>
+          <text>文章与案例</text>
+        </view>
+        <view class='acl-enter flex flex-align-center' bindtap='entryCase'>
+          <image class='acl-enter-img' src='../../images/jt@2x.png'></image>
+        </view>
+      </view>
+      <view class='acl-list'>
+        <view class='acl-list-item flex flex-align-center' wx:for='{{articleList}}' wx:for-index='index' wx:for-item='item' wx:key='index' bindtap='entryCaseDetails' id="{{item.articleid}}">
+          <image class='acl-list-img' wx:if="{{item.picurl}}" src='{{item.picurl}}'></image>
+          <image class='acl-list-img' wx:else src='../../images/diary-2134246_1920@2x-2.png'></image>
+          <view class='flex flex-v flex-1'>
+            <view class='acl-list-title'>
+              <text>{{item.title}}</text>
+            </view>
+            <view class='flex flex-pack-justify acl-list-info'>
+              <text>{{item.type}}</text>
+              <text>{{item.thumbnum}}人赞过</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 执业信息 pi-->
+    <view class='practice-info'>
+      <view class='pi-top flex flex-pack-justify'>
+        <text>执业信息</text>
+        <text class='pi-top-2'>执业状态：正常</text>
+      </view>
+      <view class='pi-center'>
+        <view class='pi-center-1'>
+          <text>执业证号：{{licensenumber}}</text>
+        </view>
+        <view>
+          <text>执业机构：{{userInfo.practicelaw}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 引入底部公用模版 -->
+    <view class='footers flex flex-v flex-align-center'>
+      <text class='tx' bindtap='gotoapply'>拥有自己的小程序</text>
+      <text>2017 © 陈浩文律师 技术支持：律师说</text>
+    </view>
+  </view>
+</view>

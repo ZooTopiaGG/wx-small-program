@@ -1,0 +1,68 @@
+.bg_this{
+  position: fixed;
+  z-index: -1;
+}
+.bg_this image{
+  width: 750rpx;
+  height: 1357rpx;
+}
+.card_xf_bg{
+  /*text-align: center;*/
+  padding-top:340rpx;
+}
+.card_xf_bg image{
+  width: 493rpx;
+  height: 390rpx;
+}
+.xf_img{
+  width: 476rpx;
+  height: 270rpx;
+  margin-left: 125rpx;
+}
+.des_1{
+  text-align: center;
+  margin-top: 80rpx;
+  font-size: 32rpx;
+  /*font-family: "微软雅黑";*/
+  color: #000000;
+}
+.des_2_box{
+  margin-top: 34rpx;
+  /*text-align: center;*/
+}
+.des_2_text{
+  /*font-family: "微软雅黑";*/
+  color: #60605f;
+  font-size: 30rpx;
+  display: inline-block;
+  margin-left:64rpx;
+  /*margin-right: 32rpx;*/
+}
+.create_btn{
+  margin-top: 110rpx;
+  text-align: center;
+  position: relative;
+  width: 538rpx;
+  height: 120rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.create_btn image{
+  /*margin-top: 110rpx;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  width: 538rpx;
+  height: 120rpx;
+  /*text-align: center*/
+}
+.create_des{
+  position: absolute;
+  width: 538rpx;
+  height: 120rpx;
+  line-height: 114rpx;
+  top: 0;
+  left: 0;
+  font-size: 36rpx;
+  /*font-family: "微软雅黑";*/
+  color: #685d6b;
+}

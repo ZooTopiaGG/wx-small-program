@@ -1,0 +1,29 @@
+/* pages/successBack/successBack.wxss */
+.container{
+  height: 100%;
+  background: #fff;
+}
+.success{
+  box-sizing: border-box;
+  padding-top: 160rpx;
+  font-size: 14px;
+  color: rgb(153,153,153)
+}
+.success-1-text{
+  margin: 40rpx 0;
+  font-size: 18px;
+  color: rgb(51, 51, 51)
+}
+.success-icon{
+  width: 160rpx;
+  height: 160rpx;
+}
+.suc-btn-group{
+  padding: 30rpx 0;
+}
+.suc-btn{
+  width: 360rpx;
+  font-size: 16px;
+  background: #211f45;
+  color: #fff;
+}

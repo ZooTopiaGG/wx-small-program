@@ -1,0 +1,11 @@
+<!--pages/successBack/successBack.wxml-->
+<view class='container flex flex-v'>
+  <view class='success flex-1 flex flex-v flex-align-center'>
+    <image class='success-icon' src='../../images/success.png'></image>
+    <text class='success-1-text'>预约成功</text>
+    <text>我们将尽快与您联系</text>
+  </view>
+  <view class='suc-btn-group'>
+    <button class='suc-btn' bindtap='backHome'>返 回 首 页</button>
+  </view>
+</view>

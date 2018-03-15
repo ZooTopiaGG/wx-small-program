@@ -1,0 +1,36 @@
+<!--pages/erweima/erweima.wxml-->
+<view class="container">
+  <view class="erweima-logo">
+   <image class="erweima-logo-bj" src="../../images/erweima-bj1.png"></image>
+   <view class="order">
+    长按二维码保存至手机
+   </view>
+   <view class="erweima-logo-img" bindlongtap="saveCodeImage" data-url="{{codeUrl}}">
+     <image class="erweima-logo-img-bj" src="{{codeUrl}}"></image>
+   </view>
+  </view>
+  <view class="bottom">
+    <image class="bottom-bj" src="../../images/erweima-bj2.png"></image>
+    <view class="bottom-order">
+      <image class="bottom-order-bg" src="../../images/yuan2x1.png"></image>
+      
+      <view class="bottom-order-text">
+        你可以将签到二维码放置以下场景！
+      </view>
+    </view>
+    <view class="bottom-advertisement">
+      <view class="bottom-advertisement-c">
+        <image class="bottom-advertisement-c-img" src="../../images/ewmi2.png"></image>
+        <view class="bottom-advertisement-c-b">椅背后</view>
+      </view>
+      <view class="bottom-advertisement-c">
+        <image class="bottom-advertisement-c-img" src="../../images/ewmi1.png"></image>
+        <view class="bottom-advertisement-c-b">易拉宝</view>
+      </view>
+      <view class="bottom-advertisement-c">
+        <image class="bottom-advertisement-c-img" src="../../images/ewmi3.png"></image>
+        <view class="bottom-advertisement-c-b">视频上</view>
+      </view>
+    </view>
+  </view>
+</view>

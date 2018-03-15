@@ -1,0 +1,196 @@
+/* create_meeting.wxss */
+.bg_this{
+  position: fixed;
+  z-index: -1;
+}
+.bg_this image{
+  width: 750rpx;
+  height: 1357rpx;
+}
+.met_banner_this{
+  position: relative;
+}
+.met_banner_this image{
+  width: 750rpx;
+  height: 300rpx;
+}
+.chose_ban_btn{
+  width:90rpx;
+  height: 90rpx;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+.chose_ban_btn image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 12rpx;
+}
+.chose_ban_btn view{
+  font-size: 22rpx;
+  color: #574e5f;
+  margin-top: -6rpx;
+}
+.info_title{
+  font-size: 32rpx;
+  margin:44rpx 0 45rpx 25rpx;
+}
+.wrt_info_box{
+  background-color: white;
+  /*width: 700rpx;*/
+  padding: 0 25rpx;
+}
+.form_box{
+  /*width: 85%;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45rpx 0 45rpx 0;
+  display: flex;
+  border-bottom:1px solid #e0e0e0; 
+}
+.form_box>input{
+  width: 400rpx;
+  vertical-align:baseline;
+}
+.form_box>view{
+  /*display: inline-block;*/
+  font-size: 32rpx;
+  /*margin-top: 8rpx;*/
+}
+.met_title{
+  line-height: 44rpx;
+}
+.title_input{
+  /*display: inline-block;*/
+   font-size: 32rpx;
+   margin-left: 30rpx;
+}
+.chose_date_picker{
+  padding-left:280rpx;
+  /*height: 86rpx;
+  line-height: 86rpx;*/
+  font-size: 32rpx;
+}
+.chose_date_time{
+  padding-left: 15rpx;
+  /*height: 86rpx;
+  line-height: 86rpx;*/
+  font-size: 32rpx;
+}
+.place_box{
+  /*justify-content: space-between;*/
+}
+.location_img{
+  border-left: 1px solid #e6e6e6;
+}
+.place_box image{
+  width:26rpx;
+  height:38rpx;
+  margin-left: 30rpx;
+  margin-top:8rpx;
+}
+.plc_input,.type_input{
+  font-size: 32rpx;
+  margin-left: 30rpx;
+}
+.location_this{
+  width:475rpx;
+  margin-left: 30rpx;
+}
+.form_des textarea{
+  width: 666rpx;
+  /*height: 294rpx;*/
+  padding: 20rpx 0;
+  font-size:32rpx; 
+  position: relative;
+  z-index: 0;
+}
+.add_file_area{
+  background-color: white;
+  text-align: center;
+  padding: 42px 0 68px 0;
+}
+.add_file_area image{
+  width: 78rpx;
+  height: 78rpx;
+  margin-bottom: 29rpx;
+}
+.add_file_area view{
+  font-size: 32rpx;
+  color: #666666;
+}
+.interactive-function{
+  padding: 0 40rpx 0 40rpx;
+  height: 300rpx;
+  background-color: white;
+}
+.interactive-function>view.interactive-des{
+  font-size: 32rpx;
+  color: #666666;
+  text-align: center;
+  padding-top: 42rpx;
+}
+.interactive-btn-area{
+  display: flex;
+  flex-wrap:wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.interactive-btn{
+  margin-left: 36rpx;
+}
+.interactive-btn image{
+  width: 79rpx;
+  height: 79rpx;
+}
+.interactive-btn>view{
+  font-size: 32rpx;
+  color: #666666;
+}
+.creat_btn{
+  margin-top: 60rpx;
+  text-align: center;
+  position: relative;
+  width: 690rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.creat_btn image{
+  width: 690rpx;
+  height: 132rpx;
+}
+.creat_btn>view{
+  position: absolute;
+  width: 690rpx;
+  height: 132rpx;
+  line-height: 132rpx;
+  top: 0;
+  left: 0;
+  font-size: 36rpx;
+  color: #685d6b;
+}
+.time_box_tilte{
+  /*height: 86rpx;*/
+  /*line-height: 86rpx;*/
+}
+.time_box{
+  margin-left: 30rpx;
+}
+.time_show{
+  height: 50rpx;
+  line-height: 50rpx;
+  color: darkgrey;
+}
+.form_des_title{
+  padding-top: 45rpx;
+  font-size: 32rpx;
+}
+.chose_mt_type{
+  width: 400rpx;
+   font-size: 32rpx;
+   margin-left: 30rpx;
+   color: darkgrey;
+}

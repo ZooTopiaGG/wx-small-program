@@ -1,0 +1,65 @@
+/* participants.wxss */
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+  background-color: #584F62;
+  color: #B2B2B2;
+  font-size: 32rpx;
+}  
+.navbar .item.active{  
+  color: #ffffff;  
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;      
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 6rpx;  
+  background: #B4CCDB;  
+}
+.all_person_area{
+  width: 630rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40rpx;
+  height: 1000rpx;
+  box-shadow: 0 0 12rpx #e6e6e6;
+  border-radius: 5rpx;
+  padding: 25rpx;
+}
+.all_person{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  height: 1000rpx; 
+}  
+.person_avatar{
+  margin: 0 0 20rpx 32rpx;
+  flex-grow:1;
+  width:120rpx;
+  height: 160rpx;
+  text-align: center;
+  display: inline-block;
+}
+.person_avatar image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.person_avatar>view{
+  text-align: center;
+  font-size: 28rpx;
+}

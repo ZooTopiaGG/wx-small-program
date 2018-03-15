@@ -1,0 +1,122 @@
+<!--meeting_list.wxml-->
+<!--participants.wxml-->
+<!--导航条-->  
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"  bindtap="choseList">{{item}}</text>  
+</view>  
+  
+<!--我加入的-->  
+<view class="met_list" hidden="{{currentTab!==0}}">  
+    <scroll-view scroll-y="true" style="height:950rpx;" hidden="{{showhave!==0}}">
+        <view class="met_list_cont" wx:for="{{joinMeetArray}}"  wx:for-index="idx" wx:for-item="itemCase" bindtap="getMeetDetail" id="{{itemCase.ID}}">
+          <image class="met_list_bg" src="../../images/met_list_bg.png"></image>
+          <view class="user_info">
+            <image src="{{itemCase.HeadUrl}}"></image>
+            <text>{{itemCase.UserName}}创建的会议</text>
+          </view>
+          <view class="met_info_out">
+            <view class="met_info_in">
+              <view class="met_info_title">{{itemCase.Title}}</view>
+              <view class="met_info_des">
+                <view class="met_info_des_box">
+                  <image class="list_time" src="../../images/list_time.png"></image>
+                  <text>{{itemCase.StartTime}}</text>
+                </view>
+                <view class="met_info_des_box">
+                  <image class="list_dw" src="../../images/list_dw.png"></image>
+                  <text>{{itemCase.District}}</text>
+                </view>
+                <view class="met_info_des_box">
+                  <image class="list_fl" src="../../images/list_fl.png"></image>
+                  <text>{{itemCase.Nature}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+
+          <view class="list_tag_box">
+            <image src="../../images/list_tag_ing.png"></image>
+          </view>
+        </view>
+        
+    </scroll-view>
+
+   
+      <view class="content" hidden="{{showNo!==0}}">
+        <view class="content-order">
+        抱歉，你还没有加入任何会议
+        </view>
+        <view class="content-orde-img">
+          <image class="content-orde-img" src="../../images/中间卡牌@2x.png"></image>
+        </view>
+
+
+        <!--<view class="saoma" bindtap="getseq">
+          <image class="saoma-bg" src="../../images/jx_1.png"></image>
+          <view class="saoma-order">扫码加入会议</view>
+        </view>-->
+
+
+      </view>
+
+    
+
+</view>  
+  
+<!--我创建的-->  
+<view class="met_list" hidden="{{currentTab!==1}}">  
+     <scroll-view scroll-y="true" style="height:950rpx;"  hidden="{{showhave!==1}}">
+        <view class="met_list_cont" wx:for="{{createMeetArray}}"  wx:for-index="idx" wx:for-item="itemCase" bindtap="getMeetInfo" id="{{itemCase.ID}}">
+          <image class="met_list_bg" src="../../images/met_list_bg.png"></image>
+          <view class="user_info" >
+            <image src="{{userAvatar}}"></image>
+            <!--<text>我创建的会议</text>-->
+          </view>
+          <view class="met_info_out">
+            <view class="met_info_in">
+              <view class="met_info_title">{{itemCase.Title}}</view>
+              <view class="met_info_des">
+                <view class="met_info_des_box">
+                  <image class="list_time" src="../../images/list_time.png"></image>
+                  <text>{{itemCase.StartTime}}</text>
+                </view>
+                <view class="met_info_des_box">
+                  <image class="list_dw" src="../../images/list_dw.png"></image>
+                  <text>{{itemCase.District}}</text>
+                </view>
+                <view class="met_info_des_box">
+                  <image class="list_fl" src="../../images/list_fl.png"></image>
+                  <text>{{itemCase.Nature}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+
+          <view class="list_tag_box">
+            <image src="../../images/list_tag_ing.png"></image>
+          </view>
+        </view>
+    </scroll-view>
+
+   
+      <view class="content" hidden="{{showNo!==1}}">
+        <view class="content-order">
+        抱歉，你还没有创建任何会议
+        </view>
+        <view class="content-orde-img">
+          <image class="content-orde-img" src="../../images/中间卡牌@2x.png"></image>
+        </view>
+
+
+        <!--<view class="saoma" bindtap="goCreateMeeting">
+          <image class="saoma-bg" src="../../images/jx_1.png"></image>
+          <view class="saoma-order">立即创建会议</view>
+        </view>-->
+
+
+      </view>
+
+    
+</view>  
+  
+
